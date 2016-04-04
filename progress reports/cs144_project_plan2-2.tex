@@ -1,0 +1,94 @@
+\include{report}
+\title{CS 145 Project Plan - ToMEto}
+\author{Jonathan Joo, Matthew Jin, Boyu (Charlie) Tong, Albert Ge}
+\chead{%
+  {\vbox{%
+      \vspace{2mm}
+      \large
+      Networks: Structure Economics \hfill
+      Caltech CMS/CS/EE 145 \hfill \\[1pt]
+      CS 145 Project Plan - ToMEto \hfill
+      \date{\today} \\
+    }
+  }
+}
+
+\linespread{1.5}
+
+
+\begin{document}
+\maketitle
+
+\section{Motivation}
+\subsection*{ToMEto: put the ``me'' in tomato!!}
+
+Food is a tasty business. But it's also a difficult business. Because of the subjective nature of foods and taste, there is no good way to determine which foods go well together, and if there's any guarantee at all if a recipe that SOUNDS good will actually taste good. We've also all been in a situation where we have a bunch of random ingredients lying around, but no good idea as to which ones would work together in a recipe. Or maybe you're getting bored of a recipe you've done hundreds of times before, and you want to find an ingredient that will spice it up a little bit, but not too much that it changes the core flavor of the meal. For all of these kitchen complications, we are fortunate to have thousands upon thousands of recipes available online, most of which are tried-and-true. But the problem is, it's impossible to read through all of them to figure out what works best given your situation. Thus, we figured we would take these recipes and create a graph/database with them, and then utilize this large database of knowledge to allow for improved cooking experiences.
+
+Past research has been done regarding food combinations, using a database of recipes. Thus, clear results exist that using such types of networks to come up with food pairing suggestions (food complements) or food substitutions is viable.\footnote{See \texttt{http://arxiv.org/pdf/1111.3919.pdf}} Furthermore, various research into these fields have yielded graph visualizations which offer the benefit of being able to see which foods are more often closely used with other foods. However, there is no easy way to use these graph visualizations to give a dynamic, helpful view on the viability of certain food pairings in a real-world context. For example, the graph in \texttt{http://www.nature.com/articles/srep00196}  does not actually do much as far as creating new or improved recipes, but simply is a network of various foods with related flavors. Our goal is to use this knowledge of past recipes to actually create suggestions upon user input, thus allowing for customized, tailored food experiences. Thus, we are motivated to take the successes of past research, and create an application that will offer dynamic feedback as to the viability of food parings, and perhaps even offer good additions to a current list of available ingredients. 
+
+
+
+\section{Resources}
+
+\begin{itemize}
+\item Recipe recommendation using ingredient networks: \texttt{http://arxiv.org/pdf/1111.3919.pdf}
+\item Flavor networks and principles of food pairing: \texttt{http://www.nature.com/articles/srep00196}
+\item Data set: \texttt{http://cooking.nytimes.com/} (aggregated ratings and nutrional information!)
+\item Possible (larger) data set: \texttt{allrecipes.com}
+\end{itemize}
+
+``Our experiments reveal that recipe ratings can be well predicted by features derived from combinations of ingredient networks and nutrition information (with accuracy .792), while most of the prediction power comes from the ingredient networks (84\%).''
+
+We plan on reproducing the results of the above paper and transforming it into a web app and database. The main finding of the paper is that, using ingredient networks, the success and popularity of a recipe can be predicted with better accuracy, as opposed to simple human intuition and some naive methods. 
+Thus we intend on converting these results in producing an application that will provide feedback to the user given an input of a list of ingredients, determining whether the said ingredients can be incorporated together to produce a satisfactory meal. 
+This will require constructing a network structure based on the recipe dataset, experimenting with various network algorithms to optimize our recommendations or ratings, and improving the quality of feedback or recommendations (perhaps by suggesting alternative ingredients or substitutions).
+
+First, to obtain the proper dataset, we plan on either web-scraping a popular recipe website (such as allrecipes.com or cooking.nytimes.com), or by utilizing an API (such as \texttt{Food2Fork.com}). The data collection step can be implemented in Python, and the results stored in a MySQL database. Next, to conduct analysis, we will use existing graph-building libraries (such as networkx in Python) to better understand the graph's structure. Finally, we intend to employ web development languages (HTML/CSS/Javascript) to present a front-end interface for communicating with users.
+
+
+
+We also intend on implementing some other features, time permitting. Different regions have different tastes in food, and consequently different recipes. Trying to factor in user preferences, perhaps using a broad classification of ethnicity, into our recommendation system would be a natural extension. To do this, it is important to choose recipe datasets that are well tagged, or implement a learning system to classify them accordingly. Another possible extension is to have a more interactive recommendation system. If an ingredient likely does not fit in well, our app could suggest removing it. On the other hand, it could suggest an ingredient that would fit well, or perhaps even revolutionary new ingredients from other cuisines, creating a fusion dish. This extension is quite a bit more ambitious, and would also require some culinary skills and hands-on experimenting.
+
+
+
+\section{Timeline}
+
+\textbf{Week 1 - Understand the environment} \\
+Flesh out project goals, investigate APIs, etc. Record all recipe sites and how easy it would be to get data off of each. Compare skillsets and divide labor according to strengths of each group member.
+
+\textbf{Week 2 - Data farming} \\
+Connect with APIs and write crawlers/scrapers if necessary. Begin scraping and pulling raw recipe data. Take care not to get throttled or banned. Store recipe data locally in a database.
+
+\textbf{Week 3 - Data compiling} \\
+Continue pulling raw recipe data. Construct a graph with the data, weighting edges based on prevalence among recipes. Investigate different data processing techniques, pruning edges, etc. Figure out which results in the most relevant and useful graph.
+
+\textbf{Week 4 - Data analyzing} \\
+Analyze clustering and visualization techniques. Investigate the best way to cluster complementary ingredients and research a way to visualize the clusters (third party libraries or other). 
+
+{\em \textbf{* Milestone 1:}} Have a graph visualization of the pulled data. 
+
+\textbf{Week 5 - Web framework} \\
+Write a web framework. Two components: bring up a backend service for hosting the data, and a front end web application that displays information to the user. At this point, there's only basic functionality: user can view ingredients list.
+
+{\em \textbf{* Milestone 2:}} Test users can connect to the app and view the ingredients list.
+
+\textbf{Week 6 - Feature: Combination rater} \\
+Given a list of ingredients, calculates how well they all work together. Try out a bunch of different metrics to determine which one works best (depends on graph implementation). 
+
+\textbf{Week 7 - Feature: Supplementary ingredients} \\
+User can input a list of ingredients, and the server will find an ingredient that works well with everything else (or a list of top 5 ingredients that are complementary, as well as a metric/score for each). 
+
+\textbf{Week 8 - Feature: Separate by cuisines} \\
+Recipe data is first parsed and grouped by cuisine (Indian, Italian, Chinese, etc.). Use machine learning to categorize unknown recipes. Users can restrict results to contain only certain ingredients.
+
+\textbf{Week 9 - Polish and push} \\
+Polish application. Make GUI aesthetically pleasing. Fix bugs on server and frontend application. Improvements on algorithms used for clustering, categorizing cuisines, etc. Publicly release the application, having friends and other people at school test out the application.
+
+{\em \textbf{* Milestone 3:}} Public launch, users now can start using the app and the implemented features.
+
+\textbf{Week 10+ - Further expansion} \\
+Further features and improvements: dynamic graph structure (user feedback on ingredient combinations), fusion cuisine (combine two cuisines and see what kind of flavors emerge). 
+
+
+
+\end{document}
