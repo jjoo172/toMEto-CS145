@@ -1,0 +1,21 @@
+nytimes
+allrecipes  https://github.com/shivamd/allrecipes
+food2fork   (API x 500/day)
+bigoven     (API x 500/hr, 30 days trial)
+yummly      (API x 250k/month, 14 days trial)
+
+spoonacular for parsing
+
+hrecipe (and microformats in general) are the bees knees and lucky for you are widely employed across the web; here's a list of sites actively publishing hrecipes in the wild; you can scrape and parse as you please!
+http://www.eat-vegan.rocks/
+http://funcook.com/
+http://www.therecipedepository.com
+http://sabores.sapo.pt/
+http://www.epicurious.com/
+http://www.williams-sonoma.com/
+http://foodnetwork.com/
+http://www.plantoeat.com/recipe_book
+http://www.essen-und-trinken.de
+http://itsripe.com/recipes/
+this list was lifted from the hrecipes specification on the microformats wiki ->
+http://microformats.org/wiki/hrecipe
