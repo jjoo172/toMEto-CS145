@@ -6,6 +6,10 @@ LIMIT = 10
 def main():
 	return render_template('index.html')
 
+@app.route("/index")
+def index():
+	return render_template('index.html')
+
 @app.route('/showSignUp')
 def showSignUp():
 	return render_template('signup.html')
