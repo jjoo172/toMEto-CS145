@@ -28,7 +28,7 @@
       \large
       Networks: Structure Economics \hfill
       Caltech CMS/CS/EE 145 \hfill \\[1pt]
-      CS 145 Project Plan - ToMEto \hfill
+      CS 145 Milestone 1 - ToMEto \hfill
       \date{\today} \\
     }
   }
@@ -98,6 +98,31 @@ For parsing the data, we wrote scripts that employ regex that extract the ingred
 
 
 \subsection{Front-end APIs}
+For front-end, we were able to get some baseline code up and running for our website. We currently have two pages, a landing page and then a page that allows you to enter up to ten ingredients. Upon pressing a button, these ingredients are then sent to app.py, which is a python script which will likely handle all of the algorithms with this information. The ingredients are conveniently stored in an array, so that our backend can use these inputs to determine which ingredients to generate. 
+
+The following sites were useful in creating this website, which is fully interactive and usable right now.
+\begin{itemize}
+\item http://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972 
+\item http://www.randomsnippets.com/2008/02/21/how-to-dynamically-add-form-elements-via-javascript/ 
+\end{itemize}
+
+Here is a screenshot of our landing page: \\
+\begin{center}
+\includegraphics[scale=0.3]{firstpage.PNG}
+\end{center}
+
+And our submission page: \\
+\begin{center}
+\includegraphics[scale=0.3]{secondpage.PNG}
+\end{center}
+ 
+
+The major challenge was learning about front-end development. Furthermore, while there existed sites which explained the implementation of certain features, it was difficult to determine how the existing code worked, and modify it as needed. 
+
+This basic layout is useful for testing purposes and offers a good foundation for the further development of our web application. From this, we know that integration of back-end and front-end should not be too much of an issue, as the large part of linking the two was accomplished with our test webpage.
+
+TODO: As far as front-end, there is a lot that can be done to improve the overall look and feel of the webpage. Once we get a better idea of our target use cases, we can edit the formatting and the entry forms on our webpage to be more intuitive regarding the use case, as well as add some descriptions on what ToMEto actually does. 
+
 
 
 
