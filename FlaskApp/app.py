@@ -24,7 +24,7 @@ def signUp():
 			print "success"
 			counter += 1;
 		except:
-			break
+			break	
 
 	print "ingredients list: "
 	for i in mylist:
