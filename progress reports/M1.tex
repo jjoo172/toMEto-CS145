@@ -92,6 +92,10 @@ particular ingredients may be cross-utilized in different regions. Therefore, ou
 
 
 \subsection{Data collection \& storage} 
+We have begun acquiring data from online recipe sources, namely \texttt{http://cooking.nytimes.com} and \texttt{http://allrecipes.com} because their sites make it easy to extract the list of ingredients. We wrote scrapers that crawl the websites, collecting recipe webpages and saving them locally as html/text files. Right now we are downloading recipes at about 1000 per hour from each website. We employ a sleep timer to slow down downloads and avoid being throttled.
+
+For parsing the data, we wrote scripts that employ regex that extract the ingredients from each recipe webpage. Right now the data is still stored locally in text files. In the upcoming week, we will work on postprocessing the ingredients list. One specific task that needs to be done is removing the quantifiers (1 cup, 1 tablespoon, etc.) from the \texttt{http://allrecipes.com} recipes. The \texttt{http://cooking.nytimes.com} recipes have quantifiers separate, so not much postprocessing needs to be done for them.
+
 
 \subsection{Front-end APIs}
 
