@@ -16,7 +16,7 @@ def showSignUp():
 
 @app.route('/landing')
 def landing():
-	return render_template('landing.html')
+	return render_template('landing2.html')
 
 @app.route('/signUp',methods=['POST'])
 def signUp():
