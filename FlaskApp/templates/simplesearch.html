@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ToMEto</title>
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/simplesearch.css" rel="stylesheet">
+
+    <!-- <script src="../static/js/jquery-1.11.2.js"></script> -->
+    <script src="../static/js/simplesearch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+   
+
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <form action="/searchQuery" method="POST">
+              <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" name="searchQuery" class="form-control"  placeholder="Search" required>
+                    <span class="input-group-addon">
+                        <button id="btnSearch" type="Get Recipes!">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                  
+                </div>
+              </div>
+            </form>
+        </div>
+  </div>
+</div>
+</body>
+</html>
