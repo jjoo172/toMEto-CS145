@@ -14,11 +14,36 @@ def index():
 def showSignUp():
 	return render_template('signup.html')
 
+
+@app.route('/simplesearch')
+def simplesearch():
+	return render_template('simplesearch.html')
+
+@app.route('/searchQuery', methods=['POST'])
+def searchQuery():
+	print request.form['searchQuery']
+	return render_template('index.html')
+
+
 @app.route('/landing')
 def landing():
+	return render_template('landing.html')
+"""
+@app.route('/landingSignUp', methods=['POST'])
+def landingSignUp():
+	print "asdf"
+	search_query = request.form['search_input']
+	print search_query
+	print "success"
+"""
+
+
+
+@app.route('/landing2')
+def landing2():
 	return render_template('landing2.html')
 
-@app.route('/signUp',methods=['POST'])
+@app.route('/signUp', methods=['POST'])
 def signUp():
  
 	mylist = []
