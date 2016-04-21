@@ -14,6 +14,10 @@ def index():
 def showSignUp():
 	return render_template('signup.html')
 
+@app.route('/landing')
+def landing():
+	return render_template('landing.html')
+
 @app.route('/signUp',methods=['POST'])
 def signUp():
  
