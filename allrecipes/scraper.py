@@ -64,6 +64,11 @@ def getNewIds(content):
 
 
 if __name__ == '__main__':
+
+  # contents = httpget('http://allrecipes.com/recipes/?sort=newest')
+  # queue = loadQueue() | getNewIds(contents)
+  # saveQueue(queue)
+
   # First argument is amount of downloads to do, else default 1
   if len(sys.argv) > 1:
     NUM_DL = int(sys.argv[1])
@@ -78,12 +83,16 @@ if __name__ == '__main__':
       recipe_id = queue.pop()
 
     # Download and save recipe
-    content = httpget(BASE_URL + 'recipe/' + recipe_id)
-    saverecipe(recipe_id, content)
-    if len(queue) < MAX_QUEUE_SIZE:
-      queue |= getNewIds(content)
+    try:
+      content = httpget(BASE_URL + 'recipe/' + recipe_id)
+      saverecipe(recipe_id, content)
+      if len(queue) < MAX_QUEUE_SIZE:
+        queue |= getNewIds(content)
+    except Exception as e:
+      print 'Error while retrieving recipe: ' + recipe_id
+      print e
+      time.sleep(WAIT_DELAY * 100)
 
     # Sleep to avoid throttling
     time.sleep(WAIT_DELAY)
-
-  saveQueue(queue)
+    saveQueue(queue)
