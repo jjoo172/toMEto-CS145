@@ -38,5 +38,15 @@
   </div>
 </div>
 <div><center>{{content}}</center></div>
+
+<table>
+  {% for x in range(num_results) %}
+    <tr>
+      <td>
+        <input type="text" value="{{ x }}">
+      </td>
+    </tr>
+  {% endfor %}
+</table>
 </body>
 </html>

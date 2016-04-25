@@ -17,14 +17,14 @@ def showSignUp():
 
 @app.route('/simplesearch')
 def simplesearch():
-	return render_template('simplesearch.html')
+	return render_template('simplesearch.html', num_results=0)
 
 @app.route('/searchQuery', methods=['POST'])
 def searchQuery():
 	searchquery = request.form['searchQuery']
 	print searchquery
 	searchquery += " || python added this line!"
-	return render_template('simplesearch.html', content=searchquery)
+	return render_template('simplesearch.html', content=searchquery, num_results=10)
 
 
 @app.route('/landing')
