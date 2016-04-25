@@ -21,8 +21,9 @@ def simplesearch():
 
 @app.route('/searchQuery', methods=['POST'])
 def searchQuery():
-	print request.form['searchQuery']
-	return render_template('index.html')
+	searchquery = request.form['searchQuery']
+	print searchquery
+	return render_template('simplesearch.html', content=searchquery)
 
 
 @app.route('/landing')
@@ -77,7 +78,7 @@ def signUp():
       
 
 if __name__ == "__main__":
-	print "aaaaa"
+	print "Launching webpage:"
 	app.run()
 
 
