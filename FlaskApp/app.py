@@ -23,6 +23,7 @@ def simplesearch():
 def searchQuery():
 	searchquery = request.form['searchQuery']
 	print searchquery
+	searchquery += " || python added this line!"
 	return render_template('simplesearch.html', content=searchquery)
 
 

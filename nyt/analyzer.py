@@ -7,7 +7,7 @@ Enter the python environment by running 'python'
 >>> degree = {}
 >>> importall()
 
->>> complement(420)
+>>> complement(420) or complement(8753)
 >>> showgraph(1000)
 
 """
