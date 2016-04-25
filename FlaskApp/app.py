@@ -17,14 +17,14 @@ def showSignUp():
 
 @app.route('/simplesearch')
 def simplesearch():
-	return render_template('simplesearch.html', num_results=0)
+	return render_template('simplesearch.html', num_results=0) # initialize num_results to 0, and no content.
 
 @app.route('/searchQuery', methods=['POST'])
 def searchQuery():
 	searchquery = request.form['searchQuery']
 	print searchquery
 	searchquery += " || python added this line!"
-	return render_template('simplesearch.html', content=searchquery, num_results=10)
+	return render_template('simplesearch.html', content=searchquery, num_results=10) #num_results will be returned by the function which lists recipes!
 
 
 @app.route('/landing')

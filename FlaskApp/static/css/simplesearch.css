@@ -1,9 +1,18 @@
+body {
+	background: url(../img/tomato_background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 #imaginary_container{
     margin-top:20%; /* Don't copy this */
 }
 
 #tometo_logo {
-	margin-bottom:10px;
+	margin-top:10%;
+	margin-bottom:5%;
 }
 
 .stylish-input-group .input-group-addon{
