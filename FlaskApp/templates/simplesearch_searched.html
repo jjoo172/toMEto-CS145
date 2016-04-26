@@ -11,14 +11,6 @@
     <script src="../static/js/simplesearch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script>
-    $(document).one('ready', function(){
-        $("#tometo_logo").delay(1000).fadeIn(1000);
-        $("#search_box").delay(2000).fadeIn(1000);
-        //$("#big_container").fadeIn("slow");
-        //$("#btnSignUp").fadeIn("slow");
-    });
-    </script>   
 
 </head>
 
@@ -29,9 +21,9 @@
         <div class="col-sm-6 col-sm-offset-3">
             <form action="/searchQuery" method="POST">
               <div id="imaginary_container"> 
-                <center> <a href="simplesearch"><img id="tometo_logo" src="../static/img/tometo_burned.png" alt="toMEto" style="width:450px;height:150px;display:none"></a></center>
-                <div id="search_box" class="input-group stylish-input-group" style="height:80px;display:none">
-                    <input type="text" name="searchQuery" class="form-control"  placeholder="Search for recipes!" required style="font-size:30pt;height:80px;">
+                <center> <a href="simplesearch"><img id="tometo_logo" src="../static/img/tometo_burned.png" alt="toMEto" style="width:450px;height:150px;"></a></center>
+                <div id="search_box" class="input-group stylish-input-group" style="height:80px;">
+                    <input type="text" name="searchQuery" class="form-control"  placeholder="Search for more recipes!" required style="font-size:30pt;height:80px;">
                     <span class="input-group-addon">
                         <button id="btnSearch" type="Get Recipes!" style="height:60px;width:40px">
                             <span class="glyphicon glyphicon-search"></span>

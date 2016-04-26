@@ -24,7 +24,7 @@ def searchQuery():
 	searchquery = request.form['searchQuery']
 	print searchquery
 	searchquery += " || python added this line!"
-	return render_template('simplesearch.html', content=searchquery, num_results=10) #num_results will be returned by the function which lists recipes!
+	return render_template('simplesearch_searched.html', content=searchquery, num_results=10) #num_results will be returned by the function which lists recipes!
 
 
 @app.route('/landing')
