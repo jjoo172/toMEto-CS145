@@ -21,6 +21,7 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 
+from collections import defaultdict
 
 PROCESS_DIR = 'processed/'
 
@@ -109,7 +110,7 @@ def complement(recipenum):
     ingredients |= set([line.strip().lower()])
   f.close()
 
-  d = {}
+  d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
   for a in ingredients:
     i = correct(a)
@@ -117,9 +118,6 @@ def complement(recipenum):
       for k in graph[i]:
         if k in ingredients or k in top10:
           continue
-
-        if k not in d:
-          d[k] = 0
 
         d[k] += min(1.0 * graph[i][k]/degree[i], 1.0 * graph[k][i]/degree[k])
 
