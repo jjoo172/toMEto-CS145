@@ -7,7 +7,7 @@ Enter the python environment by running 'python'
 >>> degree = {}
 >>> importall()
 
->>> complement(420) or complement(8753)
+>>> complement(420)
 >>> showgraph(1000)
 
 """
@@ -21,7 +21,6 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 
-from collections import defaultdict
 
 PROCESS_DIR = 'processed/'
 
@@ -33,6 +32,13 @@ def correct(string):
       l[i] = '?'
   return ''.join(l)
 
+
+def PMI(a, b):
+    return (float(graph[a][b]) / tot_recipe) /\
+            (num_recipe[a] / tot_recipe * num_recipe[b] / tot_recipe)
+
+
+
 def importfile(filename):
   """ First time importing ... """
   f = open(PROCESS_DIR + filename, 'r')
@@ -42,15 +48,15 @@ def importfile(filename):
   f.close()
 
   for a in ingredients:
+    x = correct(a)
+    num_recipe[x] = num_recipe.get(x, 0.0) + 1.0
     for b in ingredients:
-      x = correct(a)
       y = correct(b)
       if x != y:
         if x not in graph:
           graph[x] = {}
         if y not in graph[x]:
           graph[x][y] = 0
-
         graph[x][y] += 1
 
 def importfile2(filename, top1000):
@@ -62,55 +68,60 @@ def importfile2(filename, top1000):
   f.close()
 
   for a in ingredients:
+    x = correct(a)
+    num_recipe[x] = num_recipe.get(x, 0.0) + 1.0
     for b in ingredients:
-      x = correct(a)
       y = correct(b)
       if x != y and x in top1000 and y in top1000:
         if x not in graph:
           graph[x] = {}
         if y not in graph[x]:
           graph[x][y] = 0
-
         graph[x][y] += 1
+
 
 def importall():
   """ Call to import everything """
-  global graph, degree
+  global graph, degree, num_recipe, tot_recipe
 
   graph = {}
   degree = {}
+  num_recipe = {}
   allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
+  tot_recipe = len(allfiles)
+
   for f in tqdm.tqdm(allfiles):
     importfile(f)
 
   for g in graph:
     degree[g] = 0.0
     for z in graph[g]:
-      degree[g] += graph[g][z]
+      degree[g] += PMI(g,z)
 
   top1000 = set(heapq.nlargest(1000, degree, key=lambda k: degree[k]))
   graph = {}
   degree = {}
+  num_recipe = {}
   allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
+  tot_recipe = len(allfiles)
   for f in tqdm.tqdm(allfiles):
     importfile2(f, top1000)
 
   for g in graph:
     degree[g] = 0.0
     for z in graph[g]:
-      degree[g] += graph[g][z]
-
+      degree[g] += PMI(g,z)
 
 
 def complement(recipenum):
-  """ Complement of a recipe """ 
+  """ Complement of a recipe """
   f = open(PROCESS_DIR + str(recipenum) + '.txt', 'r')
   ingredients = set()
   for line in f:
     ingredients |= set([line.strip().lower()])
   f.close()
 
-  d = defaultdict(float)
+  d = {}
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
   for a in ingredients:
     i = correct(a)
@@ -119,6 +130,9 @@ def complement(recipenum):
         if k in ingredients or k in top10:
           continue
 
+        if k not in d:
+          d[k] = 0
+
         d[k] += min(1.0 * graph[i][k]/degree[i], 1.0 * graph[k][i]/degree[k])
 
   best = heapq.nlargest(10, d, key=lambda k: d[k])
@@ -126,7 +140,6 @@ def complement(recipenum):
   for b in best:
     print b, d[b]
   print
-
 
 def showgraph(n):
   """ Show top n nodes by degree """
@@ -156,10 +169,9 @@ def showgraph(n):
 
 
 
-""" 
-TEST / DEBUG FUNCTIONS 
 """
-
+TEST / DEBUG FUNCTIONS
+"""
 
 
 def prune():
@@ -185,5 +197,9 @@ def histogram(highest, binsize):
   y = [degree[k] for k in degree]
   plt.hist((x, y), bins=np.arange(0, highest, binsize))
   plt.show()
+
+def saveGraph():
+    with open('graph.txt', 'w') as outfile:
+        json.dump(graph, outfile)
 
 

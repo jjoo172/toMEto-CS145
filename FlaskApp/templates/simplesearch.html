@@ -16,15 +16,17 @@
 </head>
 
 <body>
+
 <div class="container">
   <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
             <form action="/searchQuery" method="POST">
               <div id="imaginary_container"> 
-                <div class="input-group stylish-input-group">
-                    <input type="text" name="searchQuery" class="form-control"  placeholder="Search" required>
+                <center> <a href="simplesearch"><img id="tometo_logo" src="../static/img/tometo_burned.png" alt="toMEto" style="width:450px;height:150px;"></a></center>
+                <div class="input-group stylish-input-group" style="height:80px;">
+                    <input type="text" name="searchQuery" class="form-control"  placeholder="Search for recipes!" required style="font-size:30pt;height:80px;">
                     <span class="input-group-addon">
-                        <button id="btnSearch" type="Get Recipes!">
+                        <button id="btnSearch" type="Get Recipes!" style="height:60px;width:40px">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>  
                     </span>
@@ -35,5 +37,16 @@
         </div>
   </div>
 </div>
+<div><center>{{content}}</center></div>
+
+<table>
+  {% for x in range(num_results) %}
+    <tr>
+      <td>
+        <input type="text" value="{{ x }}">
+      </td>
+    </tr>
+  {% endfor %}
+</table>
 </body>
 </html>
