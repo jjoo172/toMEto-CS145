@@ -3,8 +3,6 @@
 Enter the python environment by running 'python'
 
 >>> execfile('analyzer.py')
->>> graph = {}
->>> degree = {}
 >>> importall()
 
 >>> complement(420) or complement(8753)
