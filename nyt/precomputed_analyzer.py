@@ -26,13 +26,6 @@ def load_degree():
     with open('degree.json','r') as datafile:
         degree = json.load(datafile,strict=False)
 
-map = {}
-def load_map():
-    global map
-    with open('out.txt','r') as f:
-        for line in f:
-            a,b = line.rstrip('\n').split('\t')
-            map[a] = b
 
 def complement(recipenum):
   """ Complement of a recipe """

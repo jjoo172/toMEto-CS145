@@ -49,9 +49,13 @@ def importfile(filename):
   f.close()
 
   for a in ingredients:
+    if a not in map:
+        continue
+    x = map[correct(a)]
     for b in ingredients:
-      x = correct(a)
-      y = correct(b)
+      if b not in map:
+        continue
+      y = map[correct(b)]
       if x != y:
         if x not in graph:
           graph[x] = {}
@@ -69,9 +73,13 @@ def importfile2(filename, top1000):
   f.close()
 
   for a in ingredients:
+    if a not in map:
+        continue
+    x = map[correct(a)]
     for b in ingredients:
-      x = correct(a)
-      y = correct(b)
+      if b not in map:
+        continue
+      y = map[correct(b)]
       if x != y and x in top1000 and y in top1000:
         if x not in graph:
           graph[x] = {}
@@ -201,3 +209,4 @@ def dump_graph():
 def dump_degree():
     with open('degree.json', 'w') as outfile:
         json.dump(degree, outfile)
+

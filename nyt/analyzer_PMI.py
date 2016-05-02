@@ -32,6 +32,14 @@ def correct(string):
       l[i] = '?'
   return ''.join(l)
 
+def load_map():
+    """ Loads the ingredient mapping to reduce redundancy """
+    global map
+    map = {}
+    with open('out.txt','r') as f:
+        for line in f:
+            a,b = line.rstrip('\n').split('\t')
+            map[a] = b
 
 def PMI(a, b):
     return np.log(float(graph[a][b]) / tot_recipe) /\
@@ -48,14 +56,20 @@ def importfile(filename):
   f.close()
 
   for a in ingredients:
-    x = correct(a)
+    if a not in map:
+        continue
+    x = map[correct(a)]
+    num_recipe[x] = num_recipe.get(x, 0.0) + 1.0
     for b in ingredients:
-      y = correct(b)
+      if b not in map:
+        continue
+      y = map[correct(b)]
       if x != y:
         if x not in graph:
           graph[x] = {}
         if y not in graph[x]:
           graph[x][y] = 0
+
         graph[x][y] += 1
 
 def importfile2(filename, top1000):
@@ -67,10 +81,14 @@ def importfile2(filename, top1000):
   f.close()
 
   for a in ingredients:
-    x = correct(a)
+    if a not in map:
+        continue
+    x = map[correct(a)]
     num_recipe[x] = num_recipe.get(x, 0.0) + 1.0
     for b in ingredients:
-      y = correct(b)
+      if b not in map:
+        continue
+      y = map[correct(b)]
       if x != y and x in top1000 and y in top1000:
         if x not in graph:
           graph[x] = {}
@@ -83,27 +101,27 @@ def importall():
   """ Call to import everything """
   global graph, degree, num_recipe, tot_recipe
 
-  graph = {}
-  degree = {}
-  allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
-  tot_recipe = len(allfiles)
-
-  for f in tqdm.tqdm(allfiles):
-    importfile(f)
-
-  for g in graph:
-    degree[g] = 0.0
-    for z in graph[g]:
-      degree[g] += graph[g][z]
-
-  top1000 = set(heapq.nlargest(1000, degree, key=lambda k: degree[k]))
+  # graph = {}
+  # degree = {}
+  # allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
+  # tot_recipe = len(allfiles)
+  #
+  # for f in tqdm.tqdm(allfiles):
+  #   importfile(f)
+  #
+  # for g in graph:
+  #   degree[g] = 0.0
+  #   for z in graph[g]:
+  #     degree[g] += graph[g][z]
+  #
+  # top1000 = set(heapq.nlargest(1000, degree, key=lambda k: degree[k]))
   graph = {}
   degree = {}
   num_recipe = {}
   allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
   tot_recipe = len(allfiles)
   for f in tqdm.tqdm(allfiles):
-    importfile2(f, top1000)
+      importfile(f)
 
   for g in graph:
     degree[g] = 0.0
@@ -130,7 +148,8 @@ def complement(recipenum):
         if k not in d:
           d[k] = 0
 
-        d[k] += min(1.0 * graph[i][k]/degree[i], 1.0 * graph[k][i]/degree[k])
+        d[k] += PMI(i, k)/degree[i]
+        # d[k] += min(1.0 * graph[i][k]/degree[i], 1.0 * graph[k][i]/degree[k])
 
   best = heapq.nsmallest(10, d, key=lambda k: d[k])
   print
@@ -195,8 +214,13 @@ def histogram(highest, binsize):
   plt.hist((x, y), bins=np.arange(0, highest, binsize))
   plt.show()
 
-def saveGraph():
-    with open('graph.txt', 'w') as outfile:
+def dump_graph():
+    with open('graph.json', 'w') as outfile:
         json.dump(graph, outfile)
+
+def dump_degree():
+    with open('degree.json', 'w') as outfile:
+        json.dump(degree, outfile)
+
 
 
