@@ -101,7 +101,7 @@ def importall():
 
 
 def complement(recipenum):
-  """ Complement of a recipe """ 
+  """ Complement of a recipe """
   f = open(PROCESS_DIR + str(recipenum) + '.txt', 'r')
   ingredients = set()
   for line in f:
@@ -154,8 +154,8 @@ def showgraph(n):
 
 
 
-""" 
-TEST / DEBUG FUNCTIONS 
+"""
+TEST / DEBUG FUNCTIONS
 """
 
 
@@ -185,3 +185,10 @@ def histogram(highest, binsize):
   plt.show()
 
 
+def dump_graph():
+    with open('graph.json', 'w') as outfile:
+        json.dump(graph, outfile)
+
+def dump_degree():
+    with open('degree.json', 'w') as outfile:
+        json.dump(degree, outfile)

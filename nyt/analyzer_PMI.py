@@ -34,7 +34,7 @@ def correct(string):
 
 
 def PMI(a, b):
-    return (float(graph[a][b]) / tot_recipe) /\
+    return np.log(float(graph[a][b]) / tot_recipe) /\
             (num_recipe[a] / tot_recipe * num_recipe[b] / tot_recipe)
 
 
@@ -49,7 +49,6 @@ def importfile(filename):
 
   for a in ingredients:
     x = correct(a)
-    num_recipe[x] = num_recipe.get(x, 0.0) + 1.0
     for b in ingredients:
       y = correct(b)
       if x != y:
@@ -86,7 +85,6 @@ def importall():
 
   graph = {}
   degree = {}
-  num_recipe = {}
   allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
   tot_recipe = len(allfiles)
 
@@ -96,7 +94,7 @@ def importall():
   for g in graph:
     degree[g] = 0.0
     for z in graph[g]:
-      degree[g] += PMI(g,z)
+      degree[g] += graph[g][z]
 
   top1000 = set(heapq.nlargest(1000, degree, key=lambda k: degree[k]))
   graph = {}
@@ -122,20 +120,19 @@ def complement(recipenum):
   f.close()
 
   d = {}
-  top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
+  top10 = heapq.nsmallest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
   for a in ingredients:
     i = correct(a)
     if i in graph and i not in top10:
       for k in graph[i]:
         if k in ingredients or k in top10:
           continue
-
         if k not in d:
           d[k] = 0
 
         d[k] += min(1.0 * graph[i][k]/degree[i], 1.0 * graph[k][i]/degree[k])
 
-  best = heapq.nlargest(10, d, key=lambda k: d[k])
+  best = heapq.nsmallest(10, d, key=lambda k: d[k])
   print
   for b in best:
     print b, d[b]

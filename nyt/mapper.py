@@ -283,8 +283,10 @@ class mapper():
         if i > 100:
           break
 
+    # output to txt
   def test5(self):
     outfile = 'out.txt'
     with open(outfile, 'w') as f:
       for d in self.mapping:
         f.write('%s\t%s\n' % (d, self.mapping[d]))
+
