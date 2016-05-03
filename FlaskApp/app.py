@@ -1,9 +1,9 @@
 from flask import Flask, render_template, json, request
 
+# gets the search that jin wrote and imports it
 import imp
 search = imp.load_source('search', '../nyt/search.py')
 
-print search.search("tomato")
 
 app = Flask(__name__)
 LIMIT = 10
@@ -29,8 +29,9 @@ def simplesearch():
 def searchQuery():
 	searchquery = request.form['searchQuery']
 	print searchquery
-	searchquery += " || python added this line!"
-	return render_template('simplesearch_searched.html', content=searchquery, num_results=10) #num_results will be returned by the function which lists recipes!
+	search_ids = search.search(searchquery)
+	print search_ids
+	return render_template('simplesearch_searched.html', content=search_ids, num_results=len(search_ids)) #num_results will be returned by the function which lists recipes!
 
 
 @app.route('/landing')
