@@ -1,4 +1,10 @@
 from flask import Flask, render_template, json, request
+
+import imp
+search = imp.load_source('search', '../nyt/search.py')
+
+print search.search("tomato")
+
 app = Flask(__name__)
 LIMIT = 10
 
