@@ -15,8 +15,6 @@
     $(document).one('ready', function(){
         $("#tometo_logo").delay(200).fadeIn(500);
         $("#search_box").delay(400).fadeIn(500);
-        //$("#big_container").fadeIn("slow");
-        //$("#btnSignUp").fadeIn("slow");
     });
     </script>   
 
@@ -45,16 +43,5 @@
   </div>
 </div>
 
-<table>
-  {% for x in range(num_results) %}
-    <tr>
-      <td>
-        <center>
-          <input type="text" value="{{ content[x] }}">
-        </center>
-      </td>
-    </tr>
-  {% endfor %}
-</table>
 </body>
 </html>
