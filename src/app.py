@@ -2,6 +2,8 @@
       >> python app.py
     to start the webpage.
 """
+import sys
+
 from flask import Flask, render_template, json, request
 import nyt.search as search
 
@@ -54,14 +56,33 @@ def simplesearch():
 @app.route('/searchQuery', methods=['POST'])
 def searchQuery():
   searchquery = request.form['searchQuery']
-  print searchquery
   search_ids = search.search(searchquery)
-  print search_ids
-  print len(search_ids)
-  return render_template('simplesearch_searched.html', content=search_ids, num_results=len(search_ids)) #num_results will be returned by the function which lists recipes!
+  content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
+
+  # print searchquery
+  # print search_ids
+  # print content
+
+  return render_template('simplesearch_searched.html', content=content, num_results=len(search_ids)) #num_results will be returned by the function which lists recipes!
+
+
+# Loading complementary ingredients
+def load(filename):
+  global complements
+  complements = {}
+
+  with open(filename, 'r') as f:
+    for line in f:
+      tokens = line.strip().split('\t')
+      complements[tokens[0]] = tokens[1:]
 
 
 # Application entry point
 if __name__ == "__main__":
-  print "Launching webpage:"
-  app.run()
+  if len(sys.argv) < 2:
+    print 'Need complement file to run'
+  else:
+    print 'Loading complements . . .'
+    load(sys.argv[1])
+    print 'Launching webpage . . .'
+    app.run()

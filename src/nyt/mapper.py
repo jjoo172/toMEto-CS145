@@ -1,5 +1,9 @@
 """ USAGE:
 
+# Generate mapper_out.txt, mapper_top.txt
+>> python mapper.py
+
+# From other modules
 import mapper
 m = mapper.mapper()
 m.importall()
@@ -27,6 +31,19 @@ class mapper():
 
   DEBUG = False
 
+
+  def writeToFile(self):
+    outfile = 'mapper_out.txt'
+    with open(outfile, 'w') as f:
+      for d in self.mapping:
+        f.write('%s\t%s\n' % (d, self.mapping[d]))
+
+    topfile = 'mapper_top.txt'
+    with open(topfile, 'w') as f:
+      for d in self.degree:
+        if self.degree[d] >= self.MIN_DEGREE:
+          f.write('%s\n' % d)
+
   def correct(self, string):
     """ Fix non-ascii characters to '?' """
     l = list(string)
@@ -48,7 +65,6 @@ class mapper():
         self.graph[x] = set([])
 
       self.graph[x] |= set([filename])
-
 
   def importall(self):
     self.graph = {}
@@ -81,7 +97,6 @@ class mapper():
       print 'len(degree) =', len(self.degree)
       print 'len(mapping) = ', len(self.mapping)
 
-
   def remove(self, rm):
     for d in rm:
       d2 = self.mapping[d]
@@ -93,7 +108,6 @@ class mapper():
 
       del self.graph[d]
       del self.degree[d]
-
 
   def t1(self):
     rm = set([])
@@ -114,7 +128,6 @@ class mapper():
     self.remove(rm)
     if self.DEBUG:  
       print 't1, %d' % len(rm)
-
 
   def t3(self):
     top = set([])
@@ -154,7 +167,6 @@ class mapper():
     if self.DEBUG:  
       print 't3, %d' % len(rm)
 
-
   def t4(self):
     rm = set([])
     for d in self.degree:
@@ -178,7 +190,6 @@ class mapper():
     if self.DEBUG:  
       print 't4, %d' % len(rm)
 
-
   def t5(self):
     i = 0
     rm = set([])
@@ -201,7 +212,6 @@ class mapper():
       print 't5, %d' % len(rm)
       print i
 
-
   def t6(self):
     rm = set([])
     for d in self.degree:
@@ -222,7 +232,6 @@ class mapper():
     if self.DEBUG:  
       print 't6, %d' % len(rm)
 
-
   def t7(self):
     rm = set([])
     for d in self.degree:
@@ -242,8 +251,6 @@ class mapper():
     self.remove(rm)
     if self.DEBUG:  
       print 't7, %d' % len(rm)
-
-
 
 
   """""""""""""""""""""""""""""""""""""""
@@ -283,10 +290,9 @@ class mapper():
         if i > 100:
           break
 
-    # output to txt
-  def test5(self):
-    outfile = 'out.txt'
-    with open(outfile, 'w') as f:
-      for d in self.mapping:
-        f.write('%s\t%s\n' % (d, self.mapping[d]))
 
+# Write map and top ingredients to file
+if __name__ == '__main__':
+  m = mapper()
+  m.importall()
+  m.writeToFile()

@@ -109,7 +109,7 @@ def importall():
 
 
 
-def complement(recipenum):
+def complement(recipenum, verbose=True):
   """ Complement of a recipe """
   f = open(PROCESS_DIR + str(recipenum) + '.txt', 'r')
   ingredients = set()
@@ -129,10 +129,14 @@ def complement(recipenum):
         d[k] += min(1.0 * graph[i][k]/degree[i], 1.0 * graph[k][i]/degree[k])
 
   best = heapq.nlargest(10, d, key=lambda k: d[k])
-  print
-  for b in best:
-    print b, d[b]
-  print
+
+  if verbose:
+    print
+    for b in best:
+      print b, d[b]
+    print
+
+  return best
 
 
 def showgraph(n):
@@ -161,6 +165,13 @@ def showgraph(n):
   plt.show()
 
 
+def writeToFile(filename='out.txt'):
+  with open(filename, 'w') as out:
+    allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
+    for f in tqdm.tqdm(allfiles):
+      f2 = f[:-4]
+      best = complement(f2, verbose=False)
+      out.write('%s\t%s\n' % (f2, '\t'.join(best)))
 
 
 
@@ -201,3 +212,8 @@ def dump_graph():
 def dump_degree():
     with open('degree.json', 'w') as outfile:
         json.dump(degree, outfile)
+
+
+if __name__ == '__main__':
+  importall()
+  writeToFile(__file__[:-3] + '.txt')
