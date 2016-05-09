@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{palatino}
+\usepackage{titlesec}
+\usepackage{pbox}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\renewcommand{\baselinestretch}{1.15}
+\geometry{margin=1in}
+\geometry{headheight=2in}
+\geometry{top=2in}
+\titlespacing\section{0pt}{12pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\lhead{}
+\rhead{}
+\pagestyle{fancy}
+\setlength{\parskip}{0.5em}
+\date{\today}
+
+\title{CS 145 Milestone 2 - ToMEto}
+\author{Jonathan Joo, Matthew Jin, Boyu (Charlie) Tong, Albert Ge}
+\chead{%
+  {\vbox{%
+      \vspace{2mm}
+      \large
+      Networks: Structure Economics \hfill
+      Caltech CMS/CS/EE 145 \hfill \\[1pt]
+      CS 145 Milestone 1 - ToMEto \hfill
+      \date{\today} \\
+    }
+  }
+}
+
+\begin{document}
+\maketitle
+
+\section{Goals}
+This week, we wanted to accomplish
+\begin{enumerate}
+    \item Designing and planning algorithms to process the data.
+\end{enumerate}
+
+\section{Progress}
+
+We accomplished two preliminary algorithms this week.
+
+\subsection{Algorithms}
+The first algorithm (in \texttt{analyzer.py}) constructed a graph.
+\begin{itemize}
+    \item Using individual ingredients as nodes, and then ranked the nodes by the number of
+recipes it appeared in with adjacent neighbors (ingredients in the same list).
+    \item Each edge in the network also had an associated weight, which quantifies
+the number of recipes that the two connected ingredients both appear in.
+    \item Obtained preliminary results on the most 
+important ingredients in the network. Furthermore, used 
+these ingredients to determine best-matching \textit{complements}
+for a given recipe, which implements naively a ingredient
+that could be added into a recipe. 
+    \item For 
+each ingredient in the recipe, we found their external
+ingredient (i.e. outside of the recipe), summing over
+the weights of each connection, normalizing by degree of each ingredient.
+Additionally,
+we ignored the top ten most common ingredients (so as to 
+not suggest something obvious).
+\end{itemize}
+The second algorithm (in \texttt{analyzer\_PMI.py}) constructs a simmilar
+graph, however instead of the weights being the number of recipes, 
+we used the \textit{Pointwise mutual information} metric, defined by
+\[
+    PMI(a,b) = \frac{\text{\# recipes containing a and b}}{
+    (\text{\# recipes containing only a})(\text{\# recipes containing only b})}
+\]
+
+\subsection{Front-end}
+Additionally, we
+worked more on front-end.
+\begin{itemize}
+    \item Got a few different pages up. 
+    \item Worked on logo design as well as more UI for the landing page, which can be seen in the "landing2" tab. 
+    \item Now able to handle input/output on search forms, which can now be integrated fully into our
+python scripts. Thus, using this implementation of our search, we can use search algorithms to find the proper
+recipes from our database to deliver to a user upon a search input. 
+\end{itemize}
+
+\subsection{Engineering Design}
+
+\begin{itemize}
+    \item
+Began refactoring our initial analyzer into the actual backend
+    \item Brainstormed and discussed with Albert on algorithms
+\end{itemize}
+
+\section{Contributions}
+\textbf{Jonathan Joo:} Front-end, begin linking to back-end
+
+\textbf{Matthew Jin:} Reading on additional literature, helped Albert with 
+    choosing algorithms to try
+
+\textbf{Charlie Tong:} Continued work on \texttt{analyzer.py}, implementing
+    first algorithm 
+
+\textbf{Albert Ge:} Reading on additional literature, implemented PMI algorithm
+
+
+
+\section{Adjustments to plan}
+
+We are still in the stage of developing good algorithms for the network,
+which is inline with the M2 goals we had. We will probably continue
+to work on determining a good algorithm, and as we reach more
+optimal results, begin to seek out interviewers again for 
+feedback on the results that we get.
+
+Furthermore, as we are beginning to link front-end with back-end,
+we are thinking more about good design principles in engineering.
+We took a very sledgehammer approach to get things off the ground and running,
+however
+as we continue to grow our codebase, we feel that it will be important
+to refactor the code to make it more readable, scalable, and less bug-prone.
+
+\end{document}
