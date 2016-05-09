@@ -49,13 +49,13 @@ def signUp():
 
 
 # Recipe search option
-@app.route('/simplesearch')
+@app.route('/simplesearch', methods=['GET'])
 def simplesearch():
   return render_template('simplesearch.html', num_results=0) # initialize num_results to 0, and no content.
 
-@app.route('/searchQuery', methods=['POST'])
-def searchQuery():
-  searchquery = request.form['searchQuery']
+@app.route('/simplesearch', methods=['POST'])
+def simplesearch_searched():
+  searchquery = request.form['simplesearch']
   search_ids = search.search(searchquery)
   content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
 
@@ -63,7 +63,9 @@ def searchQuery():
   # print search_ids
   # print content
 
-  return render_template('simplesearch_searched.html', content=content, num_results=len(search_ids)) #num_results will be returned by the function which lists recipes!
+  #num_results will be returned by the function which lists recipes!
+  return render_template('simplesearch_searched.html', query=searchquery, 
+            content=content, num_results=len(search_ids)) 
 
 
 # Loading complementary ingredients

@@ -9,7 +9,7 @@ from tqdm import trange
 MAX_QUEUE_SIZE = 100000 
 NUM_DL = 1
 WAIT_DELAY = 2
-QUEUE_FILE = 'queue.txt'
+QUEUE_FILE = 'scraper_queue.txt'
 DL_DIR = 'dls/'
 BASE_URL = 'http://cooking.nytimes.com/'
 

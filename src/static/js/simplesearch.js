@@ -1,7 +1,7 @@
 $(function() {
     $('#btnSearch').click(function() {
         $.ajax({
-            url: '/searchQuery',
+            url: '/simplesearch',
             data: $('form').serialize(),
             type: 'POST',
             success: function(response) {

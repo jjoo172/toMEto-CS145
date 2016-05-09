@@ -1,19 +1,19 @@
 crusty bread, for serving	crusty bread
-bucatini pasta	pasta
+coarse yellow cornmeal	yellow cornmeal
 sea salt and freshly ground black pepper	salt and freshly ground black pepper
 unsalted fatback	fatback
 mulling spices	spices
 baking chocolate	chocolate
 pequin chilies	chilies
 herb leaves	leaves
-coarse yellow cornmeal	yellow cornmeal
+bucatini pasta	pasta
 oak-leaf lettuce	lettuces
 ghee (indian-style clarified butter) or melted unsalted butter	ghee
 dried ancho chiles	chiles
 garlic clove	garlic cloves
 capers, drained and rinsed thoroughly with cold waterrinsed	capers
 eggy bread	breads
-seedless oranges	oranges
+bunches spinach	spinach
 pitted prunes, ideally tart ones	prunes
 unsalted butter, cut into small pieces, plus additional for buttering pan	unsalted butter
 duck meat	ducks
@@ -30,8 +30,8 @@ jalapeno chilies	chilies
 loosely packed spinach	spinach
 whole-wheat bread flour	bread flour
 black olives, pitted and sliced	black olives
-brioche buns	brioches
-shelled peanuts	peanuts
+red miso paste	miso
+cremini or white mushrooms	white mushrooms
 cilantro, basil, tarragon, other herbs	cilantro
 anise extract	extract
 vanilla bean, split lengthwise	vanilla beans
@@ -63,7 +63,7 @@ herb	herbs
 chervil leaves or snipped chives	chervil leaves
 egg whites, at room temperature	egg whites
 fiji apple	apples
-shallots, garlic and chilies	shallots
+large carrot, peeled and coarsely chopped	carrots
 extra-virgin olive oil, to taste	extra-virgin olive oil
 yellow peaches	peaches
 american amber ale	amber ale
@@ -78,7 +78,7 @@ bacon drippings, lard or vegetable shortening	bacon
 coarse salt to taste	salt to taste
 steel-cut oats	oats
 pequin chiles, toasted and finely ground	chiles
-pork neck bones	pork
+duck fat or chicken fat, or canola oil	duck fat
 aleppo pepper, mild chili powder or smoked paprika	aleppo pepper
 duck potatoes	potatoes
 dried rice vermicelli	rice vermicelli
@@ -98,12 +98,12 @@ drained dried beans or canned beans	beans
 toasted pita bread	breads
 kentucky bourbon	bourbon
 finely chopped green apples	apples
-whole-wheat or multigrain bread	whole-wheat
+sun-dried tomato halves	tomato
 medium-thick pork chops, bone-in or boneless	pork chops
-large cucumbers	cucumbers
-spelt flour	flour
+all-purpose potatoes	potatoes
+bean sauce	sauce
 chopped tomatoes, with their juice (canned are fine)	chopped tomatoes
-red serrano chilies	serrano chilies
+finely diced eggplant	eggplants
 rice cereal	rice
 cheddar or jack cheese	cheddar
 dried green lentils	green lentils
@@ -119,7 +119,7 @@ chicken or vegetable stock	vegetable stock
 orange sweet potatoes	sweet potatoes
 cooked vegetables	vegetables
 pure maple syrup or brown sugar	maple syrup or brown sugar
-dark jamaican rum	rum
+about 1/4 pound parmesan, sliced wafer thin	parmesan
 chocolate sauce	sauce
 ripe plums	plums
 mixed black and white sesame seeds	sesame seeds
@@ -132,6 +132,7 @@ chicken legs and/or thighs	chicken legs
 pappardelle or other pasta	pappardelle
 or more anchovy fillets, plus extra for garnish	anchovy fillets
 new fingerling or small yellow potatoes	potatoes
+wide rice noodles	rice noodles
 whole cardamom pod	cardamom
 1-by-3-inch slice orange peel	orange peel
 chocolate morsels	chocolate
@@ -164,7 +165,6 @@ v.s. cognac	cognac
 chilled hibiscus tea	tea
 pickling liquid	liquid
 prune plums	plums
-smoked tempeh	tempeh
 fig	figs
 lemon balm leaves	leaves
 dijon mustard,	dijon mustard
@@ -184,17 +184,17 @@ large onions, about 3/4 pound	onions
 large carrots	carrots
 spinach, washed	spinach
 cubed day-old firm white bread	white bread
-lettuce, baby spinach, radicchio or arugula	lettuces
-royal icing	icing
+pineapple, peeled, cored and cut into chunks	pineapples
+cooking spray	spray
 parmesan or asiago cheese	parmesan
 turnip	turnips
 self-rising flour	flour
 yellow stone-ground grits	grits
 prune juice	juice
-red miso paste	miso
+brioche buns	brioches
 center-cut tuna fillet	tuna
 white eggs	eggs
-winter squash, such as butternut, peeled and cut into 3/4-inch cubes	winter squash
+dashi, at room temperature	dashi
 watermelon chunks	watermelon
 redwine vinegar	vinegar
 dutch processed cocoa	cocoa
@@ -208,7 +208,6 @@ prosciutto di parma	prosciutto
 vegetable (not olive) oil	vegetables
 grated zest of 1 lime	limes
 kombu strips	kombu
-ginger-infused simple syrup	simple syrup
 ripe tomato, peeled	tomato
 fresh bread crumbs, made from processing 4 to 5 slices of bread (preferably rye) in a food processor	bread crumbs
 japanese eggplants	eggplants
@@ -240,7 +239,7 @@ tinned black truffle	black truffles
 idaho or other baking potatoes	baking potatoes
 garlic chives	chives
 shallot-garlic oil	oil
-raw rice	rice
+firmly packed light-brown sugar	sugar
 morcilla sausage	sausages
 pitted cerignola olives, very coarsely chopped	olives
 (15-ounce) can cannellini or borlotti beans, drained and rinsed	beans
@@ -286,7 +285,7 @@ caciocavallo cheese	cheese
 veal broth	broth
 serrano or jalape??o chile	chiles
 hollandaise sauce	sauce
-pods star anise	star anise
+pole beans	beans
 small new potatoes, cooked until tender and halved	potatoes
 baby portobellos or baby shiitakes	shiitakes
 chervil, for garnish	chervil
@@ -297,7 +296,7 @@ ciabatta rolls	rolls
 milk (can use 2 percent) or rice beverage	milk
 garlic cloves, peeled and thinly sliced	garlic cloves
 large parsnip	parsnips
-sweet red bell peppers	red bell peppers
+boxes cherry tomatoes	cherry tomatoes
 strawberries, washed and stemmed (1 cup diced, the rest sliced)	strawberries
 medium garlic clove	garlic cloves
 chopped mint leaves (for garnish)	mint leaves
@@ -308,10 +307,11 @@ large spanish onion, diced	onions
 grated orange peel	orange peel
 mixed fresh herbs	herbs
 flour tortilla or whole wheat wrap	flour
-white sparkling wine	wine
+demerara simple syrup	simple syrup
 loosely packed fresh flat-leaf parsley leaves	flat-leaf parsley leaves
 food coloring pastes	food coloring
 finely minced seeded fresh red chili, or to taste	red chilis
+cream puffs	cream
 corn bread, cut into 1-inch cubes	breads
 pignoli nuts	nuts
 citrus juice	juice
@@ -328,18 +328,19 @@ fresh coconut milk	coconut milk
 orange-flavored liqueur	liqueur
 smooth almond butter	butter
 spinach or mustard greens, or a combination of cooking greens	spinach
+instant espresso	espresso
 low-fat milk, soy milk, almond beverage or rice beverage	low-fat milk
 red plums	plums
 bouquet garni (parsley, thyme, bay leaf)	bouquet garni
-shoulder of lamb	lamb
+fin tuna	tuna
 warm water, about 110 degrees	warm water
 fresh squeezed lime juice	lime juice
 medium beets, roasted	beets
 wild cepe mushrooms	mushrooms
-sweetened chestnut puree	puree
+pear liqueur	liqueur
 whole-grain bread	breads
-sifted all-purpose flour	all-purpose flour
-finely shredded cored napa cabbage	napa cabbages
+fresh shiitake or dried shiitake mushrooms that have been soaked 1-2 hours, stemmed and thinly sliced	shiitake mushrooms
+soy milk or almond milk	milk
 ribs celery, diced	celery
 dark chinese sesame oil or walnut oil	walnut oil
 shredded carrot	carrots
@@ -349,7 +350,7 @@ low-fat milk or water	milk or water
 cooked turkey	turkeys
 dark turkey meat	turkeys
 water-packed tuna	tuna
-elijah craig bourbon	bourbon
+cooked eggs	eggs
 toasted hazelnuts, skinned	hazelnuts
 dusting sugar	sugar
 crushed strawberries	strawberries
@@ -368,7 +369,7 @@ coarsely chopped onion	chopped onion
 korean ground red pepper	red peppers
 rich fish broth	fish broth
 pita	pitas
-large carrot, peeled and coarsely chopped	carrots
+shallots, garlic and chilies	shallots
 dried mint	mint
 salt (or as desired)	salt
 blue cornmeal	cornmeal
@@ -418,7 +419,7 @@ king oyster mushrooms	oyster mushrooms
 chopped almonds	almonds
 basket cherry tomatoes stems removed, quartered	cherry tomatoes
 large scallions, green part only, coarsely chopped	scallions
-mizuna or arugula	arugula
+celery ribs	celery
 gelatin powder	gelatin
 dried lentils	lentils
 manouri cheese	cheese
@@ -433,16 +434,17 @@ jamaican rum	rum
 carrots, julienned (about 2 large carrots)	carrots
 short rib	ribs
 whole fennel seed	fennel seeds
-chanterelle mushrooms	mushrooms
+chopped sweet bell pepper	bell peppers
 turkey fat	turkeys
 ground flaxseed	flaxseeds
 medium-size yukon gold or russet potato, peeled and diced	potato
 lime, cut into wedges.	limes
+veal cutlets	veal
 parmigiano reggiano (1/3 cup coarsely grated)	parmigiano reggiano
 small clams	clams
 matzo meal, or matzo crackers	matzo meal
 pimente oil	oil
-olive-oil-poached tomatoes	tomatoes
+butter, melted	butter
 yellow or green chives	chives
 fine salt	salt
 red or black chinese vinegar	vinegar
@@ -454,7 +456,6 @@ milk yogurt	yogurt
 unrefined brown (turbinado) sugar	sugar
 red wine pheasant liver	red wine
 frozen, shelled edamame, thawed	edamame
-chilled solid vegetable	vegetables
 soy sauce, or to taste	soy sauce
 couscous, preferably whole wheat	couscous
 bar-b-q sauce	sauce
@@ -493,12 +494,12 @@ organic applesauce	applesauce
 chowder clams	clams
 pickled pepper	peppers
 cardamom, cinnamon or grated lemon zest	cardamom
-gluten-free flour mix	flour
+peeled celery root, sliced 1/4 inch thick	celery roots
 large ripe peaches, pitted and sliced, or 8 ounces frozen peaches	peaches
-green picholine olives	olives
+lemon juice (to taste)	lemon juice
 bag baby arugula, washed and dried, for serving	baby arugula
 dried thyme leaves	thyme leaves
-small or 1/2 medium onion, chopped	medium onion, chopped
+spring 44 old tom gin	gin
 chinese sesame paste	paste
 whole dried hot pepper	peppers
 fresh thyme sprigs	fresh thyme
@@ -506,7 +507,7 @@ minced fresh chervil	chervil
 sichuan hot bean sauce	sauce
 friulian merlot	merlot
 lemon gelatin mix	gelatin
-chinese chili, seeded	chilis
+creamy ricotta	ricotta
 sliced basil leaves	basil leaves
 large yellow onion	yellow onions
 white onion, chopped	white onions
@@ -553,7 +554,7 @@ grated orange rind	orange rind
 or more crushed red pepper flake	red peppers
 crisp green olives	green olives
 coarse cornmeal	cornmeal
-dh krahn gin	gin
+organic goat cheese	goat cheese
 aloe vera juice	juice
 cooked ham cut into 1/2-inch cubes	ham
 minced butternut squash	butternut squash
@@ -600,14 +601,14 @@ dry prosecco	prosecco
 bony chicken parts, such as backbones and wings	chickens
 chanterelles or other wild or cultivated mushrooms	chanterelles
 eau de vie de framboise	eau de vie de framboises
-all-purpose potatoes	potatoes
+softened butter	butter
 shallot lobe	shallots
 semidry white wine	white wine
 crown roast of pork	pork
 bread rounds cut to the diameter of the cheese rounds, each about half an inch thick	cheese
 plus a pinch of sugar	sugar
 can water-packed tuna	tuna
-shredded cabbage for topping	cabbage
+fresh sage leaves, torn	fresh sage leaves
 egg yolks, lightly beaten	egg yolks
 espelette pepper or hot spanish paprika	peppers
 boneless lamb leg	lamb
@@ -618,19 +619,18 @@ dry marsala wine	wine
 fresh lemon juice to taste	fresh lemon juice
 buckwheat honey	honey
 very small garlic clove, pure??d	small garlic clove
-finely diced eggplant	eggplants
+red serrano chilies	serrano chilies
 tangerine juice	juice
 dark asian sesame oil	asian sesame oil
 diced zucchini	zucchinis
 leeks or onions, trimmed, washed, and sliced	leeks
 thai shrimp paste, or anchovy paste	anchovy paste
 rhubarb syrup	syrup
-tientsin bok choy	bok choy
 noilly prat dry vermouth	dry vermouth
 small tomato, chopped	tomato
 small green beans	green beans
 dried porcini mushrooms	porcini mushrooms
-a??ejo rum	rum
+raw egg whites	egg whites
 horseradish mayonnaise	mayonnaise
 pickled yellow daikon radish	daikon radish
 agave nectar (optional)	agave nectar
@@ -643,7 +643,7 @@ almond macaroons	macaroons
 arborio or carnarolli rice	arborio
 hot red pepper	red peppers
 orange blossom honey	honey
-sauce diable	sauce
+kale, either curly or cavolo nero, ribs removed, leaves washed	kale
 moscato wine	wine
 salt, black pepper and oregano	salt
 whole-grain dijon mustard	dijon mustard
@@ -656,7 +656,7 @@ cherry jam	jam
 flat parsley leaves	parsley leaves
 large, juicy oranges like valencias, washed and dried	oranges
 celery root	celery roots
-fresh green beans	green beans
+rosemary-infused simple syrup	simple syrup
 worcestershire sauce (more to taste)	worcestershire sauce
 nectarine	nectarines
 slivered or chopped fresh basil leaves	fresh basil leaves
@@ -708,7 +708,7 @@ pie shell	pie shells
 simple mustard vinaigrette (below)	mustard
 chopped roasted salted peanuts	peanuts
 large garlic	garlic
-plymouth gin	gin
+watermelon radish	watermelon
 organic egg yolks	egg yolks
 clove powder	cloves
 large white mushrooms	white mushrooms
@@ -717,7 +717,7 @@ tomato compote	tomato
 pad thai rice noodles	rice noodles
 andrulis farmers cheese	cheese
 peach brandy	brandy
-canola oil, for greasing	canola oil
+blueberries, or a mix of blueberries	blueberries
 pepper and salt	salt
 chinese rice noodles	rice noodles
 canned tomato	tomato
@@ -727,6 +727,7 @@ hot green peppers	green peppers
 baby lamb	lamb
 chopped fresh or canned tomatoes	tomatoes
 cooked pasta	pasta
+sprig thyme	thyme
 red plum tomato	tomato
 mango	mangos
 pork tongue	pork
@@ -742,7 +743,7 @@ whole matzos	matzos
 slices red onion, soaked for 5 minutes in cold water, drained and rinsed	cold water
 chicken, cut in 8 pieces, backbone removed (discard or save for stock)	chickens
 round dumpling skins	dumpling skins
-head broccoli	broccoli
+large firm eggplants	eggplants
 small pinch chili powder	chili powder
 head romaine lettuce	romaine lettuce
 croutons or crumbled bacon	croutons
@@ -756,7 +757,7 @@ chopped ripe tomatoes	ripe tomatoes
 joven mezcal	mezcal
 passion fruit pur??e or juice	juice
 snipped fresh chives	chives
-blood orange peel	orange peel
+yellow cherry tomatoes	cherry tomatoes
 coarse kosher sea salt	sea salt
 lemon juice to taste	lemon juice
 candied rose petals	rose petals
@@ -764,7 +765,7 @@ fine stone-ground cornmeal	cornmeal
 french green lentils	green lentils
 minced chopped herbs	herbs
 duck legs	ducks
-grain rice	rice
+gosling's black seal rum	rum
 medium carrot, chopped	carrots
 mellow white miso	miso
 shelled pistachio nuts	pistachio nuts
@@ -779,10 +780,11 @@ tuna loins	tuna
 arge bell peppers	bell peppers
 fee brothers peach bitters	bitters
 green serrano chilies	serrano chilies
+vya sweet vermouth	sweet vermouth
 jasmine rice	rice
 maple extract	extract
 sweet pepper	peppers
-dried shrimp	shrimps
+plain low-fat (not nonfat) greek yogurt	greek yogurt
 imported black olives, pitted	black olives
 chinese broccoli	broccoli
 curly kale or russian kale	kale
@@ -836,7 +838,7 @@ finely chopped onions	onions
 grapeseed oil, divided	grapeseed oil
 italian fontina cheese	fontina cheese
 butter to taste	butter
-extra virgin olive oil for drizzling	extra virgin olive oil
+jelly beans	beans
 slivered fresh basil	fresh basil
 vanilla ice cream for serving	vanilla ice cream
 magret (2 boneless breast halves)	magret
@@ -858,7 +860,7 @@ large carrots, cut into 1/2-inch dice	carrots
 ground lean pork	pork
 leftover boneless, skinless roast turkey	turkeys
 28-ounce can tomatoes	tomatoes
-easy oven-baked polenta	polenta
+granular yeast	yeast
 peppergrass leaves	leaves
 garlic cloves, unpeeled, lightly crushed	garlic cloves
 stewing beef	beef
@@ -911,7 +913,7 @@ moroccan preserved lemon	lemons
 romaine or leaf lettuce for the platter or plates	romaine
 nonstick pan spray	spray
 lemongrass stalks	lemongrass
-fresh basil leaves if desired	fresh basil leaves
+small oysters	oysters
 long-grain or basmati rice, rinsed and drained	basmati rice
 handful of baby arugula	baby arugula
 clam broth	broth
@@ -940,7 +942,7 @@ cantaloupe	cantaloupes
 lemon balm	lemons
 vegan dark chocolate	chocolate
 almond powder	powder
-red bell peppers, seeded, membranes removed, cut in large dice	red bell peppers
+mint leaves, cut in thin slivers	mint leaves
 whole plum tomatoes (about two 35-ounce cans)	plum tomatoes
 yellow onion, sliced	yellow onions
 tucci rag?? sauce	sauce
@@ -1007,9 +1009,8 @@ soft butter	butter
 enoki mushrooms	mushrooms
 lime pickle mayonnaise	mayonnaise
 shallots, finely chopped	shallots
-hearty red wine	red wine
 chocolate batons	chocolate
-baby cucumbers	cucumbers
+adzuki beans	beans
 good dried bread crumbs	bread crumbs
 fresh tomato sauce (optional)	tomato sauce
 wide baguette	baguettes
@@ -1026,9 +1027,10 @@ diamond crystal kosher salt	kosher salt
 creole aioli	aioli
 b&b liqueur	liqueur
 endive	endives
+dry, sparkling wine	wine
 rice milk	milk
 store-bought fresh salsa	salsa
-cooked chick peas (canned are fine), rinsed	chick peas
+chinese rice vinegar	rice vinegar
 pork spareribs	pork
 medium-grain couscous	couscous
 zest and juice of 1/2 lemon, zest removed with a vegetable peeler cut in wide strips	juice
@@ -1040,7 +1042,7 @@ assorted olives	olives
 strawberry gelatin	gelatin
 tomato sauce or simple marinara sauce	tomato sauce
 diced radish	radish
-instant coffee powder	coffee
+chicken legs and thighs	chicken legs
 hot tomato sauce	tomato sauce
 pumpkin pie spice	pumpkins
 vegetable or shrimp broth or water	vegetables
@@ -1058,7 +1060,7 @@ muscovado sugar	sugar
 meat from half a chinese roast duck, or rotisserie chicken	meat
 chanterelles, cleaned and cut into chunks	chanterelles
 green coriander	coriander
-chopped dried fruit	fruits
+large zucchini	zucchinis
 yellow sweet peppers, diced	sweet peppers
 lamb bones	lamb
 minced fresh garlic	garlic
@@ -1067,7 +1069,7 @@ tomatoes, about 1 pound	tomatoes
 white escarole	escarole
 minced dill	dill
 large ripe figs	figs
-small oysters	oysters
+kernels from 4 ears corn	corn
 pepper salsa	salsa
 plain lowfat yogurt	yogurt
 jalapeno chili peppers	chili peppers
@@ -1079,17 +1081,18 @@ cardamom powder	cardamom
 oarsely ground black pepper	ground black pepper
 dried hot red peppers	red peppers
 chopped fresh oregano	fresh oregano
-chopped fresh parsley (optional)	chopped fresh parsley
+suze liqueur	liqueur
 finely chopped onion or shallot	finely chopped onion
 garlic cloves (to taste), sliced	garlic cloves (to taste)
 leg of lamb, boned and butterflied (opened with meat scored slightly to flatten it)	leg of lamb
 turkey neck	turkeys
+strawberries, washed, hulled, and left whole	strawberries
 pastry cream	cream
 asian pear	pears
 reconstituted regular or israeili couscous	couscous
 dry tubetti or ditalini pasta	pasta
 beef tenderloins	beef
-pineapple, peeled, cored and cut into chunks	pineapples
+lettuce, baby spinach, radicchio or arugula	lettuces
 tahini paste	tahini
 rice vinegar, or as needed	rice vinegar
 lean boneless lamb	lamb
@@ -1105,18 +1108,17 @@ ripe pears	pears
 strawberry sorbet	sorbet
 ground sichuan pepper	peppers
 raw chicken skin and fat	chickens
-cooking spray	spray
+royal icing	icing
 green savoy cabbage	savoy cabbage
 herb liqueur	liqueur
 florets of 1 large head cauliflower, cut into ?? inch lengthwise slices	cauliflowers
 watermelon balls	watermelon
 all-purpose flour, plus more for rolling out the dough	all-purpose flour
 japanese wheat flour	wheat flour
-pinch cayenne, or to taste	cayenne
+quick puff pastry	puff pastry
 black soy sauce	soy sauce
 large eggs, separated	large eggs
 whole shelled hazelnuts or blanched almonds	blanched almonds
-sugar-snap peas	peas
 raw sunflower seeds	sunflower seeds
 water-chestnut powder	powder
 albacore tuna steaks	tuna steaks
@@ -1129,7 +1131,7 @@ large carrots, about 1/2 pound	carrots
 london dry-style gin	gin
 black raisins	raisins
 basil broth	broth
-lard crust	lard
+small potatoes	potatoes
 coarse salt and freshly ground white pepper	salt and freshly ground white pepper
 fresh white mushrooms	white mushrooms
 sliced scallions	scallions
@@ -1148,12 +1150,11 @@ cream of wheat	cream
 ponzu sauce	sauce
 medium shrimp	shrimps
 grouper, red snapper	grouper
-good quality blue cheese or roquefort, at room temperature, crumbled (about 1/2 cup)	blue cheese
-dashi, at room temperature	dashi
+litchi juice	juice
+winter squash, such as butternut, peeled and cut into 3/4-inch cubes	winter squash
 toasted or roasted pecans, chopped	toasted
 finely chopped scallions	chopped scallions
 oysters and their liquor	oysters
-apry liqueur	liqueur
 petite peas	peas
 ripe tomatoes, peeled, seeded, and chopped, or 1 (28-ounce) can, with juice	ripe tomatoes
 red thai chiles	chiles
@@ -1211,12 +1212,12 @@ coffee flavoring	coffee
 white bakery bread	breads
 hot creamed spinach	spinach
 eggs, well beaten	eggs
-korean gochujang red pepper paste	red peppers
+skinless, boneless chicken breasts, about 1 1/2 pounds	chicken breasts
 greek yogurt, or strained non-greek yogurt	greek yogurt
 veal breast	veal
 maple syrup, agave syrup, honey or brown sugar	maple syrup
 anchovy filets	anchovy
-whole veal shank	veal
+collards or kale	kale
 new mexico chiles	chiles
 purple plums	plums
 whole chicken breast on the bone	chicken breasts
@@ -1256,14 +1257,15 @@ dried currants	currants
 ginger powder	ginger
 risina beans	beans
 corned beef	beef
-baby potatoes	potatoes
+bone-in rabbit saddles	rabbits
 pear brandy	brandy
 parmesan, grated (1/4 cup)	parmesan
 maldon or other sea salt	maldon
-key lime juice	lime juice
+serrano or jalape??o chile, minced (more to taste)	chiles
 orange flower water or water	water
 stemmed kale	kale
 shredded zucchini	zucchinis
+hot pepper jelly	peppers
 unsalted butter, cut into small pieces	unsalted butter
 dry red peppers	red peppers
 minty yogurt chutney	yogurt
@@ -1271,7 +1273,7 @@ medium rutabaga	rutabaga
 red or orange bell peppers	bell peppers
 boneless skinless chicken breasts	chicken breasts
 queso blanco (white cheese), crumbled	queso blanco
-medium to large potatoes	potatoes
+smoked lobsters	lobsters
 spanish onions	onions
 fried shallots	shallots
 rich red wine	red wine
@@ -1279,7 +1281,7 @@ crust pastry shell	pastry
 potato flakes	potato
 tart apple, such as a pink lady or granny smith, thinly sliced and tossed with 2 teaspoons lemon juice	tart apples
 whole cumin seed	cumin seeds
-lasagna noodles	noodles
+whole wheat spaghetti	spaghetti
 small white turnip	turnips
 slab of bacon	bacon
 stale corn bread crumbs	bread crumbs
@@ -1287,6 +1289,7 @@ pink grapefruits	grapefruits
 loaf bread	breads
 whole baby fennel bulbs	fennel bulbs
 escarole (1 to 1 1/4 pounds), leaves separated, washed and dried	escarole
+large egg, lightly beaten with 3 tablespoons water	large eggs
 red chard leaves	leaves
 chicken stock or broth, slightly warm	chicken stock
 shank-half ham	ham
@@ -1305,12 +1308,12 @@ punt e mes italian vermouth	vermouth
 zucchini (or a combination of yellow and green zucchini)	zucchinis
 plum brandy or red wine	red wine
 safflower, peanut or vegetable oil	vegetable oil
-chinese black mushrooms	mushrooms
 hot chili oil	chili oil
 chicken thighs and drumsticks	chicken thighs
 ground red pepper	red peppers
 chopped fresh italian parsley	italian parsley
 amaranth flour	flour
+fresh thyme, stems removed and leaves chopped	fresh thyme
 carrot, onion and celery	carrots
 28-ounce can chopped tomatoes	can chopped tomatoes
 small yukon gold or red potatoes	red potatoes
@@ -1323,7 +1326,7 @@ fresh thai bird chili pepper, seeded and minced	chili peppers
 hot paprika or piment??n	piment??n
 roasted chestnuts	chestnuts
 greek whole-milk yogurt	yogurt
-hot pepper jelly	peppers
+italian sausage links	italian sausage
 small shallot, peeled and minced	shallots
 unseasoned rice vinegar	rice vinegar
 nut crust	crust
@@ -1344,7 +1347,7 @@ fresh key lime juice	lime juice
 unsifted unbleached flour	flour
 cranberry sauce	sauce
 vidalia onion, slivered	onions
-light tahini paste	tahini
+coconut sorbet or ice cream	ice cream
 pickled cocktail onions	onions
 yellow peas	peas
 turmeric powder	turmeric
@@ -1378,7 +1381,7 @@ grated lemon rind	lemon rind
 orange oil	oil
 vegetable oil for deep-frying	vegetable oil
 dry beluga lentils	lentils
-firmly packed light-brown sugar	sugar
+raw rice	rice
 grated coconut	coconuts
 lemon, thinly sliced	lemons
 hot paprika	paprika
@@ -1405,7 +1408,7 @@ vidalia onion, diced	onions
 jasmine white rice	white rice
 mild flavored honey	honey
 chopped red or white onion	white onions
-hard-boiled egg, finely chopped	eggs
+grated apple	apples
 winter squash or zucchini	winter squash
 medium to large onion, chopped	large onion
 large bread crumbs	bread crumbs
@@ -1420,7 +1423,7 @@ lavender bitters	bitters
 swiss chard, stemmed and washed thoroughly	swiss chard
 champagne or other sparkling wine	champagne
 red aleppo pepper	aleppo pepper
-dark chinese sesame oil	sesame oil
+candle nuts	nuts
 scallions, white part only, julienned	scallions
 sweet rice flakes	rice
 tart shell	tart shells
@@ -1461,7 +1464,7 @@ shelling beans (fava beans, butterbeans or cranberry beans)	beans
 freshly grated parmesan for serving	freshly grated parmesan
 trimmed asparagus	asparagus
 asian chili paste	chili paste
-chestnut honey	honey
+pale curly endive	endives
 sauce vierge	sauce
 tablespoons water	water
 mandarin vinaigrette	vinaigrette
@@ -1469,7 +1472,7 @@ potato gnocchi	potato
 unsalted butter (2 sticks), chilled and cubed	unsalted butter
 pears,	pears
 homemade or low-sodium chicken stock	chicken stock
-nonfat or low-fat cottage cheese	low-fat cottage cheese
+whole- wheat flour	wheat flour
 pinch of cayenne	cayenne
 lean beef	beef
 knafeh pastry	pastry
@@ -1490,17 +1493,18 @@ dill fronds	dill
 minced fresh dill	fresh dill
 black oil-cured olives	olives
 for the radishes and beans:	radishes
-water, vegetable stock or chicken stock	water
+brandied cherry juice	juice
 torn fris??e or other strong-tasting greens	fris??e
-dried figs	figs
+crumbled roquefort cheese	cheese
 korean red chili sauce (gochujang) or other hot chili sauce	chili sauce
 pork butt or shoulder	pork butt
 smoked bluefish	bluefish
-baby artichokes or globe artichokes	baby artichokes
+provolone cheese	cheese
 brown bean sauce	sauce
 chopped frozen spinach	spinach
 onion	onions
 japanese cucumbers	cucumbers
+nonfat or low-fat cottage cheese	low-fat cottage cheese
 stale country bread or baguette, cut in thick slices	country bread
 whole-wheat pita bread	breads
 jalape??o or other hot fresh or dried chili	jalape??os
@@ -1524,9 +1528,9 @@ olive oil (not extra-virgin)	olive oil
 large egg, whisked with enough ice-cold water to make 1/2 cup	large eggs
 wild hibiscus blossom in syrup	syrup
 large rock cornish hens	cornish hens
-small dry chickpeas	chickpeas
+low-sodium chicken broth	chicken broth
 fresh thyme leaves plus extra for garnish	fresh thyme leaves
-aj?? dulce peppers	peppers
+beef strip loin steaks	beef
 white onion, thinly sliced	white onions
 blanched sliced almonds	almonds
 coarse bulgur wheat	bulgur
@@ -1538,9 +1542,9 @@ hot water	water
 shaoxing rice wine	rice wine
 brown mustard	mustard
 organic sugar	sugar
-bunches spinach	spinach
+seedless oranges	oranges
 madras curry powder	curry powder
-cremini or white mushrooms	white mushrooms
+shelled peanuts	peanuts
 oat flour or very finely ground rolled oats	flour
 dill pickle	dill
 whole hazelnuts	hazelnuts
@@ -1549,7 +1553,7 @@ crushed red chile flakes	red chile flakes
 short-grain rice	rice
 tamari almonds	almonds
 sorrel leaves, cut crosswise into thin strips (2 cups)	sorrel leaves
-duck fat or chicken fat, or canola oil	duck fat
+fresh chicken livers	chicken livers
 red snapper, grouper, sea bass, or any other firm fillet	red snappers
 cotija or parmesan cheese	parmesan cheese
 chocolate cake crumbs	chocolate
@@ -1567,13 +1571,13 @@ pumpkin pur??e, canned or cooked fresh	pumpkin pur??e
 ground white pepper	white pepper
 piece cinnamon stick	cinnamon sticks
 soft goat cheese	goat cheese
-dried black trumpet mushrooms	mushrooms
+smoked tempeh	tempeh
 squash blossoms	squash
 freshly grated coconut	coconuts
 cold milk	milk
 yellow onion	yellow onions
 quick-cooking rolled oats	rolled oats
-parmesan cheese, grated (1/4 cup)	parmesan cheese
+ginger-infused simple syrup	simple syrup
 cucumber	cucumbers
 potato rolls	potato
 pimento	pimentos
@@ -1658,7 +1662,6 @@ pattypan squash or other summer squash	squash
 medium beets, about one bunch	beets
 ripe tomatoes, chopped	ripe tomatoes
 blood orange juice	orange juice
-clear rum	rum
 bomba rice	rice
 ros?? champagne	champagne
 yogurt sauce	sauce
@@ -1666,11 +1669,10 @@ hardboiled egg, finely chopped	eggs
 fris??e lettuce	lettuces
 chopped shallots	shallots
 myers's rum	rum
-home-preserved or commercial canned tomatoes	tomatoes
+carrot pur??e or carrot juice	juice
 onion, chopped	onions
 sweet italian vermouth	vermouth
 black coffee	coffee
-country ham pieces	ham
 lemon curd	lemons
 puff pastry (see note)	puff pastry
 cooked red or black quinoa	quinoa
@@ -1713,7 +1715,6 @@ fresh or frozen ginger	ginger
 cornichon	cornichons
 karo syrup	syrup
 wine-pickled onions	onions
-cold-brewed coffee	coffee
 salsa cruda	salsa
 freshly ground black pepper, more to taste	freshly ground black pepper
 whipped cream (optional)	whipped cream
@@ -1724,7 +1725,7 @@ chianti or other red wine, or as needed	chianti
 finely chopped carrot	carrots
 large tomatoes	tomatoes
 vasterbotten cheese or parmigiano-reggiano	parmigiano-reggiano
-kernels from 4 ears corn	corn
+fresh basil leaves if desired	fresh basil leaves
 fresh herbs	herbs
 cherry liqueur	liqueur
 chartreuse liqueur	liqueur
@@ -1749,7 +1750,7 @@ smooth organic peanut butter	peanut butter
 red bliss potatoes	potatoes
 whole skinless, totally lean fillets of lamb or lamb tenderloins	lamb
 chunk daikon	daikon
-lamb shoulder roast	lamb shoulder
+passion fruit	fruits
 white or red onion	red onions
 small cauliflower	cauliflowers
 maggi sauce	sauce
@@ -1768,7 +1769,7 @@ lamb loins	lamb
 young carrots	carrots
 mini semisweet chocolate chips	chocolate chips
 young pecorino	pecorino
-px sherry	sherry
+toasted cracked mustard seeds	mustard seeds
 unsalted wild mushroom stock	stock
 jamaican pumpkin	pumpkins
 unblanched whole almonds	almonds
@@ -1803,7 +1804,7 @@ ripe tomato	tomato
 minced cilantro	cilantro
 ancho-chili powder	powder
 toasted cumin seeds	cumin seeds
-soft-boiled eggs	eggs
+parsley, or a combination of parsley, tarragon and marjoram or chives	parsley
 fresh peas, shelled (about 1 cup)	peas
 wasabi powder	powder
 sambal olek or other chile paste	paste
@@ -1858,7 +1859,7 @@ pelargonium geranium leaves	leaves
 fresh coriander	coriander
 flat parsley	parsley
 white corn tortillas	corn tortillas
-all-purpose flour (about 2 cups)	all-purpose flour
+loosely packed cilantro leaves	cilantro leaves
 curly green kale	kale
 halved fruit	fruits
 coarsely chopped flat-leaf parsley	chopped flat-leaf parsley
@@ -1876,7 +1877,7 @@ peeled grated ginger	grated ginger
 round steak	steaks
 purple brive mustard, or dijon mustard	dijon mustard
 seafood seasoning	seasonings
-slab baked marinated tofu	tofu
+st. elizabeth allspice dram	allspice
 dark molasses	molasses
 garlic croutons (toast slices country bread or baguette, rub with a cut clove of garlic, and cut the toasted bread into cubes; optional)	garlic croutons
 cooked black beans	black beans
@@ -1911,7 +1912,6 @@ wheat beer	beer
 can crushed tomatoes	tomatoes
 anchovy fillets (optional)	anchovy fillets
 unsweetened whipped cream	whipped cream
-vegetable or chicken stock	chicken stock
 fermented tea leaves	leaves
 fine-grain bulgur	bulgur
 plain rice wine vinegar	rice wine vinegar
@@ -1927,7 +1927,7 @@ ricotta salata, grated	ricotta salata
 whole duck legs	ducks
 earl grey tea	tea
 emmenthaler cheese	cheese
-fresh blueberries	blueberries
+skinless pork belly	pork belly
 habanero pepper, minced	peppers
 chopped raw cashews	cashews
 cooked quinoa (any color)	quinoa
@@ -1945,15 +1945,14 @@ dry ginger	ginger
 sauce gribiche	sauce
 sliced tomato	tomato
 shucked oysters	oysters
-parsley, tarragon and chervil and fennel fronds	parsley
 gluten-free flour	flour
 coarsely grated ricotta salata	ricotta salata
 firm tofu, cut in 1x1/2-inch dominoes	firm tofu
 magret duck breast	ducks
 bean puree	puree
-solera rum	rum
+cold-brewed coffee	coffee
 cucumber juice	juice
-pomegranate molasses, preferably cortas brand (see note)	pomegranate molasses
+grainy mustard, preferably french, or to taste	mustard
 pasilla chilies	chilies
 baby corn	corn
 hot vegetable stock	vegetable stock
@@ -1972,12 +1971,11 @@ red, green and yellow peppers	peppers
 hot italian sausage	italian sausage
 mixed greens	greens
 soft herbs	herbs
-st. elizabeth allspice dram	allspice
+slab baked marinated tofu	tofu
 adobo sauce	sauce
 large whole cauliflower, cut into 2-inch florets	cauliflowers
 sherry-wine vinegar	vinegar
 templeton rye	rye
-fin tuna	tuna
 nutmeg or dried marjoram	marjoram
 vegan sharp cheddar cheese	sharp cheddar cheese
 garlic, crushed	garlic
@@ -2003,7 +2001,7 @@ madeira or sweet sherry	madeira
 thai rice	rice
 bittersweet chocolate, chopped, plus 2 ounces shavings for garnish	bittersweet chocolate
 small garlic cloves, minced	garlic cloves
-pear liqueur	liqueur
+sweetened chestnut puree	puree
 cooked small white beans	white beans
 a handful of arugula	arugula
 sriracha or other sauce, or a dried red chili	sriracha
@@ -2014,6 +2012,7 @@ head of cauliflower	cauliflowers
 live vinegar	vinegar
 roughly chopped fresh parsley leaves	parsley leaves
 fideo	fideos
+sifted all-purpose flour	all-purpose flour
 jalape??o-infused blanco tequila	tequila
 vegetable stock or water	stock or water
 asparagus juice	juice
@@ -2023,7 +2022,7 @@ canned chipotle in adobo	chipotle in adobo
 jalape??o or serrano chilies	serrano chilies
 corn oil, for frying	corn oil
 large yellow onion, chopped	yellow onions
-hendrick???s gin	gin
+red-leaf lettuce	lettuces
 green apple	apples
 plain whole-milk yogurt	yogurt
 spinach linguine	linguine
@@ -2049,6 +2048,7 @@ durum (semolina) flour	flour
 guanabana juice	juice
 rhubarb stalks	rhubarb
 pancetta or unsmoked bacon	pancetta
+strip kombu	kombu
 chicken livers, drained	chicken livers
 graham-cracker crust	crust
 brandied cherries, for garnish.	cherries
@@ -2063,7 +2063,7 @@ generous bunch beet greens	beet greens
 ice water (a bit more or less may be needed)	ice water
 red boston lettuce	boston lettuce
 slices of bread	breads
-cooked eggs	eggs
+elijah craig bourbon	bourbon
 chicken bouillabaisse	chickens
 garlic, peeled and cut lengthwise into slivers, about 1/4 cup	garlic
 cooked farro	farro
@@ -2076,7 +2076,7 @@ serrano or jalape??o chilies	chilies
 celery stalk	celery stalks
 tomatoes, about 1 pound total, cored and roughly chopped	tomatoes
 beef tripe	beef
-minced jalape??o	jalape??os
+comte or gruyere cheese, freshly grated	gruyere cheese
 white whole-wheat	whole-wheat
 cooked israeli couscous	couscous
 goat or cow milk ricotta	goat
@@ -2125,7 +2125,7 @@ chopped basil, plus more for garnish	basil
 no-salt-added beef stock	beef stock
 rabbit loin	rabbits
 african bird pepper	peppers
-eggs yolks	eggs
+krusovice cerne beer	beer
 black-currant vodka	vodka
 asian or baby eggplant	eggplants
 seasoning salt	salt
@@ -2149,7 +2149,7 @@ madeira or other sweet wine	madeira
 whole cardamom pods	cardamom pods
 medium-size endives	endives
 green plantain	green plantains
-bulb green garlic	green garlic
+cr??me fra??che, for serving	cr??me fra??che
 short-grain white rice	white rice
 meat broth	broth
 sombra mezcal	mezcal
@@ -2196,7 +2196,7 @@ ground beef (round or sirloin)	ground beef
 a medium onion, finely diced	medium onions
 malt whisky	whisky
 roasted unsalted cashews	cashews
-white chocolate glaze	white chocolate
+glass noodles	noodles
 matzo cake meal	cake
 chilled seltzer	seltzer
 yellow beefsteak tomatoes	tomatoes
@@ -2277,7 +2277,7 @@ white seedless grapes	grapes
 shichimi togarashi	togarashi
 cooked lentils	lentils
 instant oatmeal	oatmeal
-skinless pork belly	pork belly
+fresh blueberries	blueberries
 dried chili flakes	chili flakes
 medium-grain rice	rice
 smoked mozzarella	mozzarella
@@ -2299,7 +2299,7 @@ vin santo or marsala wine	vin santo
 nonpareil capers	capers
 irish whiskey	whiskey
 large egg	large eggs
-wide rice noodles	rice noodles
+jalape??o chiles	jalape??os
 vegetable oil or rendered bacon fat	vegetable oil
 lard or softened unsalted butter	lard
 ribs celery, cleaned and diced	celery
@@ -2308,9 +2308,9 @@ extra-virgin olive oil, more for drizzling	extra-virgin olive oil
 whole wheat pizza dough	pizza dough
 all-purpose unbleached flour	flour
 crimini mushrooms	mushrooms
-shrimp or other fish	shrimps
 corn bread cubes	corn
 hellmann's mayonnaise	mayonnaise
+all-purpose flour (about 2 cups)	all-purpose flour
 japanese buckwheat noodles	noodles
 instant flour	flour
 small ripe peaches	peaches
@@ -2325,8 +2325,8 @@ low-fat buttermilk	buttermilk
 shad filets	shad
 lime wedges for serving	lime wedges
 warm milk	milk
-mixed nuts	nuts
-macadamia nuts	nuts
+veal eye round	veal
+hearty red wine	red wine
 fresh chervil	chervil
 mild chili powder	chili powder
 duck gravy	ducks
@@ -2345,7 +2345,6 @@ cucumber rounds	cucumbers
 extra virgin olive oil, approximately	extra virgin olive oil
 unsweetened coconut	coconuts
 tofu, diced	tofu
-maitre d'hotel butter	butter
 mixture of red, yellow and green peppers	green peppers
 parsnip pur??e	parsnips
 coriander leaves, whole, plus stems, minced	coriander leaves
@@ -2370,7 +2369,7 @@ lamb loin	lamb
 garlic clove, finely chopped	garlic cloves
 well-seasoned chicken or vegetable stock	vegetable stock
 good white wine	white wine
-grated orange zest	orange zest
+saut??ed mushrooms	mushrooms
 yellow bell pepper, seeded, deveined, cut into 2-inch-wide slices, lengthwise	yellow bell peppers
 course kosher salt (or 1 teaspoon fine sea salt), plus more for sprinkling	kosher salt
 milk and/or chopped toasted walnuts or almonds	almonds
@@ -2414,7 +2413,7 @@ garlic hummus	garlic
 unseasoned dry bread crumbs	dry bread crumbs
 oregano, garlic powder, red pepper flakes and black pepper	oregano
 lime, cut in wedges, for serving	limes
-skinless, boneless chicken breast	chicken breasts
+plus 2 tablespoons sugar	sugar
 large shrimp, shelled and butterflied	shrimps
 quail broth	broth
 hendricks gin	gin
@@ -2426,14 +2425,14 @@ chilled butter, cut into small pieces	butter
 large red pepper	red peppers
 cauliflowers and broccoli	broccoli
 parsley potatoes	potatoes
-medium-size cucumbers, peeled, seeded and cut in julienne	cucumbers
+active dry yeast (2 1/4 teaspoons)	active dry yeast
 fresh mussels	mussels
 lemon halves	lemons
-basic soft polenta	polenta
-grainy mustard, preferably french, or to taste	mustard
+chicken breasts with skin	chicken breasts
+pomegranate molasses, preferably cortas brand (see note)	pomegranate molasses
 finely grated sharp cheddar cheese	sharp cheddar cheese
 capers, for garnish	capers
-celery ribs	celery
+mizuna or arugula	arugula
 green chilies, preferably chopped, about 1/2 cup	green chilies
 asafetida powder	powder
 tiny potatoes	potatoes
@@ -2441,7 +2440,6 @@ smithfield ham	ham
 chopped fresh parsley or thyme for garnish	chopped fresh parsley
 white yam	yams
 large shallot, peeled and sliced paper thin	shallots
-purple basil	basil
 small banana	bananas
 large spring onion	onions
 muscat-macerated fruit	fruits
@@ -2510,15 +2508,16 @@ pine nuts, roasted	pine nuts
 lemongras	lemongrass
 avocado	avocados
 imported italian crushed tomatoes	tomatoes
-bing cherries	cherries
+whole almonds	almonds
 shao xing rice wine	rice wine
 fig leaves	leaves
 thin or medium stalks asparagus, trimmed	asparagus
 lean rabbit meat	rabbits
 chicken parts	chickens
-finely grated zest of a lemon	lemons
+medium-size russet potato, about 10 ounces, peeled and diced	potato
 bread	breads
 veal demi-glace	veal
+chestnut honey	honey
 swiss chard, mustard greens or kale	swiss chard
 granny smith or other tart apple	granny smith
 grapeseed, sunflower or canola oil	grapeseed
@@ -2546,7 +2545,6 @@ vanilla cookie crumbs	vanilla
 swiss cheese	cheese
 white fish	fish
 mashed potatoes	potatoes
-rich chicken stock	chicken stock
 green beans, blanched for 4 minutes and cut in 1-inch lengths (about 1/2 cup)	green beans
 lemon juice plus 1 large lemon, sliced	lemon juice
 kosher salt and freshly ground black pepper, to taste	kosher salt and freshly ground black pepper
@@ -2585,7 +2583,7 @@ pickled-pepper juice	juice
 unpopped white popcorn	popcorn
 clementine orange juice	orange juice
 dijon mustard (to taste)	dijon mustard
-sweetened whipped cream	whipped cream
+sun dried tomatoes	tomatoes
 green anaheim peppers	peppers
 carrots, cut into one-third to one-half inch dice	carrots
 raspberry juice	juice
@@ -2659,7 +2657,7 @@ roasted hazelnuts	hazelnuts
 oat flour	flour
 shank of veal	veal
 hardboiled eggs	eggs
-coarsely chopped cilantro leaves	cilantro leaves
+fresh shiitake mushroom caps	mushroom caps
 can tomatoes, seeded and chopped if not already chopped, with juice	tomatoes
 coarse sea salt, or kosher salt	coarse sea salt
 granulated garlic or garlic powder	garlic powder
@@ -2676,7 +2674,7 @@ vegan cane sugar	sugar
 shiitake or white button mushrooms	button mushrooms
 sugar (optional)	sugar
 fresh coriander leaves	coriander leaves
-elephant garlic	garlic
+italian frying pepper	peppers
 finely (1/3 inch) diced zucchini	zucchinis
 bitter orange marmalade	orange marmalade
 lancashire cheese	cheese
@@ -2685,21 +2683,21 @@ parmesan, pecorino or ricotta salata	parmesan
 steak	steaks
 chopped candied orange peel	orange peel
 firm, unblemished red pepper, about 1/2 pound	firm
-finely chopped mint	chopped mint
+chopped dates	dates
 cheddar or gruy??re or swiss cheese	cheddar
 freshly ground white pepper to taste	white pepper
 diced shiitake mushroom	shiitake mushrooms
 beefsteak	beefsteaks
 hazelnut liqueur	liqueur
 peanut	peanuts
-fava beans, shelled	fava beans
+broccolini or broccoli rabe	broccoli rabe
 winter squash (about 1/2 of a good-size butternut, for example), such as butternut, banana or hubbard, peeled, seeded and cut in 1/2 inch dice	winter squash
 branston pickle	pickles
 sea salt, to taste	sea salt
-pad thai sauce	sauce
+chinese hot peppers	peppers
 chilled butter, diced	butter
 fusille, farfalle, or orecchiette	orecchiette
-old-fashioned bitters	bitters
+pastry flour	flour
 sugar (omit if using seasoned rice wine vinegar, which is sweet)	sugar
 dried bonito flakes	bonito flakes
 scallions, white and light green parts only, trimmed and cut into 2-inch lengths	scallions
@@ -2729,12 +2727,12 @@ chilled lard	lard
 (3 to 4 large) grated, blanched russet potatoes (see note)	russet potatoes
 whole-wheat spaghetti	spaghetti
 freshly squeezed orange juice	orange juice
-dill flower	dill
+dry white wine such as pinot grigio or sauvignon blanc	sauvignon blanc
 glutinous rice	rice
 millet flour	flour
 habanero peppers	peppers
 ground coffee	coffee
-chopped flat leaf parsley	flat leaf parsley
+pork loin rib chops	pork loin
 quarter-size slice ginger, peeled	ginger
 yellow corn	corn
 fine bread crumbs or all-purpose flour	all-purpose flour
@@ -2787,7 +2785,7 @@ salt, or to taste	salt
 warm water (105 to 115 degrees)	warm water
 matzoh cake meal	cake
 lemon slice	lemons
-finely minced crystallized ginger	ginger
+chopped fresh rosemary leaves	rosemary leaves
 polenta, white or yellow, noninstant variety	polenta
 broth if needed while cooking	broth
 raspberry puree	puree
@@ -2835,7 +2833,7 @@ chili-sesame oil	oil
 (3/4 stick) unsalted butter	unsalted butter
 mizithra cheese	cheese
 cheese pumpkin	pumpkins
-all-purpose potato	potato
+rice, preferably bomba or calasparra	rice
 shallots, chopped	shallots
 ham hocks	ham
 nonfat milk powder	milk
@@ -2856,8 +2854,8 @@ corn starch	corn
 easter egg radish	eggs
 for the tomatoes	tomatoes
 almonds, toasted and coarsely chopped	almonds
-celery stalks, trimmed and chopped	celery stalks
-sansho pepper	peppers
+dried black trumpet mushrooms	mushrooms
+red hot pepper flakes	hot pepper flakes
 small dried red chili pepper, crumbled, or 1/4 teaspon red pepper flakes	red pepper flakes
 golden raspberries	raspberries
 italian pecorino romano cheese	pecorino romano cheese
@@ -2886,7 +2884,7 @@ diced tomato flesh	tomato
 poblano chiles	chiles
 kosher salt and freshly ground pepper to taste	salt and freshly ground pepper to taste
 small cinderella or sugar pumpkin	pumpkins
-plain yogurt, buttermilk or sour cream	plain yogurt
+(8 tablespoons) unsalted butter, at room temperature	unsalted butter
 smoked ham	ham
 extra-virgin olive oi	olive oi
 banana leaves	leaves
@@ -2906,7 +2904,7 @@ cooked green and yellow beans	beans
 fruit peel	fruits
 beef deckle	beef
 red or yellow bell pepper	yellow bell peppers
-unsweetened shredded coconut (1 cup)	coconuts
+red beans	beans
 acorn squashes	squashes
 dry red chiles	red chiles
 quartered hulled strawberries	strawberries
@@ -2914,7 +2912,7 @@ quartered hulled strawberries	strawberries
 wine court-bouillon	wine
 arugula, spinach or chard, stemmed and sliced into 1/2-inch ribbons	arugula
 nutmeg, freshly grated	nutmegs
-cashew nuts	nuts
+apple bitters	apples
 fresh, unpasteurized apple cider	apple cider
 pullman bread	breads
 medium carrot	carrots
@@ -2935,14 +2933,14 @@ see note for chicken potpie	chickens
 salt, preferably kosher salt, to taste	salt
 plump garlic cloves, minced	plump garlic cloves
 spicy sausage	sausages
-pole beans	beans
+garlic scapes or ramps	ramps
 reserved duck fat	duck fat
 grape	grapes
 plain low-fat yogurt, almond beverage or rice beverage	plain low-fat yogurt
 whole chicken breast	chicken breasts
 olive bread	breads
 fresh green chiles, like jalape??o or serrano	serranos
-cauliflower pur??e	cauliflowers
+fresh cream	cream
 nonhydrogenated shortening	shortening
 minced fresh tarragon	fresh tarragon
 pancetta, cubed	pancetta
@@ -2973,19 +2971,21 @@ black truffle	black truffles
 anise seeds	seeds
 white cheese	cheese
 cabbage (green or red), outer leaves removed, cored and coarsely chopped (about 1 medium cabbage)	cabbage
-serrano or jalape??o chiles, finely chopped, or more to taste	chiles
+medium ripe tomatoes	ripe tomatoes
 turkey skin	turkeys
 hothouse cucumbers	cucumbers
 junipero gin	gin
+bag dried corn husks, about 24	corn
 balsamic or red wine vinegar	red wine vinegar
 fresh ginger, 2 inches long	fresh ginger
 flat-leaf parsley, chervil or tarragon	flat-leaf parsley
 zubrowka bison grass vodka	vodka
 rice vermicelli (thin rice sticks)	rice vermicelli
-plump, moist vanilla bean, split lengthwise, pulp scraped out	vanilla beans
-peeled celery root, sliced 1/4 inch thick	celery roots
+coarsely chopped cilantro leaves	cilantro leaves
+organic eggs	eggs
+gluten-free flour mix	flour
 live lobster	lobsters
-finely chopped nuts	nuts
+olive oil pie crust	olive oil
 fresh lemon verbena leaves	leaves
 salt, preferably kosher, to taste	salt
 truffle or olive oil	olive oil
@@ -2994,14 +2994,14 @@ fat garlic clove	garlic cloves
 watercress, plus additional watercress for garnish	watercress
 leaves lettuce	lettuces
 diced crustless stale baguette	baguettes
-whole wheat yeasted olive oil crust	olive oil
+generous bunch swiss chard or 2 smaller bunches (about 1 1/2 pounds)	swiss chard
 hulled strawberries	strawberries
 extra virgin olive oil (to taste)	extra virgin olive oil
 asian sesame oil or walnut oil	sesame oil or walnut oil
 classic duck foie terrine	ducks
 negra modelo beer	beer
 xiao shing wine	wine
-peeled garlic	garlic
+boiling chicken stock	chicken stock
 delicata squashes	squashes
 fresh berries or chocolate shavings (optional)	berries
 thin coconut milk	coconut milk
@@ -3063,7 +3063,6 @@ medium tomatoes	tomatoes
 cup cr??me fra??che	cr??me fra??che
 ruby-red grapefruit juice	grapefruit juice
 piece of orange rind	orange rind
-creamy ricotta	ricotta
 whole bibb, boston or iceberg lettuce leaves	lettuce leaves
 small-to-medium orange	oranges
 sriracha or other chili sauce	sriracha
@@ -3117,10 +3116,10 @@ black walnuts	walnuts
 yellow grape	grapes
 almond extract, optional	almond extract
 thyme honey	honey
+shoulder of lamb	lamb
 palm sugar	sugar
 lemon wedges, for serving	lemon wedges
 cocktail sherry	sherry
-dry yellow mustard	mustard
 cake yeast	yeast
 ribs celery, finely chopped	celery
 tomatillos, husks removed	tomatillos
@@ -3135,7 +3134,7 @@ cucumber salad	cucumbers
 ripe pear	pears
 cognac or aged rum	cognac
 kale (tuscan, red russian, winterbor or lacinato), coarse stems removed and discarded, roughly chopped	kale
-about 1/4 pound parmesan, sliced wafer thin	parmesan
+dark jamaican rum	rum
 medium hass avocados	avocados
 sunflower or vegetable oil	vegetable oil
 sheep???s milk yogurt	yogurt
@@ -3159,13 +3158,14 @@ firm-ripe avocados	avocados
 flat anchovy	anchovy
 large or three small eggplants	eggplants
 head napa cabbage	napa cabbages
+ripe, fresh tomatoes, peeled if desired and finely chopped	ripe
 liquid goose fat	fat
 mustard greens, trimmed and washed	mustard greens
 freshly grated ricotta salata	ricotta salata
 garlic, finely chopped	garlic
 cilantro, washed, leaves only	cilantro
-demerara simple syrup	simple syrup
-comte or gruyere cheese, freshly grated	gruyere cheese
+white sparkling wine	wine
+minced jalape??o	jalape??os
 neutral cooking oil	cooking oil
 roasted pork shoulder	pork shoulder
 harissa sauce	sauce
@@ -3187,7 +3187,7 @@ dried parsley	parsley
 frozen cranberries	cranberries
 fresh lemon juice or 1/2 teaspoon pure lemon extract	fresh lemon juice
 beef stew meat	beef
-fresh tarragon, removing and reserving the leaves of 1 sprig	fresh tarragon
+winter squash of your choice	winter squash
 fresh sage leaves, rubbed	fresh sage leaves
 piquillo pimento	pimentos
 fresh rhubarb	rhubarb
@@ -3206,6 +3206,7 @@ red, rose, or dry white wine	dry white wine
 corn oil for bread pans	corn oil
 celery tops	celery
 curly kale	kale
+lat-leaf parsley leaves	parsley leaves
 wild striped bass fillets	bass
 black mission figs	figs
 sesame flatbread (see recipe) or raw vegetables	vegetables
@@ -3235,15 +3236,15 @@ pumpkin	pumpkins
 white chocolate chips	chocolate chips
 orange curd	oranges
 king trumpet mushrooms	mushrooms
-watermelon radish	watermelon
-creole-style mustard	mustard
+plymouth gin	gin
+glucose syrup	syrup
 aged pecorino	pecorino
 arbol chiles	chiles
 pitted imported black olives	black olives
 peanut, canola, rice bran, sunflower, or grape seed oil	peanuts
-golden potatoes	potatoes
+dry tubular or shell-shaped pasta	pasta
 paneer (indian cream cheese) or fromage blanc	fromage blanc
-chopped fresh dill, chives or parsley for garnish	chopped fresh dill
+beaten egg, for brushing	eggs
 dutch cocoa	cocoa
 waxy potato	potato
 lean slab bacon	slab bacon
@@ -3251,7 +3252,7 @@ romesco sauce	sauce
 salt (optional)	salt
 16- to 20-count (extra large) shrimp, peeled and deveined but tail left on	shrimps
 plain dry breadcrumbs	breadcrumbs
-basil or basil-mint pesto	basil
+yeast extract	yeast
 black pepper to taste	black pepper
 grey goose vodka	vodka
 red bell peppers, roasted	red bell peppers
@@ -3350,7 +3351,7 @@ homemade beef grav	beef
 medium-size ripe bananas, peeled and sliced	bananas
 salmon steak	salmon
 pumpkin squash	squash
-frozen edamame	edamame
+dh krahn gin	gin
 orange or tangerine juice	juice
 peychaud???s bitters	bitters
 neutral oil, like grapeseed or corn, or softened butter, plus more for the bowl and the pan	neutral oil
@@ -3379,7 +3380,7 @@ baguette cut in 1/2-inch diagonal slices	baguettes
 fish bones and heads	fish
 wild hibiscus flower in syrup	syrup
 each parsley and mint	parsley and mint
-veal cutlets	veal
+cippoline onions or spring onions	spring onions
 granulated chicken bouillon or crushed bouillon cubes	chickens
 leek	leeks
 tiny potatoes (the size of large cherry tomatoes)	potatoes
@@ -3403,9 +3404,10 @@ garlic, unpeeled, lightly crushed	garlic
 medium green zucchini	zucchinis
 cayenne powder	cayenne
 ancho chili paste	chili paste
+green chili peppers	chili peppers
 toasted peanut oil	peanut oil
 greek feta	feta
-waxy potatoes, scrubbed and sliced about 1/2 inch thick	waxy potatoes
+la tur cheese	cheese
 3/4 inch inch thick slices of seedless watermelon, as needed	watermelon
 salt & pepper to taste	salt
 pineapple, orange and lime	pineapples
@@ -3427,7 +3429,7 @@ kefalotyri cheese	cheese
 turbinado or other brown sugar	turbinado
 black raspberry extract	extract
 turkish pepper	peppers
-scallion tops	scallions
+vegetable or chicken stock	chicken stock
 unsweetened cranberry juice	juice
 medium onion, peeled and chopped	medium onions
 chocolate, coffee, ginger or other ice cream	chocolate
@@ -3435,7 +3437,7 @@ red pepper flakes (to taste)	red pepper flakes
 flat-leaf spinach	spinach
 nasturtium blossoms	blossoms
 minced red onion	red onions
-portabella stuffing mushrooms	mushrooms
+bitter chocolate	chocolate
 fresh yeast	yeast
 veal neck bones	veal
 heads of endive	endives
@@ -3445,7 +3447,7 @@ toasted whole walnuts	walnuts
 breast of veal	veal
 preserved lemons	lemons
 softened unsalted butter	unsalted butter
-red-leaf lettuce	lettuces
+hendrick???s gin	gin
 large pink grapefruit	grapefruits
 minced thai chiles	chiles
 sour orange juice	orange juice
@@ -3469,7 +3471,7 @@ teaspoon salt	salt
 butter, plus enough to grease the baking dish	butter
 montrachet goat cheese	goat cheese
 lettuce or endive leaves	lettuces
-white crab meat	crab meat
+country ham pieces	ham
 red wine vinegar or other vinegar	red wine vinegar
 kimchi juice	juice
 ripe tomatoes, in assorted colors if possible	ripe tomatoes
@@ -3495,10 +3497,9 @@ albacore or salmon fillet	salmon fillets
 small new potatoes, scrubbed but not peeled	potatoes
 persian, kirby or european cucumbers	cucumbers
 safflower or other vegetable oil	vegetable oil
-thin slices bread	breads
 dark red kidney beans	kidney beans
 freshly grated parmesan for garnish	freshly grated parmesan
-veal eye round	veal
+mixed nuts	nuts
 prepared red curry paste	paste
 silken ???lite??? tofu	tofu
 dark karo syrup	syrup
@@ -3524,7 +3525,7 @@ dried red chile peppers	peppers
 fuyu persimmons	persimmons
 brooklyn local 2, westmalle dubbel or another beer	beer
 bulleit bourbon	bourbon
-chinese noodles	noodles
+fresh lemon grass	lemon grass
 seckel pears	pears
 baby or c-grade potatoes	potatoes
 ginger ale	ginger
@@ -3581,10 +3582,9 @@ whole-wheat bread	breads
 cherry pie	pie
 barley malt syrup or dark brown sugar	dark brown sugar
 arugula, washed, dried and chopped	arugula
-red or white onion, coarsely chopped and rinsed with cold water	white onions
+parsley, rosemary, sage and thyme	parsley
 roast chicken	chickens
 sorghum flour	flour
-softened butter	butter
 tender celery stick from the heart	celery
 coarse salt and freshly ground pepper to taste	salt and freshly ground pepper to taste
 shredded smoked mozzarella	mozzarella
@@ -3599,13 +3599,13 @@ granulated cane sugar	sugar
 day-old baguette	baguettes
 chestnut	chestnuts
 saucy hot sauce	hot sauce
-concord, black or red grapes	grapes
+porcini pieces	porcini
 ground flax seed	seeds
 date syrup	syrup
 (about 12) fingerling potatoes	fingerling potatoes
 mushroom soy sauce or regular soy sauce	soy sauce
 coarsely chopped olives	olives
-small firm, ripe avocados	avocados
+large red bell pepper, diced	red bell peppers
 a carrot, julienned to make about 1/4 cup	carrots
 fine semolina	semolina
 cajun seasoning	seasonings
@@ -3615,7 +3615,7 @@ light cream or soy milk	light cream
 large baking potato, peeled and diced	potato
 rib celery	celery
 rich fish or chicken stock	chicken stock
-olive oil pie crust	olive oil
+finely chopped nuts	nuts
 medium onion, half of it chopped, half sliced	medium onions
 carrot curry sauce	sauce
 alfalfa sprouts	sprouts
@@ -3624,14 +3624,13 @@ habanero chile	chiles
 raw salmon	salmon
 minced fresh basil	fresh basil
 habanero chili	chilis
-italian sausage links	italian sausage
 shelled walnuts (about 1 pound)	walnuts
 schmaltz (rendered chicken fat)	schmaltz
 rittenhouse 100-proof rye whiskey	rye whiskey
 simple tomato sauce	tomato sauce
 mozzarella, monterey jack, gruy??re or other melting cheese	mozzarella
 raw or cooked corn kernels (from 4 to 6 ears)	corn kernels
-extra-sharp cheddar	cheddar
+neufch??tel cream cheese	cream cheese
 powdered mustard	mustard
 plain bread crumbs	bread crumbs
 grated parmesan for serving	grated parmesan
@@ -3655,7 +3654,7 @@ thick sirloin	sirloin
 egg	eggs
 dry gin	gin
 15-ounce cans white beans	white beans
-glucose syrup	syrup
+creole-style mustard	mustard
 medium shrimp, shelled	shrimps
 small onion, peeled and chopped	small onion
 vanilla vodka	vodka
@@ -3671,7 +3670,7 @@ no-salt-added chicken stock	chicken stock
 diced (1/2 inch) zucchini or other summer squash	diced
 boneless beef steak	beef
 spaghetti, penne or other pasta	spaghetti
-pineapple chunks	pineapples
+dried imported barberries	barberries
 cornmeal biscuit dough	cornmeal
 fruity extra virgin olive oil	extra virgin olive oil
 packed light-brown sugar	sugar
@@ -3697,7 +3696,7 @@ baby braising greens	greens
 fresh figs	figs
 cherry preserves	cherry
 mixed dark greens	greens
-milk, slightly warmed	milk
+neutral oil, like grapeseed or corn	neutral oil
 bottled taco sauce	sauce
 meaty bones from cod	cod
 pure pomegranate juice	pomegranate juice
@@ -3708,7 +3707,7 @@ fish fumet or clam broth	broth
 apricot marmalade	marmalade
 shelled fresh peas	peas
 your favorite beer	beer
-fresh lemon grass	lemon grass
+chinese noodles	noodles
 osetra caviar	caviar
 wild mushroom broth	broth
 unbleached all purpose flour	flour
@@ -3730,10 +3729,11 @@ garlic, chopped	garlic
 large stalks broccoli (stems and crowns)	broccoli
 tomatoes, peeled, seeded, and chopped, or 1 cup canned chopped tomatoes	tomatoes
 sea parsley	parsley
+chopped drained capers	capers
 grape or cherry tomatoes	cherry tomatoes
 bolognese sauce	sauce
 angel-hair pasta	pasta
-large garlic clove, minced	garlic cloves
+chick peas, borlotti beans or pinto beans	chick peas
 halloumi cheese	cheese
 red grapes	grapes
 prune jam	jam
@@ -3751,7 +3751,6 @@ wild rice, rinsed	wild rice
 strawberries, hulled and halved	strawberries
 almond beverage or milk	milk
 clarified butter, ghee or olive oil	butter
-chopped fruit	fruits
 nonfat yogurt	yogurt
 whole fennel seeds	fennel seeds
 dried hot red pepper flakes	hot red pepper flakes
@@ -3774,6 +3773,7 @@ dry white wine, such as sauvignon blanc	dry white wine
 bourbon or rye	bourbon
 herb vinegar	vinegar
 brown sugar or honey	sugar or honey
+tomato extract	tomato
 chinese chile paste	paste
 georgia peaches	peaches
 powdered pectin	pectin
@@ -3787,10 +3787,11 @@ coarsely chopped fresh thyme leaves	fresh thyme leaves
 pinch of cayenne pepper	cayenne peppers
 nigella sativa seeds	seeds
 live crawfish	crawfish
-hot peppers	peppers
+2-inch strip orange peel	orange peel
 zucchini or other summer squash, cut in 1/4-inch dice (about 4 cups)	zucchinis
 oyster or other mushrooms	mushrooms
 allspice, cracked or coarsely ground in a spice mill	allspice
+thai green chilies	green chilies
 averna amaro	amaro
 finely ground walnuts, (about 1 cup whole walnuts ground in a food processor)	walnuts
 not-too-robust red wine	red wine
@@ -3808,7 +3809,7 @@ egg beaten with 1 tablespoon of water	water
 whole-bean sauce	sauce
 greek thyme honey	honey
 cranberry juice cocktail	juice
-sunflower-seed oil	oil
+large leeks, white and light green parts only, cut in half lengthwise, sliced and rinsed well	leeks
 ripe tomatoes, quartered	ripe tomatoes
 cumin seeds, black pepper, rosemary or smoked paprika	cumin seeds
 firm ripe tomatoes, quartered lengthwise	ripe tomatoes
@@ -3836,7 +3837,7 @@ onion, sliced	onions
 ginger marmalade	ginger
 pitted stuffed olives	olives
 large portobello mushrooms, stems removed	portobello mushrooms
-lemon segments	lemons
+sour cream (optional)	sour cream
 kidney suet	suet
 sherry vinegar, white wine vinegar, or cider vinegar	sherry vinegar
 hot red asian chiles	chiles
@@ -3856,7 +3857,7 @@ medium-hot chili powder	chili powder
 beef marrow bones	beef
 hungry jack potato flakes	potato
 guava puree	puree
-chinese or japanese dried mushrooms	dried mushrooms
+whole peeled tomatoes	tomatoes
 turkey liver	turkeys
 green chilies, like jalape??o or serrano, minced	green chilies
 jumbo chicken wings	chicken wings
@@ -3881,13 +3882,13 @@ lyle???s golden syrup	syrup
 white asparagus	asparagus
 salted pork belly	pork belly
 candied fruit	fruits
-coarsely ground sirloin	sirloin
+chocolate curls	chocolate
 boneless lamb	lamb
 merguez sausage	sausages
 rosemary, basil and thyme	rosemary
 freshly grated pecorino romano or parmesan	parmesan
 can lentils	lentils
-several torn slices of prosciutto	prosciutto
+spanish onion, finely chopped	spanish onion
 mint marinade	mint
 lemon twists	lemons
 lime wheel	limes
@@ -3903,9 +3904,10 @@ italian tuna	tuna
 poached eggs	eggs
 freshly grated parmesan (1/4 cup, tightly packed)	freshly grated parmesan
 lemon twist.	lemons
-dried garlic flakes	garlic
-whipped creme fraiche	creme fraiche
-glass noodles	noodles
+veal cubes	veal
+tartar sauce	sauce
+boneless pork loin chops	pork loin
+white chocolate glaze	white chocolate
 fresh thyme, minced	fresh thyme
 peach jam	jam
 bartlett pears	pears
@@ -3913,10 +3915,10 @@ cooked white rice	white rice
 sharp orange cheddar	cheddar
 raisins or finely diced plums or pluots	raisins
 smoked ham hock	ham
-chopped fresh basil leaves	fresh basil leaves
+shredded cabbage for the tacos	cabbage
 bacardi light rum	light rum
 minced scallions	scallions
-grated fontina cheese	fontina cheese
+green plantains, peeled, lightly scored and cut into 2-inch slices on the diagonal, peels reserved	green plantains
 ripe avocado	avocados
 bulk sausage	sausages
 idaho baking potatoes	baking potatoes
@@ -3924,10 +3926,12 @@ white-bread crumbs	crumbs
 almond butter	butter
 fresh tomatoes, peeled, seeded and diced, or 1 (28-ounce) can chopped tomatoes, with juice	tomatoes
 peanut, corn or vegetable oil	peanuts
+(10 2/3 tablespoons) sweet butter	sweet butter
 minced flat-leaf parsley leaves	flat-leaf parsley leaves
 neutral oil, like grape seed or corn, as needed	neutral oil
 crab salad	salad
 large garlic cloves, to taste, minced or pressed	large garlic cloves
+(2 cups) fresh blueberries (preferably fresh, or frozen, not thawed)	blueberries
 raspberry liqueur	liqueur
 organic pumpkin	pumpkins
 diced (1/2 inch) peeled sweet potato	diced
@@ -3958,7 +3962,7 @@ basil leaves, sliced into chiffonade	basil leaves
 large bunch black kale	kale
 chinese cooking sherry (shaoxing rice wine) or dry sherry	sherry
 vegetable trimmings	vegetables
-low-fat (1 percent) milk	milk
+thai chili sauce	chili sauce
 patty-pan squash	squash
 farmer cheese	cheese
 black-olive paste	paste
@@ -3979,7 +3983,7 @@ teriyaki sauce	sauce
 sweet soy sauce	soy sauce
 basil, torn or chopped	basil
 japanese bonito flakes	bonito flakes
-white cabbage	cabbage
+sugar, plus some for the dish	sugar
 lamb necks	lamb
 medium sweet potatoes, scrubbed	sweet potatoes
 wonton wrappers	wrappers
@@ -3989,7 +3993,7 @@ grana padano cheese	cheese
 eggplant, cut into 1/2-inch cubes	eggplants
 dried chamomile blossoms	blossoms
 bittersweet chocolate, melted and cooled	bittersweet chocolate
-shredded fennel bulb	fennel bulbs
+newburg sauce	sauce
 sesame-seed hamburger bun	hamburger buns
 cooked kasha	kasha
 ripe field tomatoes	tomatoes
@@ -4009,7 +4013,7 @@ french or italian bread	breads
 fresh pepper, plus more to taste	peppers
 whole mint	mint
 cr??me de cassis liqueur	liqueur
-verbena tea	tea
+unseasoned bread crumbs	bread crumbs
 butter, at room temperature	butter
 nonfat or low-fat buttermilk	buttermilk
 kochukaru (korean red pepper flakes) or other red pepper flakes	red peppers
@@ -4033,7 +4037,6 @@ finely grated rind of 1 lemon	lemons
 wehani rice	rice
 skinless boneless cod	cod
 unsalted butter, melted	unsalted butter
-cold cream cheese, cut into 4 pieces	cream cheese
 cumin seeds, lightly toasted and crushed	cumin seeds
 hot dog rolls	rolls
 turnip, trimmed, peeled and chopped	turnips
@@ -4048,7 +4051,7 @@ medium apple	apples
 lemon verbena leaves	leaves
 large angel cake	cake
 thai bird chilies	chilies
-punt e mes or other sweet vermouth	sweet vermouth
+70-percent-cacao dark chocolate	chocolate
 white part of leeks	leeks
 hard-cooked eggs, peeled and halved lengthwise	hard-cooked eggs
 nicoise olives	olives
@@ -4069,7 +4072,7 @@ agave nectar (to taste)	agave nectar
 dried pears	pears
 fresh or dry breadcrumbs	breadcrumbs
 fresh asparagus spears	asparagus spears
-plum tomato	tomato
+red and green bell peppers	green bell peppers
 herbs for garnish	herbs
 cayenne pepper, or to taste	cayenne peppers
 small onion or 1 medium leek, finely chopped	small onion
@@ -4082,7 +4085,6 @@ waxy potatoes like red bliss	waxy potatoes
 juice and zest from 1 lemon	juice
 pork jowl	pork
 turkey livers	turkeys
-cracked black pepper	black pepper
 shrimp, about 1/2 pound, shelled and deveined	shrimps
 chopped nuts	nuts
 white all-purpose flour	all-purpose flour
@@ -4093,16 +4095,16 @@ red rice-wine vinegar	rice-wine vinegar
 pork braciola cutlets	pork
 gold rum	rum
 artichoke heart	artichoke hearts
-montecristo rum	rum
+new mexico chile powder	chile powder
 portobello mushroom caps	mushroom caps
-southeast asian fish sauce	asian fish sauce
+turkey or smoked turkey, sliced	turkeys
 espelette pepper or spanish smoked hot paprika	peppers
 pureed pumpkin	pumpkins
 whole cut-up chicken	chickens
 grated or crumbled gorgonzola cheese	cheese
 ham bone or 2 or 3 smoked ham hocks	ham
 italian peasant bread	breads
-canned organic tomato sauce	tomato sauce
+long-grain converted rice	rice
 slivered fresh sage	fresh sage
 morel	morels
 red jalape??os	jalape??os
@@ -4114,11 +4116,11 @@ chopped or slivered fresh herbs	herbs
 shao hsing rice wine or dry sherry	dry sherry
 sour rye bread	breads
 yukon gold potatoes, scrubbed and cut into 1/2-inch dice	yukon gold potatoes
-cajun andouille sausage	sausages
+water, chicken stock, or vegetable stock	water
 baby peas	peas
 persian allspice	allspice
 okra pods	okra
-fresh thyme, stems removed and leaves chopped	fresh thyme
+coarse dry bread crumbs	dry bread crumbs
 shallots, finely diced	shallots
 firm, unblemished green pepper, about 6 ounces	firm
 buckwheat noodles	noodles
@@ -4128,7 +4130,7 @@ kellogg???s corn flakes	corn
 pickled green tomatoes	green tomatoes
 chocolate liqueur	liqueur
 curry paste	paste
-parsley stems	parsley
+truffle butter, chilled and cut into tiny pieces, optional	butter
 pork shoulder roast	pork shoulder
 extra-virgin olive oil, for sprinkling	extra-virgin olive oil
 salt, white pepper and cayenne	salt
@@ -4156,13 +4158,13 @@ subway (submarine) sandwich rolls	rolls
 dried limes (loomi omani)	limes
 walnut halves, chopped	walnut halves
 finely chopped fresh sage	fresh sage
-toasted pecans	pecans
+watercress (large stems removed).	watercress
 large whole eggs, room temperature	eggs
 yuzu	yuzus
 hard-cooked egg	eggs
 garlic cloves, to taste	garlic cloves
 grated pecorino romano	pecorino romano
-large leeks, white and light green parts only, cut in half lengthwise, sliced and rinsed well	leeks
+sunflower-seed oil	oil
 tomatoes (fresh or canned), cored and chopped	tomatoes
 eggplant, sliced lengthwise into 4 slices, each about 1/3 inch thick	eggplants
 coffee powder	coffee
@@ -4175,6 +4177,7 @@ brown chicken base	chickens
 red or white wine vinegar or sherry vinegar (more to taste)	white wine vinegar or sherry vinegar
 coriander seeds, ground	coriander seeds
 chopped fresh mint leaves, or as needed	mint leaves
+plum tomato	tomato
 barley rusks	barley
 brioche bread	breads
 black vinegar	vinegar
@@ -4221,13 +4224,13 @@ maroilles cheese	cheese
 cabbage kimchi	cabbage
 persimmon	persimmons
 large shrimp	shrimps
-vegetable broth, at room temperature	vegetable broth
+massaman syrup	syrup
 chunky peanut butter	peanut butter
 coconut water	water
 snapper or cod fillets	cod fillets
 beef short ribs	beef
 seville oranges	oranges
-crisp apples	apples
+garlic cloves, minced (1 if using fresh tomato sauce, which is already seasoned)	garlic cloves
 yellow crookneck squash	squash
 gruy??re cheese, grated (1/2 cup, tightly packed)	gruy??re cheese
 high-gluten flour	flour
@@ -4238,6 +4241,7 @@ cherry heering	cherry
 unsalted butter, melted (optional)	unsalted butter
 salted black beans	black beans
 lapsang souchong tea	tea
+mint leaf	mint
 yellowfin tuna	tuna
 hass avocado	avocados
 rib steaks	steaks
@@ -4254,7 +4258,7 @@ chopped fresh parsley leaves	parsley leaves
 banks 5 island rum	rum
 pork chops, with bone, trimmed of fat	pork chops
 walnut	walnuts
-tubular pasta	pasta
+fresh ham	ham
 soft fresh goat cheese	goat cheese
 hot hungarian paprika	paprika
 apricot liqueur	liqueur
@@ -4275,28 +4279,27 @@ chile oil	oil
 mustard, horseradish, cornichons and sea salt	mustard
 aniseed	aniseeds
 orange blossom water	water
-kosher salt or more to taste	kosher salt
+grain rice	rice
 hanger steak	steaks
 straight rye whiskey	rye whiskey
-tomato extract	tomato
+morel or porcini mushrooms	porcini mushrooms
 fresh goat cheese, about 4 ounces	goat cheese
 chanterelles, or other mushrooms	chanterelles
 domestic mushrooms	mushrooms
 preserved duck	ducks
-pitted cherries	cherries
-sour cream (optional)	sour cream
+shredded fennel bulb	fennel bulbs
+lemon segments	lemons
 green split peas	peas
-cornstarch, sifted	cornstarch
+whole green cardamom	cardamom
 chocolate hazelnut spread	chocolate
 large onion, peeled and finely chopped	large onion
 red bell peppers, seeded and cut into quarters	red bell peppers
-chick peas, borlotti beans or pinto beans	chick peas
 poppy seed rolls	rolls
 chopped semisweet chocolate	semisweet chocolate
 peaches, sliced (about 4 cups)	peaches
 moroccan almond-argan butter	butter
 chocolate coating	chocolate
-blueberries, or a mix of blueberries	blueberries
+canola oil, for greasing	canola oil
 fregola or israeli couscous	couscous
 ancho chile powder	chile powder
 resh chili, seeded, stemmed and minced	chilis
@@ -4313,7 +4316,7 @@ slivered almonds	almonds
 white and black sesame seeds, toasted	black sesame seeds
 (8-ounce) packages cream cheese, at room temperature	cream cheese
 freshly ground black pepper or to taste	freshly ground black pepper
-unseasoned bread crumbs	bread crumbs
+clear rum	rum
 ripe red tomatoes	tomatoes
 sugar snap peas, stemmed	sugar snap peas
 heavy cream, room temperature	heavy cream
@@ -4365,11 +4368,10 @@ cheese croutons	croutons
 butter for the pan	butter
 15-ounce can chickpeas	chickpeas
 swiss chard, kale	swiss chard
-croutons, preferably homemade	croutons
+ajwain seeds	seeds
 crusty italian bread	breads
-fresh ham	ham
 crumbled blue cheese	blue cheese
-sweet rice flour	rice flour
+semihard cheese	cheese
 preserved lemon juice	lemon juice
 eggs, at room temperature, separated	eggs
 dry black beans	black beans
@@ -4386,15 +4388,17 @@ fresh blackberries	blackberries
 large shallot, finely chopped	shallots
 pheasant stock	stock
 baby green beans	green beans
-unsalted butter at room temperature, plus butter for greasing the souffle dishes	unsalted butter
+medium eggplants	eggplants
 dried chickpeas	chickpeas
 toasted cumin seeds, ground	cumin seeds
+can organic vegetable broth	vegetable broth
 jalepeno pepper	peppers
 sweet red peppers	red peppers
 hazelnuts, pecans or walnuts	hazelnuts
 soft rye-bread crumbs (a mix of large and small pieces, without caraway seeds)	crumbs
 beef bouillon	beef
 plain yogurt or sour cream, plus more for garnish	plain yogurt
+chinese or japanese dried mushrooms	dried mushrooms
 can tomatoes, seeded and chopped, with juice	tomatoes
 raw walnuts	walnuts
 lemon (meyer if possible)	lemons
@@ -4409,8 +4413,8 @@ pacific cod	cod
 fresh shiitake mushrooms, stemmed and sliced (discard the stems or use for stock)	shiitake mushrooms
 pork lard	lard
 white and pale green parts of 1 pound of leeks (about 4 medium), chopped	leeks
-chopped fresh rosemary leaves	rosemary leaves
 drained yogurt or thick greek-style yogurt	drained yogurt
+ground turmeric, optional	ground turmeric
 grapefruit peel	grapefruits
 apple, sliced thin	apples
 ham broth	broth
@@ -4421,7 +4425,7 @@ slivered thai basil leaves	basil leaves
 amaretto or grand marnier	grand marnier
 strawberry liqueur	liqueur
 scant 1 1/3 cups cool milk, preferably whole or 2 percent (warm the milk to at least 70 degrees if you???re working by hand)	milk
-frizzled leeks (see recipe below)	leeks
+turkey necks	turkeys
 soba sauce	sauce
 non-chlorinated water	water
 baby cilantro	cilantro
@@ -4429,9 +4433,8 @@ italian sausages	sausages
 grated or finely chopped red onion (optional)	red onions
 chili pepper	chili peppers
 large shiitake mushrooms	shiitake mushrooms
-fresh shiitake mushroom caps	mushroom caps
 lemon wedge	lemons
-large firm eggplants	eggplants
+head broccoli	broccoli
 serrano or other fresh chili pepper	serranos
 sparkling water	water
 yellow plantains	plantains
@@ -4458,11 +4461,11 @@ pasta (spaghetti, ziti, penne, or fusili)	pasta
 shaoxing wine or dry sherry	dry sherry
 firm (chinese) bean curd	firm
 pacific cod or pacific sea bass fillets	cod
-crispy shallots	shallots
+rendered chicken fat	chickens
 roast of beef	beef
 yam	yams
 cayenne pepper to taste	cayenne peppers
-chopped dried apricots	dried apricots
+garlic, peeled and crushed with the side of a knife	garlic
 fresh mint leaves	mint leaves
 grated swiss cheese	cheese
 head escarole	escarole
@@ -4538,11 +4541,11 @@ yukon potatoes, peeled, roughly chopped	potatoes
 split chickpeas	chickpeas
 roast of lamb	lamb
 hemp seeds	seeds
-chopped fresh mint or parsley, or a combination	chopped fresh mint
+chicken drumsticks	chickens
 chopped crystalized ginger	ginger
 beefeater gin	gin
 extra virgin olive oil, to taste	extra virgin olive oil
-yellow cherry tomatoes	cherry tomatoes
+blood orange peel	orange peel
 small lobsters, about 1 1/4 pounds each	lobsters
 a 2-inch piece of ginger, peeled, julienned, cut into 1??? lengths	ginger
 pomegranate seeds, optional	pomegranate seeds
@@ -4558,16 +4561,16 @@ green olive	green olives
 pitted kalamata olives	kalamata olives
 cooked chickpeas	chickpeas
 scotch bonnet	scotch
-italian prune plums	plums
+baking potato	potato
 cooked quinoa, (1 cup uncooked)	quinoa
 leaf lettuce or radicchio	radicchio
 grano duro flour or unbleached all-purpose flour	unbleached all-purpose flour
 chopped white onion	white onions
 shelling beans	beans
-teff polenta	polenta
+all-purpose flour (2 cups)	all-purpose flour
 butternut squash, peeled and diced	butternut squash
 london broil, top round or flank steak	london broil
-chocolate curls	chocolate
+coarsely ground sirloin	sirloin
 sheets phyllo dough	phyllo dough
 onions, peeled, roughly chopped	onions
 mushrooms, chopped	mushrooms
@@ -4575,7 +4578,7 @@ tarragon, dill or parsley	tarragon
 sushi grade or ahi tuna	tuna
 medium ripe avocados	avocados
 mahlepi flavoring	flavoring
-chile pepper	peppers
+dry yellow mustard	mustard
 fresh ginger, grated (or 1 teaspoon powdered ginger)	fresh ginger
 lard, bacon drippings or vegetable oil	lard
 minced flat-leaf parsley	flat-leaf parsley
@@ -4609,7 +4612,7 @@ hot chili flakes	chili flakes
 diced european or japanese cucumber	cucumbers
 cheese tortellini	cheese
 medium barley	barley
-chili pepper flakes	pepper flakes
+corn bread	breads
 flounder or any firm white-fleshed fish	flounder
 coriander seed	coriander seeds
 finely chopped zest of 1 orange, preferably organic	oranges
@@ -4617,7 +4620,7 @@ rustic bread	breads
 chicken, 3 1/2 to 4 pounds; washed, patted dried, legs and wings trussed	chickens
 dried red new mexico chiles	chiles
 green cabbage (1 medium head), cored and cut crosswise in 3/4-inch wide ribbons	green cabbage
-arugula greens	greens
+thai red curry paste	paste
 john cope's toasted dried sweet corn	sweet corn
 chopped fresh thyme leaves	fresh thyme leaves
 feta, crumbled	feta
@@ -4628,8 +4631,7 @@ white or black pepper	black pepper
 egg beaten with 1 teaspoon milk, for egg wash	milk
 inely chopped parsley	chopped parsley
 barely cooked vegetables	vegetables
-tart crust	crust
-whole leeks, white and light green parts, sliced crosswise into 1/8-inch-wide pieces (to make about 4 cups), and thoroughly rinsed	leeks
+quahog clams	clams
 garlic clove, cut in half	garlic cloves
 chopped ginger	ginger
 head of leaf lettuce or romaine	romaine
@@ -4678,7 +4680,7 @@ sweet apples	apples
 dark-meat chicken	chickens
 matcha powder	powder
 (1 1/4 sticks) unsalted butter, at room temperature	unsalted butter
-boneless pork loin chops	pork loin
+whipped creme fraiche	creme fraiche
 atlantic salmon (2 1/4 inches at thickest point), scaled and cleaned, gills removed, head and tail on, interior cavity well washed	salmon
 grande liqueur de sapins	liqueur
 zucchini or other green summer squash	zucchinis
@@ -4690,7 +4692,7 @@ chopped shiitake caps	shiitake caps
 suet pastry	pastry
 (15-ounce) can cannelini beans or borlotti beans, drained through a strainer and rinsed	beans
 currant jelly	jelly
-soy milk or almond milk	milk
+finely shredded cored napa cabbage	napa cabbages
 salt, preferably kosher salt	salt
 canned diced tomatoes	tomatoes
 orange or lemon zest	lemon zest
@@ -4701,15 +4703,15 @@ dash of salt	salt
 sweet red pepper, cut into 1/2-inch cubes	sweet red pepper
 cornstarch or arrowroot dissolved in 2 tablespoons vegetable stock or water	cornstarch
 ground garam masala	garam masala
-shredded cabbage for the tacos	cabbage
+chopped fresh basil leaves	fresh basil leaves
 chicken soup	chickens
 dozen littleneck clams, cleaned	littleneck clams
 cooked red rice	rice
-chopped sweet bell pepper	bell peppers
+chanterelle mushrooms	mushrooms
 thick greek style yogurt or drained yogurt	drained yogurt
 smoked haddock	haddock
 cerignola olives	olives
-plain low-fat (not nonfat) greek yogurt	greek yogurt
+dried shrimp	shrimps
 tightly packed, mixed baby greens, such as kale, red chard, and spinach	tightly packed
 chocolate flowers	chocolate
 coarsely chopped onions	onions
@@ -4727,7 +4729,6 @@ bluefish fillet	bluefish fillets
 grapeseed or other unflavored oil	grapeseed
 small cucumber, halved, seeded and thinly sliced on the diagonal	cucumbers
 hot red pepper sauce	sauce
-chipotle chili	chilis
 hot red peppers	red peppers
 flax seed	seeds
 slivered fresh basil (optional)	fresh basil
@@ -4752,6 +4753,7 @@ small to medium zucchini	zucchinis
 large or 2 medium leeks, white and light green part only, cleaned and sliced	leeks
 whole breast of lamb	lamb
 red-hot pepper flakes	pepper flakes
+crisp apples	apples
 liquid brine	liquid
 large shallot, finely sliced	shallots
 whole chestnuts	chestnuts
@@ -4813,7 +4815,7 @@ light olive oil or vegetable oil	olive oil or vegetable oil
 chopped roasted peppers	peppers
 1/2-inch thick slices eggplant (depending on the size of the eggplant)	eggplants
 new mexico or poblano green chili	green chilis
-medium-bodied red wine	red wine
+cherrystone clams	clams
 fresh berries	berries
 pearl tapioca	tapioca
 torn fris??e	fris??e
@@ -4823,7 +4825,7 @@ elderflower liqueur	liqueur
 chicken or vegetable stock, or hot water	vegetable stock
 unsweetened cocoa powder (preferably dutch process)	unsweetened cocoa powder
 pear eau de vie	pears
-hot smoked paprika	smoked paprika
+apry liqueur	liqueur
 fava beans in the pod	fava beans
 ground clove, as needed	cloves
 medium size beets, roasted	beets
@@ -4840,7 +4842,7 @@ toasted flaxseeds	flaxseeds
 sweet and hot peppers	peppers
 lemon thyme or regular thyme	thyme
 heaped tablespoons capers, rinsed and drained	capers
-whole wheat spaghetti	spaghetti
+lasagna noodles	noodles
 grain cereal or rolled oats	rolled oats
 kombu stock	stock
 swedish brown beans	beans
@@ -4857,15 +4859,14 @@ cocoa-infused tequila	tequila
 summer squash, cut in 1/2-inch dice	summer squash
 cranberry juice	juice
 candied violets	violets
-creamer potatoes	potatoes
-graham-cracker crumbs	crumbs
+firm baby zucchini, or 5 small zucchini	zucchinis
 extra-bitter chocolate	chocolate
 apricot paste	paste
 penne pasta	pasta
 mint, cilantro or parsley	mint
 medium to large onion, sliced	large onion
 borlotti or other dried beans	beans
-saut??ed mushrooms	mushrooms
+grated orange zest	orange zest
 tuna belly	tuna
 italian parmesan	parmesan
 good red-wine vinegar	red-wine vinegar
@@ -4905,7 +4906,7 @@ sweet cherry tomatoes	cherry tomatoes
 whole red bell pepper	red bell peppers
 lini lambrusco bianco, or other sparkling white wine	white wine
 vietnamese or thai fish sauce	fish sauce
-carrot pur??e or carrot juice	juice
+home-preserved or commercial canned tomatoes	tomatoes
 cayenne pepper or hot sauce	hot sauce
 leftover turkey carcass and meaty bones	turkeys
 leaf lettuces	lettuces
@@ -4918,6 +4919,7 @@ celery, diced	celery
 red and yellow bell pepper	yellow bell peppers
 coarsely shredded zucchini	zucchinis
 fresh chopped parsley leaves	parsley leaves
+old overholt rye whiskey	rye whiskey
 flat-leaf parsley sprigs	flat-leaf parsley
 fresh strawberries	strawberries
 green peppercorns packed in brine, rinsed	peppercorns
@@ -4935,6 +4937,7 @@ small japanese eggplants, trimmed and cut into 1/2-inch cubes	eggplants
 rice sticks	rice
 ricotta salata, grated, or 2 ounces crumbled goat cheese	ricotta salata
 red-currant jelly	jelly
+smoked autumn vegetables	vegetables
 semisoft asiago cheese	cheese
 swiss chard leaves	leaves
 toasted sesame seeds for garnish	sesame seeds
@@ -4974,7 +4977,7 @@ frying chickens, each in 10 pieces, wingtips discarded	chickens
 ???00??? fine italian bread flour	bread flour
 cumin powder	cumin
 coconut flesh	coconuts
-krusovice cerne beer	beer
+eggs yolks	eggs
 bite-size pieces of meat or shellfish (precooked is o.k.)	meat
 chinese mushrooms	mushrooms
 young string beans, trimmed	beans
@@ -4984,7 +4987,7 @@ carrot, trimmed and chopped	carrots
 sweet corn kernels	corn kernels
 oil-packed sun-dried tomatoes	sun-dried tomatoes
 goat cheese (1/2 of a 12-ounce log)	goat cheese
-cr??me fra??che, for serving	cr??me fra??che
+bulb green garlic	green garlic
 purple grapes	grapes
 lemon vodka	vodka
 orecchiette pasta	pasta
@@ -5077,7 +5080,7 @@ rib-eye or other well-marbled steak	rib-eye
 peanut or other vegetable oil	peanuts
 finely cut chives	chives
 red bell pepper, cut in 2-inch julienne	red bell peppers
-dry white wine such as pinot grigio or sauvignon blanc	sauvignon blanc
+dry (fino) sherry	sherry
 walnut pieces, toasted	walnut pieces
 extra-large eggs at room temperature, separated	extra-large eggs
 onion or spring onion	onions
@@ -5087,7 +5090,7 @@ chopped parsnip	parsnips
 pitted green olives	green olives
 boneless beef short ribs	beef
 whole italian parsley leaves	italian parsley leaves
-plus 2 tablespoons sugar	sugar
+skinless, boneless chicken breast	chicken breasts
 baguette slices	baguettes
 pasta noddles	pasta
 greek olives	olives
@@ -5100,7 +5103,7 @@ coarse salt, pepper, sesame or poppy seeds	coarse salt
 brown rice flour	rice flour
 red chard	chard
 bakery bread	breads
-roasted red peppers	red peppers
+easy oven-baked polenta	polenta
 clams or mussels, well washed	clams or mussels
 12-ounce bag baby spinach, washed	baby spinach
 passion-fruit puree	puree
@@ -5142,7 +5145,7 @@ grated cheese, preferably half colby and half monterey jack	cheese
 garganelli pasta	pasta
 roasted peanuts	peanuts
 mild honey, such as clover	mild honey
-jalape??o, stemmed, seeded and finely chopped	jalape??os
+finely chopped ginger	ginger
 banana, mango and raspberries	bananas
 red turnips	turnips
 dried cannellini beans	cannellini beans
@@ -5157,7 +5160,7 @@ chopped tarragon	tarragon
 apricot brandy	brandy
 brisket (6 to 7 pounds)	brisket
 small head radicchio	radicchio
-beaten egg, for brushing	eggs
+chopped fresh dill, chives or parsley for garnish	chopped fresh dill
 pomegranate syrup	syrup
 dried ginger	ginger
 dark cocoa powder	cocoa powder
@@ -5166,7 +5169,7 @@ melted shortening	shortening
 green (unripe) papaya	greens
 cacha??a or pineapple juice	pineapple juice
 melted bacon grease	bacon
-fresh rice noodles	rice noodles
+fresh green tomatillos, diced	tomatillos
 pastry for a 9-inch pie shell	pastry
 extra-virgin olive oil, for drizzling	extra-virgin olive oil
 finely ground white pepper	white pepper
@@ -5179,7 +5182,7 @@ head bibb or boston lettuce	boston lettuce
 kosher chicken	chickens
 several large thyme sprigs	thyme
 head green cabbage	green cabbage
-chicken breasts with skin	chicken breasts
+basic soft polenta	polenta
 rustic white bread	white bread
 garlic cloves, peeled, julienned	garlic cloves
 gluten-free spaghetti	spaghetti
@@ -5193,7 +5196,6 @@ puffed brown rice cereal	brown rice
 peeled shrimp	shrimps
 plus 1 teaspoon fresh lemon or lime juice	lime juice
 croutons or toasted tortilla chips	croutons
-dry (fino) sherry	sherry
 unsweetened pumpkin pur??e	pumpkin pur??e
 (squares) semisweet chocolate, chopped	semisweet chocolate
 cooked red jasmine rice	rice
@@ -5216,11 +5218,11 @@ pancetta, minced	pancetta
 cold bitter lemon soda	lemons
 sour milk	milk
 cumin, or to taste	cumin
-rendered duck fat	duck fat
+watermelon wedge	watermelon
 toffee sauce	sauce
 heads fris??e	fris??e
 chopped fennel fronds, for garnish	fennel fronds
-large red bell pepper, diced	red bell peppers
+small firm, ripe avocados	avocados
 large onion, sliced	large onion
 can chili hot kidney beans, drained	kidney beans
 dried funghi porcini mushrooms	porcini mushrooms
@@ -5232,9 +5234,9 @@ porcini mushroom	porcini
 tomato, cut in half	tomato
 pizza dough (store-bought is fine, or make your own)	pizza dough
 coarse salt and freshly ground black pepper	salt and freshly ground black pepper
-vegan butter substitute, like earth balance	butter
+milk, or as needed	milk
 italian style shredded cheese blend	cheese
-neutral oil, like grapeseed or corn	neutral oil
+milk, slightly warmed	milk
 cloves garlic, chopped	cloves garlic
 dried penne	penne
 red jalapeno chili	jalapeno chili
@@ -5251,7 +5253,7 @@ currant	currants
 mushroom soup	soup
 (15-ounce) can chick peas, drained and rinsed	chick peas
 salmon filet	salmon
-2-inch strip orange peel	orange peel
+hot peppers	peppers
 butter cookies	butter
 cooked quinoa (3/4 cup uncooked)	quinoa
 finely grated lemon zest	grated lemon zest
@@ -5269,9 +5271,10 @@ whole spice	spices
 korean red chile paste	paste
 salt, plus more for the sauce	salt
 finely chopped leeks	leeks
-tartar sauce	sauce
+dried garlic flakes	garlic
 pork shoulder or loin	pork shoulder
 american globe artichokes	artichokes
+pitted cherries	cherries
 large onion, finely chopped	large onion
 firm bartlett pears	pears
 safflower or canola oil	canola oil
@@ -5322,6 +5325,7 @@ japanese soba noodles	soba noodles
 fine-grain polenta	polenta
 smoked chicken	chickens
 bittersweet chocolate, melted and still warm	bittersweet chocolate
+verbena tea	tea
 prince mushrooms	mushrooms
 large oysters	oysters
 unsweetened chocolate, coarsely chopped	unsweetened chocolate
@@ -5359,7 +5363,7 @@ green-tomato chutney	chutney
 large russet potatoes (about 1 pound), scrubbed and cut lengthwise into quarters	russet potatoes
 extra-crunchy peanut butter	peanut butter
 whole garlic cloves	garlic cloves
-fresh broccoli	broccoli
+beef bouillon cube	beef
 parchment paper and cornmeal	cornmeal
 deglet noor dates	dates
 lightly packed chopped fresh parsley	chopped fresh parsley
@@ -5377,7 +5381,7 @@ cold strong coffee	coffee
 red currant jam	jam
 littleneck clams, scrubbed	littleneck clams
 black beans or vegetables or sour cream	black beans
-rye bread	breads
+basil-butter sauce	sauce
 black olives as desired	black olives
 spaghetti alla chitarra	spaghetti
 cippollini onions	onions
@@ -5391,7 +5395,7 @@ chopped fresh dill, parsley or mint	chopped fresh dill
 thinly sliced scallions	scallions
 strong veal stock	veal stock
 albacore or yellowfin tuna	tuna
-baking potato	potato
+italian prune plums	plums
 cracked black pepper, for garnish.	black pepper
 boston or bibb lettuce	bibb lettuces
 angel food cake	cake
@@ -5436,14 +5440,13 @@ small or 1/2 medium red onion, peeled and very thinly sliced	red onions
 grapefruit twist	grapefruits
 squeeze of lime	limes
 black calamata olives	calamata olives
-cooked arborio or carnaroli rice (1/2 cup raw)	arborio
 grated dried unsweetened coconut	coconuts
 grated greek kefalotyri cheese	cheese
 parsnip	parsnips
 beef patties	beef
 napa cabbage, cored, leaves finely julienned	napa cabbages
 cabbage or napa cabbage	napa cabbages
-fresh coriander leaves, chopped	coriander leaves
+chopped sage	sage
 pine nuts, lightly toasted.	pine nuts
 tomatoes, in 1/4-inch dice	tomatoes
 good-quality white bread, crusts removed, each cut in 1/2 on the diagonal	white bread
@@ -5504,7 +5507,7 @@ orzo pasta	pasta
 kale, finely chopped, loosely packed	kale
 chayote squash	squash
 iceberg lettuce leaves	lettuce leaves
-dry egg noodles	egg noodles
+clean veal	veal
 cut pasta	pasta
 steamed mussels	mussels
 red jalapeno chile	jalapenos
@@ -5523,13 +5526,12 @@ chopped candied lemon peel	lemon peel
 japanese soba	soba
 boneless veal loin roast, tied at 1/4-inch intervals	veal
 yellow lentils	lentils
-70-percent-cacao dark chocolate	chocolate
+punt e mes or other sweet vermouth	sweet vermouth
 sweet kosher wine	wine
 fresh cilantro leaves	cilantro leaves
 bay leaf, lightly bruised	bay leaf
 ginger liqueur (domaine de canton)	liqueur
 coarsely chopped parsley	chopped parsley
-fresh shiitake or dried shiitake mushrooms that have been soaked 1-2 hours, stemmed and thinly sliced	shiitake mushrooms
 black pepper, to taste	black pepper
 flaky sea salt and ground black pepper	salt and ground black pepper
 whole-wheat bread flour, plus flour to sprinkle surface	bread flour
@@ -5570,9 +5572,9 @@ cookie dough	dough
 olive or other oil	olives
 gypsy peppers, or mixture of red, yellow and orange peppers	peppers
 soaked pumpkin seeds	pumpkin seeds
-mint leaves, cut in thin slivers	mint leaves
+red bell peppers, seeded, membranes removed, cut in large dice	red bell peppers
 red sweet peppers	sweet peppers
-chopped toasted almonds	almonds
+fine dry unseasoned bread crumbs	bread crumbs
 dry masa	masa
 diastatic malt powder	powder
 whole chicken	chickens
@@ -5583,7 +5585,7 @@ rump roast	roasts
 poblano chile	chiles
 yellow cornmeal, preferably stone-ground	yellow cornmeal
 water, coconut milk or vegetable stock	water
-nonhydrogenated margarine	margarine
+extra-large egg	eggs
 spinach mayonnaise	mayonnaise
 large vidalia onions	onions
 red or orange chili peppers	chili peppers
@@ -5597,7 +5599,7 @@ cassis syrup	syrup
 finely chopped fresh marjoram or 1/2 teaspoon dried	marjoram
 parsley leaves, chopped	parsley leaves
 dry hijiki seaweed	seaweed
-ground turmeric, optional	ground turmeric
+basil, preferably thai	basil
 mint jelly	mint
 hayman???s old tom gin or any gin	gin
 large eggplants	eggplants
@@ -5612,7 +5614,7 @@ lean lamb	lamb
 leftover turkey meat	turkeys
 grapeseed oil, or other neutral oil	grapeseed oil
 hot red-pepper sauce	sauce
-small apricots	apricots
+roquefort style blue cheese	blue cheese
 capers, coarsely chopped	capers
 onion sprouts	onions
 large garlic clove, quartered	garlic cloves
@@ -5627,7 +5629,6 @@ plus 16 cloves	cloves
 basil oil	oil
 instant couscous	couscous
 rack of lamb	lamb
-cippoline onions or spring onions	spring onions
 large endive, trimmed, and cut into diagonal slices, 1-inch wide	endives
 fresh taleggio	taleggio
 bananas, mashed with a fork until smooth	bananas
@@ -5646,7 +5647,7 @@ sour cream or heavy cream, or a combination of the two	sour cream
 vietnamese coriander	coriander
 cumin seed	cumin seeds
 zest of one lime	limes
-medium-size russet potato, about 10 ounces, peeled and diced	potato
+finely grated zest of a lemon	lemons
 mirin or 1 teaspoon sugar, or to taste	mirin
 xtra-virgin olive oil	olive oil
 old forester bourbon	bourbon
@@ -5656,13 +5657,12 @@ blanched kale	kale
 buttermilk biscuits	buttermilk
 whole bay leaves	bay leaves
 swiss chard, stemmed and washed in several changes of water, stems diced and set aside	swiss chard
-torn greens	greens
+guajillo chilies	chilies
 regular or red quinoa	quinoa
 anaheim peppers	peppers
 chimichurri salsa	salsa
 dark or golden raisins	golden raisins
 pastry shell	pastry
-sausage meat in bulk	sausage meat
 soup pasta	pasta
 can tomatoes	tomatoes
 sweet tart pastry	pastry
@@ -5677,7 +5677,6 @@ fresh corn	corn
 turkey legs	turkeys
 scotch bonnet peppers	peppers
 korean-style beef short ribs	beef
-red and green bell peppers	green bell peppers
 zucchini, cut in ??-inch slices	zucchinis
 flaky white fish	fish
 bone-in beef short ribs	beef
@@ -5749,7 +5748,7 @@ capers, preferably salt-packed, rinsed, pressed dry on paper towels and coarsely
 roasted winter vegetable medley	vegetables
 nonstick oil spray	oil
 italian sausage, cut up	italian sausage
-vya sweet vermouth	sweet vermouth
+parsley, tarragon and chervil and fennel fronds	parsley
 cinnamon powder	cinnamon
 slivered basil	basil
 chocolate satin frosting	chocolate
@@ -5757,11 +5756,11 @@ orzo macaroni	orzo
 clotted cream	cream
 passion fruit syrup	syrup
 sweet marsala wine	wine
-mixed mushrooms	mushrooms
-fine dry unseasoned bread crumbs	bread crumbs
+(1 cup, 8 ounces) unsalted butter, at room temperature	unsalted butter
+chopped toasted almonds	almonds
 large white or yellow onions	yellow onions
 ground turkey	turkeys
-pernod or pastis	pernod
+diced rhubarb stalks	rhubarb
 pork shoulder, trimmed of excess fat and cut into chunks	pork shoulder
 fresh lump crab meat	lump crab meat
 kosher salt and freshly ground black pepper to taste	kosher salt and freshly ground black pepper
@@ -5793,7 +5792,7 @@ yellow onions, peeled	yellow onions
 salmon fillet	salmon fillets
 black mustard seed	mustard
 small red beans	beans
-turkey or smoked turkey, sliced	turkeys
+southeast asian fish sauce	asian fish sauce
 cayenne pepper	cayenne peppers
 hot italian sausages	sausages
 lamb shoulder in 2-inch chunks, with bone	lamb shoulder
@@ -5801,10 +5800,9 @@ tarragon sprigs	tarragon
 cooked shrimp with spices	shrimps
 fresh-shaved parmesan (optional)	parmesan
 organic dark brown sugar	dark brown sugar
-gosling's black seal rum	rum
 medium tomatoes, diced	tomatoes
 mung-bean sprouts	sprouts
-extra-large egg	eggs
+nonhydrogenated margarine	margarine
 saffron stems	saffron
 red lettuce leaves	lettuce leaves
 fenugreek leaves	leaves
@@ -5827,7 +5825,7 @@ vegetable oil, plus 3 cups or as needed for deep frying	vegetable oil
 empanada dough	dough
 long-grain rice, optional	long-grain rice
 whole chicken livers	chicken livers
-long-grain converted rice	rice
+canned organic tomato sauce	tomato sauce
 finely chopped shallots	shallots
 vegetarian oyster sauce	oyster sauce
 dried chipotle	chipotles
@@ -5844,7 +5842,7 @@ extra-virgin coconut oil	coconut oil
 fresh oregano, chopped	fresh oregano
 sorel liqueur	liqueur
 fresh lemon juice or sherry vinegar (more to taste)	fresh lemon juice or sherry vinegar
-medium carrots	carrots
+low-fat (1 percent or 2 percent) milk	milk
 freshly grated parmesan to taste	freshly grated parmesan
 finely ground juniper berries	juniper berries
 vanilla extract (to taste)	vanilla extract
@@ -5880,7 +5878,7 @@ lamb's lettuce	lettuces
 bony parts of chicken, such as the backs and necks	chickens
 white or borlotti beans	beans
 hairy melons	melons
-water, chicken stock, or vegetable stock	water
+cajun andouille sausage	sausages
 strawberry sauce	sauce
 linguica sausage	sausages
 slivered mint leaves	mint leaves
@@ -5891,12 +5889,11 @@ lime butter	butter
 lightly toasted cumin	cumin
 ramen noodles	noodles
 thinly sliced prosciutto, cut in small pieces	prosciutto
-farmer's cheese	cheese
+tuna loin	tuna
 chickpea broth	broth
 (10 tablespoons) very cold (frozen is fine) unsalted butter, cut into 10 pieces	unsalted butter
-plus 1 teaspoon chili powder	chili powder
-skyy vodka	vodka
-coarse dry bread crumbs	dry bread crumbs
+chile pepper	peppers
+canned imported italian plum tomatoes	italian plum tomatoes
 fresh tomatoes	tomatoes
 lemon or lime wedges	lime wedges
 green pears	pears
@@ -5911,7 +5908,6 @@ small red potatoes, halved	red potatoes
 mango sorbet	mangos
 finely grated zest of 2 limes	limes
 cayenne, or to taste	cayenne
-whole peeled tomatoes	tomatoes
 fresh chives, minced	chives
 green cabbage in 1-inch dice	green cabbage
 korean red pepper paste	red peppers
@@ -5947,8 +5943,7 @@ salad oil	oil
 harissa paste	harissa
 can chickpeas	chickpeas
 nitrite-free ham	ham
-coarse-grained mustard	mustard
-truffle butter, chilled and cut into tiny pieces, optional	butter
+parsley stems	parsley
 shredded red or green cabbage	green cabbage
 turmeric root	turmeric
 unsalted butter or olive oil	butter or olive oil
@@ -5966,6 +5961,7 @@ grated v??sterbotten or parmesan cheese.	parmesan
 mung bean	beans
 thick greek-style or drained yogurt	drained yogurt
 salted water	water
+goat's cheese	cheese
 dark-brown sugar	sugar
 coarsely chopped fresh thyme	fresh thyme
 mild feta cheese	feta cheese
@@ -5989,14 +5985,14 @@ fresh thyme or rosemary	thyme or rosemary
 activated charcoal powder	powder
 white creme de menthe	creme de menthe
 black peppers	peppers
-dry sparkling wine	wine
+ancho chili powder	chili powder
 liquid pectin	pectin
 poppy seed	poppy seeds
 parmesan, grated	parmesan
 buttermilk or whole milk, at room temperature	buttermilk
 cooked fresh corn kernels	corn kernels
 cippolini or other sweet onion	sweet onion
-sun dried tomatoes	tomatoes
+sweetened whipped cream	whipped cream
 assorted herbs	herbs
 whole-wheat bread crumbs	bread crumbs
 yellow zucchini squash	squash
@@ -6065,7 +6061,7 @@ shredded dried unsweetened coconut	coconuts
 chick peas, washed and picked over, soaked for 6 hours or overnight in 1 quart water	chick peas
 italian black olives	black olives
 mirin or sweet sherry	mirin
-adzuki beans	beans
+baby cucumbers	cucumbers
 sungold cherry tomatoes	cherry tomatoes
 freshly ground nutmeg	ground nutmeg
 bottle of ketchup	ketchup
@@ -6129,7 +6125,6 @@ brandy-cured cherry	cherry
 small boned and skinned chicken breasts, about 2 1/2 ounces each, pounded thin	chicken breasts
 skinned salmon	salmon
 tomato demiglace	tomato
-persian cucumbers, finely diced	cucumbers
 freshly squeezed tangerine	tangerines
 canola oil or light sesame oil	canola oil
 lightly toasted coriander seeds	coriander seeds
@@ -6152,10 +6147,9 @@ maltaise sauce	sauce
 large carrots, peeled and grated	carrots
 shredded iceberg lettuce	iceberg lettuce
 flat-leaf parsley, torn or chopped	flat-leaf parsley
-pumpkin seed vinaigrette paste	pumpkins
 baby basil leaves	basil leaves
 15-ounce can of chickpeas	chickpeas
-firm feta cheese	feta cheese
+lean veal	veal
 dried glass noodles	noodles
 slices whole-wheat country bread	country bread
 cultured butter	butter
@@ -6169,7 +6163,7 @@ fresh chives	chives
 dry-fried noodles	noodles
 rice krispies cereal	rice
 raisins, for garnish	raisins
-yellow food coloring	food coloring
+chicken sausage	sausages
 whole cumin seeds	cumin seeds
 regular green beans	green beans
 shoulder of beef	beef
@@ -6200,8 +6194,7 @@ head bibb lettuce	bibb lettuces
 summer fruit	fruits
 fresh gingerroot	gingerroot
 tender pie dough	dough
-sun-dried tomato halves	tomato
-tuna loin	tuna
+whole-wheat or multigrain bread	whole-wheat
 guajillo chile	chiles
 guajillo chili	chilis
 chanterelle	chanterelles
@@ -6210,7 +6203,6 @@ crushed ice	ice
 gluten-free dessert pastry	pastry
 ears corn	corn
 coconut milk (do not shake can)	coconut milk
-sherry wine vinegar	wine vinegar
 poire liqueur	liqueur
 strawberries, washed and hulled	strawberries
 medium peaches	peaches
@@ -6219,7 +6211,7 @@ duck-and-veal demi-glace	demi-glace
 rich chicken broth	chicken broth
 golden syrup	syrup
 grated parmesan to taste	grated parmesan
-chinese rice vinegar	rice vinegar
+cooked chick peas (canned are fine), rinsed	chick peas
 whole wheat spaghetti, or tonnarelli	spaghetti
 dry white table wine	wine
 finely crumbled saltine crackers	crackers
@@ -6229,9 +6221,10 @@ cranberry or other beans	beans
 vidalia onions, or other sweet onions	onions
 vegetable bouillon	vegetables
 hot red chili pepper	red chili peppers
+frozen edamame	edamame
 whole goat???s milk	milk
 salt and pepper, to taste	salt and pepper
-guajillo chilies	chilies
+torn greens	greens
 small bananas, mashed	bananas
 for the walnuts: (purchased candied walnuts may be substituted)	walnuts
 egg, slightly beaten	eggs
@@ -6265,7 +6258,6 @@ long grain rice	rice
 rosemary-orange oven-dried tomatoes	tomatoes
 cranberry liqueur	liqueur
 pink sea salt	sea salt
-basic tart dough	dough
 medium cabbage	cabbage
 french bread, crusts removed, cut in 1/4-inch cubes, enough to make 1 cup	french bread
 beef steak	beef
@@ -6277,6 +6269,7 @@ chopped fresh marjoram	marjoram
 veal medallions	veal
 tapioca flour	flour
 tablespoon extra-virgin olive oil	extra-virgin olive oil
+large garlic clove, minced	garlic cloves
 preserved duck meat	ducks
 slices seeded sandwich bread	breads
 teaspoon unsalted butter for the dish	unsalted butter
@@ -6292,7 +6285,7 @@ flageolet beans	beans
 spinach leaves and stems, washed well, drained, and squeezed dry	spinach leaves
 arborio rice, cooked	arborio rice
 shredded unsweetened coconut	coconuts
-sprig thyme	thyme
+persian cucumbers, finely diced	cucumbers
 salt (to taste)	salt
 red-chile pepper	peppers
 corn, husked, silked and cut into thirds	corn
@@ -6302,6 +6295,7 @@ nam pla (fish sauce)	nam pla
 large red bell pepper	red bell peppers
 danish dough	dough
 deglazing liquid	liquid
+farmer's cheese	cheese
 tomato and cucumber	tomato
 tree ear mushrooms	mushrooms
 fresh white mushrooms or fresh shiitakes, cleaned	white mushrooms
@@ -6309,7 +6303,7 @@ fleur de sel or other flaky sea salt	fleur de sel
 veal knuckle	veal
 salt, preferably fleur de sel, and freshly ground white pepper	salt
 minced dried shrimp	shrimps
-jelly beans	beans
+extra virgin olive oil for drizzling	extra virgin olive oil
 bouquet garni made	bouquet garni
 crab	crabs
 whole clove	cloves
@@ -6323,7 +6317,6 @@ chicken stock or water	stock or water
 dark brown sugar (or about 1/4 cup packed), more for sprinkling	dark brown sugar
 kosher salt to taste	salt to taste
 natural cocoa powder	cocoa powder
-red burgundy wine	wine
 hot chocolate	chocolate
 braciola steak	steaks
 grated orange or lemon rind	lemon rind
@@ -6339,7 +6332,7 @@ sweet or smoky paprika	paprika
 dried red pepper	red peppers
 dark chocolate squares	chocolate
 korean rice cakes	rice
-large egg, lightly beaten with 3 tablespoons water	large eggs
+tientsin bok choy	bok choy
 reshly ground pepper	ground pepper
 cooked lobsters	lobsters
 bulk pork breakfast sausage	pork
@@ -6365,7 +6358,6 @@ chopped fresh parsley, or a mixture of parsley and thyme	chopped fresh parsley
 wild mushrooms or cultivated exotic mushrooms	wild mushrooms
 salt cod fillets	cod fillets
 bunch of kale	kale
-loosely packed cilantro leaves	cilantro leaves
 lovage leaves	leaves
 bittersweet or semisweet chocolate	semisweet chocolate
 pear vinegar or balsamic vinegar	balsamic vinegar
@@ -6379,7 +6371,7 @@ tart cherries	cherries
 sugar or apple-cider syrup	sugar
 brown sugar, turbinado sugar or dark agave nectar	brown sugar
 cornstarch (about 2 tablespoons)	cornstarch
-large zucchini	zucchinis
+chopped dried fruit	fruits
 red snapper	red snappers
 hot-red pepper flakes	pepper flakes
 italian parsley leaves roughly chopped	italian parsley leaves
@@ -6414,7 +6406,7 @@ puff-pastry dough	dough
 turkish red pepper	red peppers
 medium yellow zucchini or summer squash	summer squash
 thinly sliced celery	celery
-fluke or halibut fillets	halibut
+basic tart dough	dough
 hamburger bun	hamburger buns
 medium carrots, unpeeled and cut in large chunks	carrots
 white cooking wine	wine
@@ -6432,7 +6424,7 @@ medium-to-large head cauliflower	cauliflowers
 grated dry jack or cheddar	cheddar
 flaky salt	salt
 dandelion greens	greens
-brandied cherry juice	juice
+water, vegetable stock or chicken stock	water
 black tea	tea
 ground almonds (or, if you???d prefer, omit the almonds and use another 1/2 cup all-purpose flour)	almonds
 fresh mixed wild mushrooms	wild mushrooms
@@ -6473,7 +6465,7 @@ garlic, peeled and chopped	garlic
 thin veal slices	veal
 sirloin, pork or lamb	sirloin
 cold sparkling water	water
-parsley, or a combination of parsley, tarragon and marjoram or chives	parsley
+soft-boiled eggs	eggs
 dry orecchiette	orecchiette
 shredded coconut	coconuts
 dark brown sugar (about 2 tablespoons)	dark brown sugar
@@ -6518,7 +6510,7 @@ turkey stuffing	turkeys
 vanilla bean pod	vanilla beans
 spaghetti sauce	sauce
 queso fresco or feta, crumbled	queso fresco or feta
-suze liqueur	liqueur
+chopped fresh parsley (optional)	chopped fresh parsley
 boneless pork chops, 4 ounces each, about 1/2-inch thick	pork chops
 lard, approximately 1 1/2 pounds, melted	lard
 lime powder	limes
@@ -6570,8 +6562,8 @@ grated aged pecorino cheese	pecorino cheese
 apple slice	apples
 big shallot, chopped fine	shallots
 ground beef chuck	beef chuck
-stolichnaya orange	oranges
-tart cooking apples	apples
+small pinch of cream of tartar	cream of tartar
+purple basil	basil
 capers (optional)	capers
 beef, veal, chicken, vegetable stock	beef
 finely minced yellow onions	yellow onions
@@ -6584,7 +6576,7 @@ cinnamon simple syrup	simple syrup
 whole head garlic	head garlic
 sliced onion	onions
 hot brewed espresso	espresso
-whole almonds	almonds
+bing cherries	cherries
 minced fresh thyme	fresh thyme
 reserved chocolate from ganache	chocolate
 popped corn	corn
@@ -6592,7 +6584,7 @@ chopped fresh rosemary or sage (to taste)	chopped fresh rosemary
 cream cheese at room temperature	cream cheese
 vinegar court-bouillon	vinegar
 green or beluga lentils	lentils
-chopped dates	dates
+finely chopped mint	chopped mint
 blueberries or other fruit	blueberries
 frozen mixed berries	berries
 fresh watercress for garnish	watercress
@@ -6618,7 +6610,7 @@ prune	prunes
 smoked pork butt	pork butt
 coarsely chopped scallions	chopped scallions
 cooked shell beans	shell beans
-broccolini or broccoli rabe	broccoli rabe
+fava beans, shelled	fava beans
 raw sugar or white sugar	white sugar
 cherry sauce	sauce
 orange slice	oranges
@@ -6640,12 +6632,13 @@ kahlua liqueur	liqueur
 chinese rice wine	rice wine
 sardine sauce	sauce
 lamb ribs	lamb
-(8 tablespoons) unsalted butter, at room temperature	unsalted butter
+summer squash, cut into 2-inch-thick slices, lengthwise	summer squash
+plain yogurt, buttermilk or sour cream	plain yogurt
 vegetable or canola oil	canola oil
 instant or dry active yeast	yeast
-red beans	beans
+unsweetened shredded coconut (1 cup)	coconuts
 dry couscous	couscous
-apple bitters	apples
+cashew nuts	nuts
 white or light miso	miso
 unsweetened coconut flakes	coconuts
 sweet muscat wine	wine
@@ -6654,7 +6647,7 @@ kalamata or oil-cured olives, chopped	olives
 chopped parsley to finish	chopped parsley
 thinly sliced onion (about one large onion)	onions
 polenta, noodles or rice	polenta
-bag dried corn husks, about 24	corn
+sausage meat in bulk	sausage meat
 sweet peppers (red, yellow, green), cut into slices about 3/4 inch wide by 1 1/2 inches long	sweet peppers
 parsley, tarragon or chives	parsley
 thinly sliced shallots	shallots
@@ -6671,7 +6664,7 @@ sweet chili sauce	chili sauce
 bean	beans
 ground lightly toasted cumin seeds	cumin seeds
 onion or scallions	scallions
-chinese hot peppers	peppers
+pad thai sauce	sauce
 pie crust	pie crusts
 peanut, canola, rice bran, sunflower or grape seed oil	peanuts
 bag presliced mushrooms	mushrooms
@@ -6680,12 +6673,12 @@ black-eyed peas, washed and picked over	black-eyed peas
 medium-large shrimp in their shells	shrimps
 finely diced green onions	green onions
 cointreau or other orange liqueur	cointreau
-ripe, fresh tomatoes, peeled if desired and finely chopped	ripe
-pastry flour	flour
+green thai chili	chilis
+graham-cracker crumbs	crumbs
 flanken ribs	ribs
 black currants	currants
 celery bitters	celery
-winter squash of your choice	winter squash
+fresh tarragon, removing and reserving the leaves of 1 sprig	fresh tarragon
 shaved pecorino	pecorino
 plain low-fat or nonfat yogurt	yogurt
 roasted beets	beets
@@ -6697,11 +6690,11 @@ canned tomatoes, diced	tomatoes
 garlic clove, minced	garlic cloves
 beef rib bones or short ribs, washed	beef
 cheese, preferably gruyere, cut into small cubes	cheese
-quick puff pastry	puff pastry
+pinch cayenne, or to taste	cayenne
 mixed green and yellow beans	beans
 orange tomato	tomato
 vietnamese fish sauce (nuoc mam)	vietnamese fish sauce
-yeast extract	yeast
+basil or basil-mint pesto	basil
 thai chilies	chilies
 cauliflower	cauliflowers
 white pineau des charentes	pineau des charentes
@@ -6716,7 +6709,7 @@ himalayan pink salt	salt
 nonstick cooking oil spray	cooking oil
 shell steaks	steaks
 toasted sunflower seeds	sunflower seeds
-strawberries, washed, hulled, and left whole	strawberries
+scallion tops	scallions
 medium onion, coarsely chopped	medium onions
 juice of 1 lemon, as needed, optional	juice
 preserves and creme fraiche	creme fraiche
@@ -6729,7 +6722,7 @@ lamb blade chops	lamb
 soaked split red lentils	red lentils
 leaf gelatin	gelatin
 3- to 4-pound cleaned salmon without the head, skin on	salmon
-la tur cheese	cheese
+waxy potatoes, scrubbed and sliced about 1/2 inch thick	waxy potatoes
 milk or almond beverage	milk
 parmesan, crumbled goat cheese or feta	parmesan
 whole red and yellow peppers	peppers
@@ -6744,11 +6737,10 @@ small red waxy potatoes (about 1/2 pound)	waxy potatoes
 poultry stock	stock
 ground mild chili powder	chili powder
 ricard pastis	pastis
-chopped fresh dill, cilantro, mint or chives for garnish	chopped fresh dill
 pink curing salt	salt
 overcooked meat or fish	fish
 loin steaks	steaks
-parsley, rosemary, sage and thyme	parsley
+dry vermouth, or a dry white wine	dry vermouth
 large fully cooked shrimp, cut in half lengthwise	shrimps
 capers, pickles, olives, cucumbers	capers
 half a small red bell pepper, cut into 1-inch dice	red bell peppers
@@ -6793,6 +6785,7 @@ whole peppercorns	peppercorns
 orange wheel	oranges
 italian sweet sausage	sausages
 korean rice wine	rice wine
+pineapple chunks	pineapples
 espresso coffee beans	beans
 freshly grated zucchini, about 1 1/2 pounds whole	zucchinis
 red-wine or sherry vinegar	sherry vinegar
@@ -6801,17 +6794,17 @@ boneless chicken thighs	chicken thighs
 english mustard	mustard
 medium sweet potato, peeled, cooked and mashed	sweet potato
 large carrot	carrots
-dolin dry vermouth	dry vermouth
+bakewell cream	cream
 granny smith apple, cored and diced	granny smith apples
 medium red bell pepper	red bell peppers
 racks baby back ribs	ribs
 coffee ice cream	ice cream
-spanish onion, finely chopped	spanish onion
+several torn slices of prosciutto	prosciutto
 chopped leeks	leeks
 stone-ground cornmeal	cornmeal
 very thinly sliced smithfield ham	ham
 asian dried shrimp	shrimps
-veal cubes	veal
+coarse-grained mustard	mustard
 finely chopped green pepper	green peppers
 small head cabbage	cabbage
 tuscan (lacinato) kale	kale
@@ -6822,11 +6815,11 @@ large eggs, at room temperature	large eggs
 whole anchovies	anchovies
 finely grated ginger	grated ginger
 fresh or canned chicken broth	chicken broth
-thai chili sauce	chili sauce
+low-fat (1 percent) milk	milk
 garlic cloves (more to taste), halved, green shoots removed	garlic cloves
 currants or dark raisins	currants
 mango-tamarind chutney	chutney
-sugar, plus some for the dish	sugar
+white cabbage	cabbage
 plain full-fat yogurt	yogurt
 pita breads	breads
 small spanish onion, peeled and thinly sliced	spanish onion
@@ -6856,6 +6849,7 @@ apple sauce or sour cream	sour cream
 mandarin orange	oranges
 pepper	peppers
 plum wine	wine
+dill flower	dill
 cranberries, prunes or other dried fruit	cranberries
 garlic (peeled, finely chopped)	garlic
 block of organic extra-firm tofu	tofu
@@ -6867,12 +6861,12 @@ short ribs	ribs
 white-bread flour	flour
 whole-grain farro	farro
 bell pepper or other sweet pepper	bell peppers
-garlic cloves, minced (1 if using fresh tomato sauce, which is already seasoned)	garlic cloves
+kosher salt or more to taste	kosher salt
 tarragon, basil and mint, or other mixed herbs	tarragon
 cotija cheese	cheese
 red caviar	caviar
 day-old bread	breads
-pork loin rib chops	pork loin
+chopped flat leaf parsley	flat leaf parsley
 minced scallion	scallions
 butter, for greasing the pans	butter
 champagne, or to taste	champagne
@@ -6880,7 +6874,7 @@ ginger, julienned and placed in a bowl of cold water	ginger
 minced cilantro or flat-leaf parsley	flat-leaf parsley
 bone-in pork butt	pork butt
 hot red chile pepper	peppers
-lat-leaf parsley leaves	parsley leaves
+thin slices bread	breads
 roughly chopped shallots	shallots
 medium onion, thinly sliced	medium onions
 honey-blood orange compote	oranges
@@ -6896,7 +6890,6 @@ brut champagne	champagne
 split red lentils, soaked for 2 hours or longer and drained (optional)	red lentils
 parsnips, trimmed, peeled and chopped	parsnips
 round dumpling wrappers	wrappers
-morel or porcini mushrooms	porcini mushrooms
 medium-sized shallots, chopped	shallots
 pink-grapefruit juice	juice
 extra-large shrimp	shrimps
@@ -6909,7 +6902,7 @@ grated ginger root	ginger root
 thinly sliced mint leaves	mint leaves
 palo cortado sherry	sherry
 dark greens	greens
-litchi juice	juice
+good quality blue cheese or roquefort, at room temperature, crumbled (about 1/2 cup)	blue cheese
 pieces pickled ginger (to taste)	ginger
 hellmann???s real mayonnaise or best foods mayonnaise	mayonnaise
 peeled chestnuts, roughly chopped	chestnuts
@@ -6918,7 +6911,7 @@ lightly toasted unsalted peanuts	peanuts
 crispy pancetta	pancetta
 green apples	apples
 zest of a lemon	lemons
-rendered chicken fat	chickens
+crispy shallots	shallots
 part-skim ricotta cheese	ricotta cheese
 borlotti beans, pinto beans or red beans	beans
 garganelli or other tube-shaped pasta	pasta
@@ -6931,7 +6924,7 @@ herbed vinegar	vinegar
 garlic cloves, mashed in a mortar and pestle with a generous pinch of salt	garlic cloves
 mushroom broth	broth
 raw tahini	tahini
-beaten eggs	eggs
+navel orange	oranges
 center cut salmon fillet	salmon fillets
 peppercorns, crushed	peppercorns
 unsalted butter, at room temperature	unsalted butter
@@ -6943,7 +6936,7 @@ red-grapefruit juice	juice
 italian parsley, dill, fennel fronds or wild fennel	italian parsley
 juice of 3 oranges (about 1 cup)	juice of 3 oranges
 capers, drained (optional)	capers
-whole green cardamom	cardamom
+cornstarch, sifted	cornstarch
 black or red lumpfish caviar	caviar
 corn niblets	corn
 large egg whites	egg whites
@@ -6952,7 +6945,7 @@ medium onion, finely diced	medium onions
 garlic, bruised	garlic
 roma (plum) tomatoes	tomatoes
 black bean chile-garlic sauce	sauce
-thai red curry paste	paste
+arugula greens	greens
 fresh soft goat cheese	goat cheese
 water or stock (chicken or vegetable)	water or stock
 pickled mustard greens	mustard greens
@@ -6965,7 +6958,6 @@ asian persimmon	persimmons
 mexican oregano or fresh thyme	fresh thyme
 whitewine vinegar	vinegar
 ardbeg whisky	whisky
-bow-tie noodles	noodles
 grape juice	juice
 defatted stock	stock
 pheasant	pheasants
@@ -6978,6 +6970,7 @@ roughly chopped mint	chopped mint
 spicy egyptian dukkah	dukkah
 very large or 2 medium beefsteak tomatoes, thinly sliced	tomatoes
 shallot and wild-mushroom sauce	sauce
+red or white onion, coarsely chopped and rinsed with cold water	white onions
 shallots, peeled, finely chopped	shallots
 oil-packed sardines, drained and lightly crushed	sardines
 onion, peeled and cut in chunks	onions
@@ -6988,11 +6981,11 @@ fresh flat leaf parsley	flat leaf parsley
 boneless duck breasts	duck breasts
 walnuts, coarsely chopped	walnuts
 sweet muscat	muscat
-cherrystone clams	clams
+medium-bodied red wine	red wine
 diced mushrooms, preferably wild	mushrooms
 yukon gold or baking potatoes	baking potatoes
 ginger syrup	syrup
-dry, sparkling wine	wine
+cold cream cheese, cut into 4 pieces	cream cheese
 large red peppers, or a combination of red and yellow peppers, thinly sliced or chopped	red peppers
 almond	almonds
 hard apple cider	apple cider
@@ -7044,22 +7037,22 @@ walnuts, pine nuts or roasted chestnuts	walnuts
 virgin olive oil	olive oil
 minced fresh thyme leaves	fresh thyme leaves
 extra-virgin olive or walnut oil	walnut oil
-freshly ground caraway seeds	caraway seeds
+silver tequila	tequila
 warm milk or broth from the celery root	milk
 finely (1/8 inch) diced cucumber	cucumbers
 grated parmesan, or a mixture of parmesan and romano pecorino	grated parmesan
 baby brussels sprouts	brussels sprouts
 very firm tofu sliced into 4 large pieces	firm tofu
 yogurt cheese	cheese
-(10 2/3 tablespoons) sweet butter	sweet butter
+skyy vodka	vodka
 white turnip	turnips
 fresh jalapeno	jalapenos
 whole canned tomatoes	tomatoes
 salad of bitter greens	greens
 cascabel chilies	chilies
 old-fashioned butterscotch sauce	sauce
-slivered fresh mint leaves, extra virgin olive oil, and dried red pepper flakes for garnish	mint leaves
-granular yeast	yeast
+aleppo chili	chilis
+sausages and cured meat	sausages
 small new red potatoes (about 2 pounds)	red potatoes
 sprigs fresh thyme or 1 teaspoon dried thyme	fresh thyme
 roasted whole almonds	almonds
@@ -7085,6 +7078,7 @@ cured chorizo	chorizo
 borlotti beans	beans
 large eggs, at room temperature, separated	large eggs
 hot green chiles	green chiles
+toasted pecans	pecans
 slivered fresh basil or chopped chives	chopped chives
 scallions, thinly sliced, white and dark green parts separated	scallions
 tomatillos, husked and quartered	tomatillos
@@ -7103,7 +7097,7 @@ heavy cream, chilled	heavy cream
 chili-soybean paste	paste
 gluten-free penne	penne
 ripe tomatoes, about 3/4 pound, peeled and cut into 1/4-inch cubes	ripe tomatoes
-clean veal	veal
+dry egg noodles	egg noodles
 kabocha or butternut squash	butternut squash
 short or medium-grain non-sticky red rice	rice
 vermicelli rice noodles	rice noodles
@@ -7132,11 +7126,11 @@ sifted cake flour	cake flour
 thin cinnamon stick (about 1?? inches long)	cinnamon sticks
 green tomato	tomato
 roughly chopped rosemary	rosemary
-chopped drained capers	capers
+maitre d'hotel butter	butter
 large scallops	scallops
 unsweetened apple juice or cider	apple juice
 finely chopped onion for garnish	finely chopped onion
-caciotta cheese	cheese
+diced sweet potatoes	sweet potatoes
 serrano or bird chile	serranos
 salmon fillet steaks	salmon fillets
 medium-size onion	onions
@@ -7147,8 +7141,8 @@ parsley for garnish	parsley
 chipotle chile	chiles
 papaya	papayas
 greek honey	honey
-(1 cup, 8 ounces) unsalted butter, at room temperature	unsalted butter
-diced rhubarb stalks	rhubarb
+chipotle chili	chilis
+pernod or pastis	pernod
 dried dill	dill
 fried eggs	eggs
 cooked tomatillo salsa	salsa
@@ -7159,7 +7153,7 @@ dark (blackstrap) molasses	molasses
 italian-style bread crumbs	bread crumbs
 oil to grease muffin tin	oil
 unsalted pistachio nuts	pistachio nuts
-low-fat (1 percent or 2 percent) milk	milk
+medium carrots	carrots
 flavorful oil	oil
 steen???s cane syrup	syrup
 pequin chiles	chiles
@@ -7180,6 +7174,7 @@ fresh horseradish	horseradish
 pork rind	pork
 sultana raisins	raisins
 orange juice concentrate	orange juice
+white crab meat	crab meat
 stemmed greens	greens
 sugar icing	sugar
 sunflower sprouts	sprouts
@@ -7206,6 +7201,7 @@ firm white-fleshed ocean fish, like snapper or halibut	halibut
 grape leaves	leaves
 lemon oil	oil
 dark amber syrup	syrup
+old-fashioned bitters	bitters
 aleppo pepper flakes	pepper flakes
 hopped fresh herbs	herbs
 pear nectar	pears
@@ -7249,7 +7245,7 @@ shoulder of veal	veal
 salt, if necessary	salt
 washed greens	greens
 dill seed	dill
-soft rolls or slices of white bread	white bread
+finely chopped cucumber (more to taste)	cucumbers
 lemons, parsley and dill	lemons
 mild chiles, like pasilla	chiles
 tarte tatin pastry	pastry
@@ -7267,6 +7263,7 @@ maldon salt or other flaky sea salt	salt
 chipotle	chipotles
 red salsa	salsa
 berry jam	jam
+fresh rice noodles	rice noodles
 vinegar, oil and herbs	vinegar
 rye, bourbon or rum	rye
 large green bell pepper, in medium dice	green bell peppers
@@ -7277,7 +7274,7 @@ boneless, skinless chicken	chickens
 ground toasted cumin, to taste	cumin
 dried red lentils	red lentils
 pickled herring	herring
-small pinch of cream of tartar	cream of tartar
+stolichnaya orange	oranges
 jumbo shrimp	shrimps
 primitivo quiles vermouth rojo	vermouth
 scallions, chives or cilantro	scallions
@@ -7297,16 +7294,16 @@ tamarind pulp	pulp
 sea salt or fleur de sel and freshly ground pepper	sea salt
 shiso or basil	basil
 milk, more as needed	milk
-green thai chili	chilis
+finely minced crystallized ginger	ginger
 passion fruit sauce	sauce
 thin slices of prosciutto, more if desired	prosciutto
 blood-orange juice	juice
 ripe figs	figs
-langoustines or large shrimp	shrimps
+lemon juice as desired	lemon juice
 coarsely ground black pepper	ground black pepper
 yogurt or thick greek-style yogurt	yogurt
 garlic cloves, peeled and halved, green shoots removed	garlic cloves
-dry vermouth, or a dry white wine	dry vermouth
+rich chicken stock	chicken stock
 mulberries or blackberries	blackberries
 raw good-quality lean beef	beef
 chilled vegetable shortening, cut into bits	vegetable shortening
@@ -7345,14 +7342,14 @@ shredded red-chile meat	meat
 framboise or blackberry brandy	brandy
 neutral oil for frying	neutral oil
 trout roe or red or black caviar	trout
-silver tequila	tequila
+freshly ground caraway seeds	caraway seeds
 dry cottage cheese	cottage cheese
 whole-grain mustard	mustard
 goat cheese, like montrachet, at room temperature	goat cheese
 beef tongue	beef
 fresh salmon, about 2 to 2 1/2 pounds	salmon
 head radicchio	radicchio
-collards or kale	kale
+whole veal shank	veal
 dried black chickpeas	chickpeas
 serrano chile	serrano chiles
 turkey neck and giblets	turkeys
@@ -7382,7 +7379,7 @@ manila clams	clams
 whole buckwheat groats	buckwheat groats
 garlic head	garlic
 thinly sliced onions	onions
-finely chopped cucumber (more to taste)	cucumbers
+soft rolls or slices of white bread	white bread
 steamed broccoli florets (about 1/3 of a crown), steamed for 4 to 5 minutes then separated into smaller florets	broccoli florets
 wehani rice or bhutanese red rice	rice
 plum tomato sauce	tomato sauce
@@ -7398,6 +7395,7 @@ fine fresh bread crumbs	bread crumbs
 full-fat coconut milk	coconut milk
 veal roast	veal
 mustard seed	mustard
+serrano or jalape??o chiles, finely chopped, or more to taste	chiles
 collard	collards
 dumpling wrappers	wrappers
 garlic, peeled and crushed	garlic
@@ -7413,7 +7411,6 @@ black ni??oise olives	olives
 dried tarragon	tarragon
 hot pepper	peppers
 alaskan cod fillets	cod fillets
-pale curly endive	endives
 smoky scotch whiskey	whiskey
 large green	greens
 blanched slivered almonds	almonds
@@ -7429,8 +7426,8 @@ mussels marinara	mussels
 baby spinach or chopped chard leaves	baby spinach
 jalapeno, seeded and finely diced	jalapenos
 granulated sugar, plus sugar for dusting the souffle dishes	granulated sugar
-ajwain seeds	seeds
-sliced bacon	bacon
+croutons, preferably homemade	croutons
+plain low-fat yogurt as needed	plain low-fat yogurt
 cucumbers, peeled, seeded, and sliced crosswise 1/8-inch thick	cucumbers
 grapefruit	grapefruits
 small broccoli florets	broccoli florets
@@ -7463,7 +7460,7 @@ cayenne (or less, to taste)	cayenne
 ground toasted cumin	cumin
 plum sake	sake
 fine sea salt (about 1/2 teaspoon)	fine sea salt
-semihard cheese	cheese
+sweet rice flour	rice flour
 wax beans	beans
 lentils, preferably french le puy	lentils
 pork loin cutlets	pork loin
@@ -7492,12 +7489,11 @@ peanut or olive oil	olive oil
 west indian rum	rum
 red or white wine	white wine
 dried pasta	pasta
-porcini pieces	porcini
 baking spray	spray
 steamed rice	rice
 hot chili sauce	chili sauce
 pork bones	pork
-can organic vegetable broth	vegetable broth
+shrimp or other fish	shrimps
 large scallions, chopped	scallions
 coarse ground black pepper	ground black pepper
 hot red chili powder	chili powder
@@ -7522,7 +7518,7 @@ romaine hearts, cut crosswise into 1-inch thick chiffonade (about 5 cups)	romain
 table salt	salt
 zucchini pickles	zucchinis
 freestone peaches	peaches
-pesto sauce	sauce
+tubular pasta	pasta
 large tomatoes, peeled, seeded and finely chopped	tomatoes
 ground almond meal	almond meal
 stalks celery, chopped	celery
@@ -7535,11 +7531,11 @@ plain kefir or yogurt	yogurt
 unsalted butter, or half unsalted, half black truffle butter	unsalted butter
 chicken broth, vegetable broth or water	chicken broth
 iodized salt	salt
-plain low-fat yogurt as needed	plain low-fat yogurt
+sliced bacon	bacon
 beet juice	juice
 black pepper and salt	salt
 cloves, ground	cloves
-beef bouillon cube	beef
+fresh broccoli	broccoli
 fool berries	berries
 medium apples to yield 2 1/2 cups chopped (use firm cooking apples like northern spy or mcintosh)	apples
 sriracha or other hot sauce	sriracha
@@ -7548,7 +7544,7 @@ whole garlic	garlic
 sweet cherries	cherries
 gruy??re cheese, grated (3/4 cup)	gruy??re cheese
 previously cooked mashed sweet potatoes (approximately 1 pound fresh)	sweet potatoes
-organic eggs	eggs
+plump, moist vanilla bean, split lengthwise, pulp scraped out	vanilla beans
 butter, for serving	butter
 cucumber rounds or toasted croutons	cucumbers
 unrefined turbinado sugar	turbinado sugar
@@ -7581,7 +7577,7 @@ duck broth	broth
 coarse corn grits	corn
 cretan gravieri cheese	cheese
 skin-on boneless chicken breasts	chicken breasts
-thai green chilies	green chilies
+chopped fresh dill, cilantro, mint or chives for garnish	chopped fresh dill
 finely diced onion	onions
 medium-size leeks	leeks
 all purpose flour	flour
@@ -7590,15 +7586,13 @@ small red onions	red onions
 fresh lemon juice, to taste	fresh lemon juice
 small garlic clove, pureed (optional)	small garlic clove
 fresh fennel fronds	fennel fronds
-medium eggplants	eggplants
+unsalted butter at room temperature, plus butter for greasing the souffle dishes	unsalted butter
 boneless beef chuck	beef chuck
 lemon-flavored olive oil	olive oil
 berry brandy	brandy
 basil pesto	pesto
-grated apple	apples
 very ripe tomatoes, cut into 1/2-inch chunks	ripe tomatoes
-chopped spinach	spinach
-large ripe avocado, halved and pitted	avocados
+crumbled aged white cheddar	cheddar
 potato per person, peeled and chopped into large pieces	potato
 high-quality vegetable oil as needed	vegetable oil
 chopped flat-leaf parsley or slivered fresh basil	chopped flat-leaf parsley
@@ -7607,9 +7601,10 @@ game hens	hens
 smoked spanish paprika	paprika
 garlic, roughly chopped	garlic
 unsalted walnuts	walnuts
+pork neck bones	pork
 anchovy fillets, coarsely chopped	anchovy fillets
 no-boil lasagna noodles	noodles
-bone-in rabbit saddles	rabbits
+baby potatoes	potatoes
 balsamic vinegar, or to taste	balsamic vinegar
 lawry???s seasoned salt	salt
 cod or other fillet, in two pieces	cod
@@ -7625,9 +7620,9 @@ roasting chicken	chickens
 yellow pigeon peas	peas
 crusty bread or toast	crusty bread
 chopped walnuts or pecans	walnuts or pecans
-serrano or jalape??o chile, minced (more to taste)	chiles
+key lime juice	lime juice
 whole unblanched almonds	almonds
-corn tostadas or 12 to 18 large tortilla chips	corn
+large apples	apples
 sparkling lemonade	lemonade
 luxardo marasca cherry or other high-quality macerated cocktail cherry	cherry
 celery, very finely minced	celery
@@ -7646,9 +7641,9 @@ beef chuck roll	beef chuck
 white fish fillets	fish fillets
 chopped parsley or shredded basil	chopped parsley
 strong-flavored tea leaves	leaves
-rib-eye, thinly sliced	rib-eye
+celery stalks, trimmed and chopped	celery stalks
 spice powder	powder
-red hot pepper flakes	hot pepper flakes
+sansho pepper	peppers
 dulse seaweed	seaweed
 frozen baby lima beans	lima beans
 medium yellow onions, peeled and coarsely chopped	yellow onions
@@ -7681,12 +7676,13 @@ finely sliced cilantro leaves	cilantro leaves
 shallot, finely diced	shallots
 fresh thyme leaves, chopped, or 1/2 teaspoon dried thyme	fresh thyme leaves
 seedless green grapes	grapes
-wide swiss chard stems	swiss chard
+single ladyfingers	ladyfingers
 rich stock	stock
 flat-leaf parsley, mint or dill	flat-leaf parsley
 grated parmesan cheese (optional)	grated parmesan cheese
 rice paper wrappers	rice
 fish heads	fish
+light tahini paste	tahini
 fresh curd goat cheese	goat cheese
 littleneck clams (3 pounds or more)	littleneck clams
 pumpkin-seed oil	oil
@@ -7695,7 +7691,8 @@ baguette	baguettes
 heart of romaine lettuce, torn into bite-size pieces	romaine lettuce
 chili con carne seasoning	chilis
 red wine vinegar, cider vinegar or sherry vinegar	red wine vinegar
-small butternut squash, about 1 1/2 pounds, peeled, seeded, and cut in 1/2-inch	butternut squash
+instant coffee powder	coffee
+gruy??re cheese, grated (3/4 cup, tightly packed)	gruy??re cheese
 several pieces dried porcini mushrooms	porcini mushrooms
 dry white wine, such as riesling	dry white wine
 tropical fruits	fruits
@@ -7708,7 +7705,7 @@ peanut dipping sauce	sauce
 ice cubes (optional)	ice cubes
 fine bread crumbs	bread crumbs
 saltine crumbs	crumbs
-crumbled cake	cake
+solera rum	rum
 capers, dried, finely chopped	capers
 medium-size ripe tomatoes	ripe tomatoes
 cooked crabmeat	crabmeat
@@ -7716,12 +7713,12 @@ satsuma or tangerine juice	juice
 teaspoon freshly ground black pepper	freshly ground black pepper
 celery sticks, chips or chicken wings	celery
 baby mackerel	mackerel
-rib pork chops	pork chops
-smoked lobsters	lobsters
+leftover turkey	turkeys
+medium to large potatoes	potatoes
 liquid smoke	liquid
 espelette pepper	peppers
-newburg sauce	sauce
 yukon gold, fingerling or red bliss potatoes	yukon gold
+roasted red peppers	red peppers
 aged rum or brandy	brandy
 strawberry ice cream	ice cream
 medjool dates, pitted and diced	medjool dates
@@ -7735,7 +7732,7 @@ garlic cloves, finely chopped or pressed through a garlic press	garlic cloves
 turkey thighs, about 2 ?? lbs total	turkeys
 finely diced bell peppers	bell peppers
 fine corn meal	corn
-large red bell peppers, seeded, deveined and cut into julienne strips	red bell peppers
+57 grams/2 ounces chilled rendered leaf lard	lard
 arugula pesto	pesto
 red thai chilies	chilies
 cayenne pepper and salt	salt
@@ -7746,7 +7743,7 @@ frozen banana, sliced	bananas
 beef chuck roast	beef chuck
 veal scaloppine	veal
 orange jellies	oranges
-bean sauce	sauce
+spelt flour	flour
 wheat bran	bran
 grated rind of 2 large oranges	oranges
 marinara sauce for serving	marinara sauce
@@ -7760,6 +7757,7 @@ green chili pepper	chili peppers
 piment??n or other chili powder	piment??n
 grape seed	seeds
 eggless linguine	linguine
+teff polenta	polenta
 ripe tomatoes, preferably romas, peeled, seeded and finely chopped, or 1 14-ounce can crushed tomatoes (in puree)	ripe tomatoes
 nonfat plain yogurt	plain yogurt
 oil for deep frying	oil
@@ -7767,11 +7765,10 @@ radicchio leaves	leaves
 ham steaks	ham
 dessert crepes	crepes
 jelly doughnuts	jelly
-boxes cherry tomatoes	cherry tomatoes
+sweet red bell peppers	red bell peppers
 green jalape??os	jalape??os
 white wine vinegar or seasoned rice wine vinegar	white wine vinegar
 caribbean yams	yams
-skinless, boneless chicken breasts, about 1 1/2 pounds	chicken breasts
 persian cucumbers, chopped	cucumbers
 allspice dram	allspice
 queso fresco or feta cheese, crumbled	queso fresco or feta cheese
@@ -7792,14 +7789,14 @@ stick (4 tablespoons) unsalted butter, melted	unsalted butter
 mushroom powder	powder
 (2 sticks) unsweetened butter, softened	butter
 mirin, sake or white wine	mirin
-butter, melted	butter
+olive-oil-poached tomatoes	tomatoes
 remoulade sauce	sauce
 beaujolais or other fruity red wine	beaujolais
 baby lamb chops	lamb
 djion mustard	mustard
-lemon juice (to taste)	lemon juice
+green picholine olives	olives
 golden delicious or other cooking apples	apples
-spring 44 old tom gin	gin
+small or 1/2 medium onion, chopped	medium onion, chopped
 ground sumac (optional)	sumac
 corn kernels, preferably fresh	corn kernels
 tomato sauce for custard pie	tomato sauce
@@ -7811,24 +7808,24 @@ rib steak	steaks
 large red onion, chopped	red onions
 winter vegetables	vegetables
 seedless raisins	raisins
-asiago cheese	cheese
+chinese black mushrooms	mushrooms
 pea shoots, leaves and tendrils	pea shoots
 celery stalks, from the heart of the celery, very thinly sliced	celery stalks
-turkey necks	turkeys
+frizzled leeks (see recipe below)	leeks
 scallions, small romaine lettuce leaves, and lemon wedges for garnish	scallions
 chiles de ??rbol	chiles
 basil sprig	basil
 stemmed thyme	thyme
-fresh sage leaves, torn	fresh sage leaves
+shredded cabbage for topping	cabbage
 mixed bitter and pungent lettuces	lettuces
-raw egg whites	egg whites
+a??ejo rum	rum
 chinese sweet wine	wine
 5-pound duck	ducks
 nonstick baking spray	spray
-kale, either curly or cavolo nero, ribs removed, leaves washed	kale
+sauce diable	sauce
 spinach stems	spinach
 whole nigella seeds	nigella seeds
-rosemary-infused simple syrup	simple syrup
+fresh green beans	green beans
 bourbon, brandy or rum	bourbon
 peeled pineapple	pineapples
 small shallots, coarsely chopped	shallots
@@ -7860,7 +7857,7 @@ curry dressing	dressing
 fresh pasta shells	pasta
 small bulb fennel, trimmed and chopped	fennel
 adobo powder	powder
-brown (turbinado) sugar	sugar
+shallots, peeled, julienned	shallots
 dried sage	sage
 sweet yellow pepper	yellow pepper
 whole coriander seed	coriander seeds
@@ -7891,6 +7888,7 @@ basil olive oil	olive oil
 wild orange essential oil	oil
 large eggs, lightly beaten	large eggs
 white chocolate, preferably imported, broken into small pieces	white chocolate
+mixed mushrooms	mushrooms
 clementine juice	juice
 a-1 sauce	sauce
 emmentaler cheese	cheese
@@ -7906,7 +7904,7 @@ candied yams	yams
 freshly grated ginger	grated ginger
 toasted pumpkin seeds (to taste)	pumpkin seeds
 grated gruy??re cheese (2 ounces)	gruy??re cheese
-small potatoes	potatoes
+lard crust	lard
 peperoncino (hot red-pepper flakes)	peperoncino
 for the ricotta base:	ricotta
 whole wheat pappardelle	pappardelle
@@ -7954,7 +7952,6 @@ large clove garlic	clove garlic
 oriental sesame oil	sesame oil
 common mushrooms	mushrooms
 chicken fat	chickens
-dried imported barberries	barberries
 kaffir lime	limes
 new mexico chili peppers	chili peppers
 organic buttermilk	buttermilk
@@ -7965,9 +7962,8 @@ halibut fillet	halibut
 cinnamon syrup	syrup
 lemon-lime soda	soda
 shaoshing wine	wine
-chicken legs and thighs	chicken legs
 medium-grain sea salt	sea salt
-beef strip loin steaks	beef
+aj?? dulce peppers	peppers
 lemon halves or fat wedges	lemons
 goat cheese, crumbled (optional)	goat cheese
 white potatoes, peeled and cut into 1/4-inch dice (2 small)	white potatoes
@@ -7977,8 +7973,8 @@ feta cheese, crumbled	feta cheese
 distilled vinegar	vinegar
 freshly cracked black pepper	black pepper
 loosely packed fresh basil, finely shredded	fresh basil
-instant espresso	espresso
-thickened yogurt	yogurt
+parmesan cheese, grated (1/4 cup)	parmesan cheese
+dr. brown's cream soda	cream
 cold unsalted butter, cut into small pieces	cold unsalted butter
 grape tomatoes	tomatoes
 slices prosciutto, torn into strips.	prosciutto
@@ -8008,7 +8004,7 @@ apple-cider vinegar	vinegar
 ham bone	ham
 medium-size carrots	carrots
 fresh rosemary, minced	fresh rosemary
-toasted cracked mustard seeds	mustard seeds
+px sherry	sherry
 asian basil leaves	basil leaves
 garlic mayonnaise	mayonnaise
 italian seasoning	seasonings
@@ -8017,6 +8013,7 @@ medium-size fresh tomatoes	tomatoes
 plus 1 tablespoon sugar, divided	sugar
 whole heads garlic	garlic
 butternut, kabocha or hubbard squash	butternut
+pesto sauce	sauce
 shaved parmesan	parmesan
 turnip greens or mustard greens	mustard greens
 shrimp	shrimps
@@ -8043,15 +8040,15 @@ vanilla bean (about 2 inches long), split, seeds removed with a paring knife, se
 lemon juice or sherry or white wine vinegar	lemon juice
 roasted chicken	chickens
 soy sauce, to taste	soy sauce
-garlic, peeled and crushed with the side of a knife	garlic
+chopped dried apricots	dried apricots
 sriracha or other red chili paste	sriracha
 medium onion (red or yellow), quartered lengthwise, sliced into 1/3 inch slices	medium onions
 chicken bouillion cubes	chickens
 butter or cooking spray	butter
 fruit puree	fruits
-lemon juice as desired	lemon juice
 tetilla cheese	cheese
 sweet white-miso paste	paste
+concord, black or red grapes	grapes
 horseradish root	horseradish
 imported black olives	black olives
 file powder, optional	powder
@@ -8065,6 +8062,7 @@ smoked spanish paprika, to taste	paprika
 fillet of sushi-grade fluke sole, halibut or yellowtail	halibut
 chipotle pepper	peppers
 vanilla oil	oil
+korean gochujang red pepper paste	red peppers
 bourbon whiskey	bourbon
 bottled hot sauce	hot sauce
 italian parsley, roughly chopped	italian parsley
@@ -8086,7 +8084,6 @@ citrus sauce	sauce
 2 percent milk	milk
 medium-large onion	onions
 black truffle juice	juice
-sausages and cured meat	sausages
 cooked green lentils	green lentils
 packed light brown sugar	light brown sugar
 olive or vegetable oil	vegetable oil
@@ -8099,7 +8096,6 @@ english cucumber	cucumbers
 lamb stew meat	lamb
 yellow corn meal	corn
 plus 1 teaspoon extra virgin olive oil	extra virgin olive oil
-passion fruit	fruits
 bread cubes	breads
 red, orange or yellow bell peppers	yellow bell peppers
 yogurt for serving, optional.	yogurt
@@ -8114,13 +8110,14 @@ medium yellow onions	yellow onions
 broccoli stalks	broccoli
 snipped basil	basil
 venison tenderloin	venison
-active dry yeast (2 1/4 teaspoons)	active dry yeast
+medium-size cucumbers, peeled, seeded and cut in julienne	cucumbers
 dried greek giant beans	beans
 garlic cloves, peeled, finely chopped	garlic cloves
 finely diced celery	celery
 peanut oil for deep frying, plus 3 tablespoons	peanut oil
 poire william brandy	brandy
 kentucky limestone lettuce	lettuces
+tart cooking apples	apples
 rosemary sprig	rosemary
 toasted walnut pieces	walnut pieces
 jameson irish whiskey	whiskey
@@ -8128,7 +8125,6 @@ long, thin eggplant	eggplants
 pitted kalamata olives, roughly chopped	kalamata olives
 razor clams	clams
 salted peanuts	peanuts
-italian frying pepper	peppers
 green or yellow string beans	beans
 grated gruy??re cheese	gruy??re cheese
 navy-strength gin	gin
@@ -8138,7 +8134,6 @@ gold tequila	tequila
 small or medium beets, roasted, peeled, and cut in wedges or half-moons	beets
 ripe tomatoes, very thinly sliced and drained on paper towels	ripe tomatoes
 fresh morels	morels
-coconut sorbet or ice cream	ice cream
 beef chuck steak	beef chuck
 veal scallops	scallops
 pineapple gum syrup	syrup
@@ -8149,13 +8144,12 @@ mixed green and red bell peppers	red bell peppers
 starchy potatoes	potatoes
 dried giant lima beans	lima beans
 wild turkey	turkeys
-garlic scapes or ramps	ramps
 mixed zucchini and yellow squash, sliced thin	yellow squash
 fennel, sliced thinly	fennel
 extra virgin olive, plus about 1 teaspoon for the baking sheet	extra virgin olive
 dry-cured ham	ham
 long-grain white rice	white rice
-cream puffs	cream
+lean ground pork	ground pork
 recipe stuffing	stuffing
 dungeness crab meat	crab meat
 heavy sweet cream	cream
@@ -8165,7 +8159,6 @@ natural orange juice	orange juice
 onion, peeled and grated	onions
 neapolitan parsley	parsley
 plain greek yogurt or drained yogurt	greek yogurt or drained yogurt
-ni??oise olives	olives
 greek-style yogurt or goat yogurt	yogurt
 shepherd's cheese, enough to make approximately 1 1/2 lightly packed cups	cheese
 pork garlic sausages	sausages
@@ -8176,23 +8169,22 @@ oyster crackers	crackers
 maldon sea salt and freshly ground black pepper	salt and freshly ground black pepper
 asian hot pepper oil	oil
 cored and shredded red cabbage	red cabbage
-whole- wheat flour	wheat flour
 hero rolls	rolls
 opal basil leaves	basil leaves
 smoky scottish whisky	whisky
 chicken pieces (thighs, wings, drumsticks)	chickens
 recipe yeasted olive oil pastry	yeasted olive oil pastry
-ancho chili powder	chili powder
+dry sparkling wine	wine
 semisweet white wine	white wine
 green de puy lentils	lentils
 acorn	acorns
 distilled white vinegar	white vinegar
-fresh cream	cream
+cauliflower pur??e	cauliflowers
 small yellow wax beans	beans
 ground asafetida	asafetida
 fresh bread crumbs	bread crumbs
 firmly packed light brown sugar	light brown sugar
-rice, preferably bomba or calasparra	rice
+all-purpose potato	potato
 chicken breast, cut into 3/4 inch dice	chicken breasts
 peeled honeycrisp or gala apple, sliced 1/4 inch thick	apples
 fresh hot green chile	green chiles
@@ -8206,7 +8198,6 @@ baby eggplant	eggplants
 whole peeled canned tomatoes	tomatoes
 no-salt-added chicken stock (preferably homemade)	chicken stock
 red ripe plum tomatoes, peeled and seeded and cut into 1/2-inch cubes	plum tomatoes
-medium red onion	red onions
 green pumpkinseeds	pumpkinseeds
 lean meat	meat
 grated pecorino romano cheese	pecorino romano cheese
@@ -8268,7 +8259,7 @@ mixed fresh herbs (chives, chervil and parsley)	herbs
 maine lobster	lobsters
 beef sausage	sausages
 apple butter	butter
-dry tubular or shell-shaped pasta	pasta
+golden potatoes	potatoes
 sirloin steak	sirloin
 medium-size fennel bulb	fennel bulbs
 dry champagne	champagne
@@ -8286,7 +8277,7 @@ chipotle peppers	peppers
 whole grain pasta	pasta
 leaf sage	sage
 dry apricots	apricots
-sriracha or other hot sauce, or rice wine vinegar	sriracha
+lamb, trimmed and frenched	lamb
 slice of tofu	tofu
 ricotta salata, pecorino	ricotta salata
 splash campari	campari
@@ -8297,17 +8288,17 @@ green leaves	leaves
 whole-wheat pizza dough	pizza dough
 freshly ground pepper, plus more to taste	freshly ground pepper
 peas or cooked fresh peas	peas
-green chili peppers	chili peppers
+tart crust	crust
 whole-wheat pitas	pitas
 arbol chili	chilis
 dried chile flakes	chile flakes
 generous pinch of saffron threads	saffron threads
 damiana leaves	leaves
-bitter chocolate	chocolate
+portabella stuffing mushrooms	mushrooms
 sugar, preferably organic	sugar
 fennel seed	fennel seeds
 large ripe tomato	tomato
-(2 cups) fresh blueberries (preferably fresh, or frozen, not thawed)	blueberries
+chilled solid vegetable	vegetables
 thai chile or half a small jalape??o	chiles
 plus 2 teaspoons all-purpose flour	all-purpose flour
 fresh thyme leaves or 1/2 teaspoon dried thyme	fresh thyme leaves
@@ -8319,7 +8310,7 @@ baby-back ribs	ribs
 turkey bones	turkeys
 honey graham cracker crumbs	graham cracker crumbs
 ripe, unblemished pears with stems	ripe
-roasted pumpkin seeds	pumpkin seeds
+eggplant, preferably japanese eggplants	eggplants
 duck skin	ducks
 corn flour or fine cornmeal	fine cornmeal
 crystal hot sauce	hot sauce
@@ -8328,9 +8319,9 @@ boneless pork top loin roast or rib-end loin roast	pork
 top round	round
 dried green peppercorns	peppercorns
 finely chopped tomatoes	chopped tomatoes
-neufch??tel cream cheese	cream cheese
+extra-sharp cheddar	cheddar
 ground caraway	caraway
-white fettuccine	fettuccine
+whole wheat all-purpose flour	all-purpose flour
 whole-fat sour cream	sour cream
 boneless, skinless chicken thighs	chicken thighs
 all-purpose flour, or instant flour	all-purpose flour
@@ -8354,6 +8345,7 @@ celery cabbage	cabbage
 ham stock	stock
 mixed berries or berries and cherries	berries
 red radishes, washed and trimmed	radishes
+langoustines or large shrimp	shrimps
 hot chili paste	chili paste
 cilantro sauce	sauce
 seltzer water	water
@@ -8366,8 +8358,9 @@ pomelo, or a small pink grapefruit	pomelo
 black cardamom	cardamom
 3-inch piece mexican cinnamon (canela)	cinnamon
 low-fat (2 percent) milk	milk
-green plantains, peeled, lightly scored and cut into 2-inch slices on the diagonal, peels reserved	green plantains
+grated fontina cheese	fontina cheese
 for garnish: paper-thin lemon slices	lemons
+chinese chili, seeded	chilis
 leftover vegetables	vegetables
 coarse unclear sugar	sugar
 green or black olives	black olives
@@ -8399,15 +8392,15 @@ heirloom tomatoes	tomatoes
 amaranth greens	greens
 chicken stock, vegetable stock or water	chicken stock
 fresh porcini mushrooms	porcini mushrooms
-medium ripe tomatoes	ripe tomatoes
 apple brandy	brandy
 dried black beans	black beans
-summer squash, cut into 2-inch-thick slices, lengthwise	summer squash
-new mexico chile powder	chile powder
+cooked arborio or carnaroli rice (1/2 cup raw)	arborio
+montecristo rum	rum
 roasted red pepper	red peppers
 vinaigrette sauce	sauce
 muscatel vinegar	vinegar
 rosemary needles	rosemary
+lamb shoulder roast	lamb shoulder
 pie pastry	pastry
 romaine hearts	romaine
 veal glaze	veal
@@ -8426,12 +8419,12 @@ saturn peaches	peaches
 vegetable oil for frying	vegetable oil
 green vegetables	vegetables
 raw brown (turbinado) sugar or regular brown sugar	raw brown
-massaman syrup	syrup
+vegetable broth, at room temperature	vegetable broth
 fresh summer savory	savory
 orange-flower water	water
 carrots (not too fat), trimmed and peeled	carrots
-fresh green tomatillos, diced	tomatillos
-mint leaf	mint
+pumpkin seed vinaigrette paste	pumpkins
+chopped spinach	spinach
 dried crushed oregano	oregano
 regular quinoa	quinoa
 chopped stone fruit	fruits
@@ -8450,7 +8443,6 @@ green chorizo	chorizo
 dipping sauce	sauce
 loosely packed fresh basil leaves	fresh basil leaves
 (14-ounce) can tomatoes, drained and chopped	tomatoes
-basil, preferably thai	basil
 resh chopped parsley	chopped parsley
 onion and chestnuts	chestnuts
 chipotle chile powder	chile powder
@@ -8462,7 +8454,7 @@ mint or coriander (optional)	mint
 lamb loin chops	lamb
 rock cornish game hens	hens
 light-brown sugar	sugar
-old overholt rye whiskey	rye whiskey
+bow-tie noodles	noodles
 broccoli or broccolini	broccoli
 pur??ed roasted pumpkin	pumpkins
 serrano or jalape??o peppers	jalape??o peppers
@@ -8487,12 +8479,12 @@ cherimoya puree	puree
 ground meat	meat
 toasted black sesame seeds	black sesame seeds
 stout or porter	stout
-chicken drumsticks	chickens
+chopped fresh mint or parsley, or a combination	chopped fresh mint
 ground fenugreek seeds	seeds
 green bell pepper	green bell peppers
 garlic, peeled and minced	garlic
 toasted unsweetened coconut flakes	coconuts
-crumbled aged white cheddar	cheddar
+large ripe avocado, halved and pitted	avocados
 gorgonzola cheese	cheese
 herbs de provence	herbs
 beluga malossol caviar	caviar
@@ -8524,8 +8516,9 @@ delicata squash	squash
 quail	quails
 grated cheddar cheese	cheddar cheese
 lobster broth	broth
+hard-boiled egg, finely chopped	eggs
 tawny port	port
-generous bunch swiss chard or 2 smaller bunches (about 1 1/2 pounds)	swiss chard
+whole wheat yeasted olive oil crust	olive oil
 chicken stock, approximately	chicken stock
 french rolls or a long baguette	baguettes
 dry-roasted peanuts	peanuts
@@ -8541,12 +8534,12 @@ chinese chilis	chilis
 chinese chili bean sauce (toban djan)	sauce
 quails, boned	quails
 grated carrots (about 8 medium)	carrots
-firm baby zucchini, or 5 small zucchini	zucchinis
+creamer potatoes	potatoes
 regular or no-boil lasagna noodles	noodles
 minced jalape??os	jalape??os
 crispy brown rice cereal	brown rice
 long red chili	red chilis
-organic goat cheese	goat cheese
+sherry wine vinegar	wine vinegar
 unsalted fish	fish
 hot bean paste (also known as spiced broad bean sauce), or as needed	paste
 swiss chard or red chard	swiss chard
@@ -8571,6 +8564,7 @@ temple oranges	oranges
 loaf white bread, cut into 1-inch cubes	white bread
 dried cherries (1/4 cup)	cherries
 lightly toasted pine nuts or untoasted chopped walnuts	pine nuts
+rustic italian bread	breads
 baby red potatoes	red potatoes
 sweet spanish paprika	paprika
 berbere (available in specialty stores) or chili powder	berbere
@@ -8589,19 +8583,19 @@ perucchi white vermouth	vermouth
 veal meatballs	veal
 chopped fresh parsley, dill, chives, tarragon, or a combination	chopped fresh parsley
 any type of stock	stock
-finely chopped ginger	ginger
+jalape??o, stemmed, seeded and finely chopped	jalape??os
 gruy??re, gouda or cheddar cheese	gruy??re
 bunch spinach	spinach
 red stripe beer	beer
-boiling chicken stock	chicken stock
-coarsely chopped rosemary	rosemary
+peeled garlic	garlic
+peeled tomatoes	tomatoes
 fresh ginger root	ginger root
 vegetable, peanut or canola oil	vegetables
 parmesian cheese	cheese
 burrata or buffalo mozzarella	mozzarella
-watermelon wedge	watermelon
+rendered duck fat	duck fat
 pumpkin flesh	pumpkins
-milk, or as needed	milk
+vegan butter substitute, like earth balance	butter
 dark brown sugar, firmly packed	dark brown sugar
 semisweet chocolate chips	chocolate chips
 scrappy???s cardamom bitters	cardamom
@@ -8615,7 +8609,7 @@ spanish smoked paprika	smoked paprika
 cooked medium shrimp, peeled	shrimps
 cooked pumpkin puree	pumpkin puree
 hot green poblano chili	chilis
-candle nuts	nuts
+dark chinese sesame oil	sesame oil
 nonfat dry milk powder	milk
 spanish short grain rice	rice
 diced dried apricots	dried apricots
@@ -8626,7 +8620,7 @@ stick butter	butter
 medium-size beets, roasted	beets
 basil leaves, finely chopped	basil leaves
 sturdy greens	greens
-basil-butter sauce	sauce
+rye bread	breads
 balsamic vinegar (more to taste)	balsamic vinegar
 flaky salt or fleur de sel	fleur de sel
 korean chili powder	chili powder
@@ -8636,7 +8630,7 @@ pullman or other firm white bread	white bread
 red pepper (optional)	red peppers
 cheese: cotija, monterey jack, cheddar	cheddar
 amber beer	beer
-chopped sage	sage
+fresh coriander leaves, chopped	coriander leaves
 chopped parsley leaves	parsley leaves
 pumpkin seed oil	oil
 ginger beer	beer
@@ -8660,9 +8654,10 @@ russet potatoes or yukon golds	russet potatoes
 lemon hart demerara rum	rum
 goan vindaloo powder	powder
 roasted pistachio oil	oil
+pods star anise	star anise
 whole-wheat couscous	couscous
 red tomatoes	tomatoes
-roquefort style blue cheese	blue cheese
+small apricots	apricots
 orange-flavored brandy	brandy
 eye roast	roasts
 baby arugula or wild arugula leaves	baby arugula
@@ -8702,7 +8697,7 @@ homemade buttermilk	buttermilk
 instant dry yeast	dry yeast
 green or white cabbage	cabbage
 mushrooms, washed, dried and quartered	mushrooms
-large apples	apples
+corn tostadas or 12 to 18 large tortilla chips	corn
 green pepper	green peppers
 quinoa, rinsed thoroughly	quinoa
 fontina or gruy??re	gruy??re
@@ -8716,7 +8711,7 @@ grated gruy??re or crumbled queso fresco	queso fresco
 ground teff	teff
 minced italian parsley	italian parsley
 fruity extra-virgin olive oil	extra-virgin olive oil
-canned imported italian plum tomatoes	italian plum tomatoes
+plus 1 teaspoon chili powder	chili powder
 sweet potatoes (3 1/2 pounds)	sweet potatoes
 peanut or other oil	peanuts
 anise seed	seeds
@@ -8727,7 +8722,7 @@ soy milk	milk
 russet potatoes, peeled and grated	russet potatoes
 buffalo mozzarella	mozzarella
 rolled oat	rolled oats
-goat's cheese	cheese
+ni??oise olives	olives
 dry basil	basil
 freshly grated parmesan (optional)	freshly grated parmesan
 black-olive tapenade	tapenade
@@ -8787,7 +8782,7 @@ freshly grated parmesan, for serving (more to taste)	freshly grated parmesan
 melted unsalted butter	unsalted butter
 cauliflower (1/2 medium head)	cauliflowers
 vessel whole milk	whole milk
-smoked autumn vegetables	vegetables
+red burgundy wine	wine
 celery stalks, sliced (about 3/4 pound)	celery stalks
 unsweetened applesauce	applesauce
 sea trout	trout
@@ -8803,10 +8798,12 @@ rabbit legs	rabbits
 medium new potato, peeled and chopped	potato
 finely minced ginger	minced ginger
 korean red pepper powder	red peppers
-all-purpose flour (2 cups)	all-purpose flour
+fluke or halibut fillets	halibut
 broccoli stems	broccoli
 demerara syrup	syrup
+chopped cucumber	cucumbers
 red pepper sauce	sauce
+rib-eye, thinly sliced	rib-eye
 young asiago cheese	cheese
 white or cremini mushrooms, rinsed briefly and wiped dry	cremini mushrooms
 chicken gizzards and hearts	chickens
@@ -8869,10 +8866,11 @@ black raspberries	raspberries
 sliced bamboo shoots, rinsed and drained	bamboo shoots
 peeled winter squash, like butternut or kabocha	winter squash
 orange	oranges
+asiago cheese	cheese
 snipped fresh dill	fresh dill
 bartlett pear	pears
 tepary beans	beans
-bakewell cream	cream
+dolin dry vermouth	dry vermouth
 roasted sweet pepper	peppers
 banana ice cream	ice cream
 ground cinnamon (1 teaspoon)	ground cinnamon
@@ -8893,7 +8891,7 @@ lamb breast	lamb
 breadcrumbs, plus more if desired	breadcrumbs
 grated sharp cheddar cheese	sharp cheddar cheese
 finely chopped lime zest	lime zest
-navel orange	oranges
+beaten eggs	eggs
 crumbled feta or freshly grated parmesan (more to taste)	feta
 pinch of salt	salt
 tomato halves	tomato
@@ -8914,7 +8912,7 @@ prosciutto (about 1/4 pound)	prosciutto
 medium cucumbers, peeled, seeded and diced	cucumbers
 sliced garlic	garlic
 chipotle chiles in adobo	chiles
-aleppo chili	chilis
+slivered fresh mint leaves, extra virgin olive oil, and dried red pepper flakes for garnish	mint leaves
 organic white sugar	white sugar
 mini phyllo shells	phyllo
 pureed banana	bananas
@@ -8926,7 +8924,7 @@ small white beans	white beans
 seasoned rice wine vinegar	rice wine vinegar
 granulated raw sugar	sugar
 white cannellini beans	cannellini beans
-diced sweet potatoes	sweet potatoes
+caciotta cheese	cheese
 beans -- limas	beans
 lean ground beef	ground beef
 carrot, peeled and finely chopped	carrots
@@ -8985,7 +8983,7 @@ nonfat powdered milk	milk
 double-crust pie dough	dough
 white raisins	raisins
 tomato broth	broth
-poblano chilies	chilies
+sugar-snap peas	peas
 minced fresh herbs	herbs
 green peas or mung lentil papadini	green peas
 salted black bean paste	paste
@@ -9005,7 +9003,7 @@ garlic flakes	garlic
 lime or lemon juice	lemon juice
 monterey jack, cheddar, or mixed cheeses	monterey jack
 finely chopped pitted kalamata olives	kalamata olives
-single ladyfingers	ladyfingers
+wide swiss chard stems	swiss chard
 chicken	chickens
 olive oil or butter for the pan or griddle	olive oil
 gouda cheese	cheese
@@ -9017,7 +9015,7 @@ dried navy beans	navy beans
 diver scallops, or sea scallops	sea scallops
 salted margarine	margarine
 peaches, pitted and sliced into 1/3-inch-thick wedges	peaches
-corn bread	breads
+chili pepper flakes	pepper flakes
 berry juice	juice
 kosher salt and ground black pepper	salt and ground black pepper
 wheat sour bread	breads
@@ -9027,13 +9025,12 @@ organic vegetable broth	vegetable broth
 chopped walnuts for garnish	chopped walnuts
 fresh jarred sauerkraut, rinsed and well drained	sauerkraut
 minced fresh rosemary	fresh rosemary
-lean ground pork	ground pork
 onion, intact	onions
 bone-in rib steaks	steaks
 fennel tops	fennel
 garlic cloves, cut in half, green shoots removed, and mashed to a paste in a mortar and pestle with 1/4 teaspoon salt	garlic cloves
 salt, to taste	salt
-57 grams/2 ounces chilled rendered leaf lard	lard
+large red bell peppers, seeded, deveined and cut into julienne strips	red bell peppers
 orecchiette, penne, farfalle or fusilli	orecchiette
 pears, ripe but not too soft, peeled, cored and sliced	pears
 green cardamom	cardamom
@@ -9050,12 +9047,13 @@ grated gruyere cheese	gruyere cheese
 red lentils, rinsed	red lentils
 soft-shell crabs, cleaned	soft-shell crabs
 mint ice	ice
+elephant garlic	garlic
 barbados rum	rum
 morel mushrooms	mushrooms
 clam juice, or fish or chicken stock	clam juice
 whole caraway seed	caraway seeds
-crumbled roquefort cheese	cheese
-shallots, peeled, julienned	shallots
+dried figs	figs
+brown (turbinado) sugar	sugar
 dash or two grapefruit bitters	grapefruits
 cloves garlic, crushed	cloves garlic
 soaked chia seeds (1 teaspoon dry unsoaked; see note)	chia seeds
@@ -9067,14 +9065,15 @@ bamboo skewers	skewers
 old unsalted butter	unsalted butter
 korean chili paste	chili paste
 quick-cooking polenta	polenta
+large cucumbers	cucumbers
 all purpose flour or whole wheat flour	whole wheat flour
 wedge brie	brie
 bird chilies	chilies
 heaped tablespoon	tablespoons
 cold unsalted butter, cut into bits	cold unsalted butter
 ground clove	cloves
-provolone cheese	cheese
-dr. brown's cream soda	cream
+baby artichokes or globe artichokes	baby artichokes
+thickened yogurt	yogurt
 large sweet onions, chopped	onions
 fresh egg noodles	egg noodles
 canned straw mushrooms	mushrooms
@@ -9091,7 +9090,7 @@ anjou pears	pears
 extra virgin olive oil, or more to taste	extra virgin olive oil
 4-pound chicken	chickens
 chicken or beef broth	beef broth
-gruy??re cheese, grated (3/4 cup, tightly packed)	gruy??re cheese
+small butternut squash, about 1 1/2 pounds, peeled, seeded, and cut in 1/2-inch	butternut squash
 mussels, scrubbed, debearded	mussels
 vegetable oil and oil	vegetable oil
 large leek	leeks
@@ -9120,20 +9119,19 @@ thinly sliced chives	chives
 finely chopped flat-leaf parsley	chopped flat-leaf parsley
 cooked grains	grains
 pearl couscous	couscous
-watercress (large stems removed).	watercress
-lamb, trimmed and frenched	lamb
+sriracha or other hot sauce, or rice wine vinegar	sriracha
 mild red pepper flakes	red pepper flakes
 jarred tomato sauce	tomato sauce
 demerara (raw) sugar	demerara
 kernels from 2 ears of corn	corn
 chinese or thai barbecue sauce	barbecue sauce
-natural, unsweetened peanut butter	peanut butter
+fresh sweet peas	peas
 green and red pepper	red peppers
-eggplant, preferably japanese eggplants	eggplants
+roasted pumpkin seeds	pumpkin seeds
 mint simple syrup	simple syrup
 green-tea leaves	leaves
 dried hominy	hominy
-whole wheat all-purpose flour	all-purpose flour
+white fettuccine	fettuccine
 white horseradish	horseradish
 star fruits	fruits
 pork sausage	pork sausages
@@ -9144,6 +9142,7 @@ thinly shredded cabbage	cabbage
 slivered fresh basil leaves or chopped fresh tarragon, chervil or marjoram	fresh basil leaves
 medium-dry sherry	sherry
 jim beam bourbon	bourbon
+macadamia nuts	nuts
 new red-skinned potatoes, about 1 to 1 1/4 pounds	potatoes
 sprinkle of white wine vinegar	white wine vinegar
 ocean salad	salad
@@ -9159,9 +9158,8 @@ carpano antica formula vermouth	vermouth
 olive oil, duck fat or bacon fat	olive oil
 dried red beans	beans
 rose geranium leaves	leaves
-quahog clams	clams
+whole leeks, white and light green parts, sliced crosswise into 1/8-inch-wide pieces (to make about 4 cups), and thoroughly rinsed	leeks
 rich beef broth	beef broth
-fresh chicken livers	chicken livers
 chipotle chilies	chilies
 gigante beans	beans
 whole star anise (or 2 whole cloves)	star anise
@@ -9171,13 +9169,14 @@ pan corn bread	breads
 ripe but firm tomatoes	tomatoes
 cava sparkling wine	wine
 low-fat chicken stock	chicken stock
-strip kombu	kombu
+medium red onion	red onions
 top round of beef	beef
 dried white beans	white beans
-rustic italian bread	breads
+hot smoked paprika	smoked paprika
+chopped fruit	fruits
 monkfish fillet	monkfish
-lean veal	veal
-peeled tomatoes	tomatoes
+firm feta cheese	feta cheese
+coarsely chopped rosemary	rosemary
 wildflower honey	honey
 cutlet	cutlets
 finely chopped red or white onion	white onions
@@ -9202,6 +9201,7 @@ liquid aminos	liquid
 tap water	water
 mint leave	mint
 black forest ham	ham
+crumbled cake	cake
 dried shallots	shallots
 evaporated skim milk	skim milk
 whole wheat matzo meal	matzo meal
@@ -9213,7 +9213,7 @@ diced ham	ham
 guinea fowl	fowl
 almonds, blanched	almonds
 red miso	miso
-chopped cucumber	cucumbers
+cracked black pepper	black pepper
 thick-cut salmon filets, cut into 4 equal rectangular portions	salmon
 jalapeno pepper	jalapeno peppers
 large onion (8 ounces), peeled and cut into quarters	large onion
@@ -9232,7 +9232,7 @@ sweet green pepper	green peppers
 reduced-sodium soy sauce	soy sauce
 ginger liqueur	liqueur
 boneless chicken	chickens
-leftover turkey	turkeys
+rib pork chops	pork chops
 cinnamon sugar (see note), for sprinkling	sugar
 fresh beets, trimmed and washed	beets
 orange glaze	oranges
@@ -9252,9 +9252,8 @@ dry white wine, such as pinot grigio or sauvignon blanc	dry white wine
 pasteurized egg	eggs
 chipotle chili powder	chili powder
 carrots (2 large)	carrots
-chicken sausage	sausages
-jalape??o chiles	jalape??os
-low-sodium chicken broth	chicken broth
+yellow food coloring	food coloring
+small dry chickpeas	chickpeas
 anise liqueur	liqueur
 meyer lemons	lemons
 large carrot, peeled and chopped	carrots
@@ -9262,11 +9261,12 @@ pierre ferrand orange cura??ao	oranges
 enriched vinaigrette	vinaigrette
 large-leaf spinach	spinach
 salt and freshly ground black pepper.	salt
+poblano chilies	chilies
 spaghetti, linguini or fettuccine	spaghetti
 fine hard wheat durum semolina flour	semolina flour
 plain white mushrooms	white mushrooms
 grapeseed or coconut oil	coconut oil
-fresh sweet peas	peas
+natural, unsweetened peanut butter	peanut butter
 colman's mustard	mustard
 meat glaze	glaze
 unbleached bread flour	bread flour
