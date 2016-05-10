@@ -1,5 +1,5 @@
 Running ToMEto as is:
-  >> python app.py analyzer_*.txt
+  >> python app.py nyt/analyzer_*.txt
 
 Use a new analyzer algorithm:
   >> cd nyt
