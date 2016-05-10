@@ -56,6 +56,7 @@ def simplesearch():
 @app.route('/simplesearch', methods=['POST'])
 def simplesearch_searched():
   searchquery = request.form['simplesearch']
+
   search_ids = search.search(searchquery)
 
   # iterate through complements list, adding tuples of (id, list of complements)
@@ -73,17 +74,23 @@ def simplesearch_searched():
 
   #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
 
-  # print searchquery
-  # print search_ids
-  # print content
+  #
+  # TODO: separate page for single line errors?
+  #
 
-  #num_results will be returned by the function which lists recipes!
+  try:
+    search_ids = search.search(searchquery)
+  except Exception as e:
+    # TODO: better error message
+    return render_template('simplesearch_searched.html', query=searchquery,
+            content = ['Unable to establish connection to nytimes'], num_results=1)
 
-  # no searches match.
   if (len(search_ids) == 0):
-    return render_template('no_results.html')
+    return render_template('simplesearch_searched.html', query=searchquery,
+            content=['No recipes found!'], num_results=1)
 
   else:
+    content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
     return render_template('simplesearch_searched.html', query=searchquery, 
             content=content, num_results=len(search_ids)) 
 
