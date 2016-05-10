@@ -13,7 +13,7 @@ app = Flask(__name__)
 # Home page
 @app.route("/")
 def main():
-  return render_template('index.html')
+  return render_template('simplesearch.html', num_results=0)
 
 @app.route("/index")
 def index():
@@ -64,7 +64,13 @@ def simplesearch_searched():
   # print content
 
   #num_results will be returned by the function which lists recipes!
-  return render_template('simplesearch_searched.html', query=searchquery, 
+
+  # no searches match.
+  if (len(search_ids) == 0):
+    return render_template('no_results.html')
+
+  else:
+    return render_template('simplesearch_searched.html', query=searchquery, 
             content=content, num_results=len(search_ids)) 
 
 
