@@ -30,6 +30,12 @@ body {
     background:transparent;
 }
 
+.white_bg
+{
+	background-color: #ffffff;
+	padding: 3px; 
+}
+
 form {
 	margin-bottom:30px;
 	padding:0px;

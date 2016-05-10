@@ -57,7 +57,21 @@ def simplesearch():
 def simplesearch_searched():
   searchquery = request.form['simplesearch']
   search_ids = search.search(searchquery)
-  content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
+
+  # iterate through complements list, adding tuples of (id, list of complements)
+  content = []
+
+  for k in search_ids:
+    value = [k]
+    if k in complements:
+      value.append(complements[k])
+    else:
+      value.append('NULL')
+
+    #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
+    content.append(value)
+
+  #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
 
   # print searchquery
   # print search_ids
