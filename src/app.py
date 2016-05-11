@@ -88,8 +88,7 @@ def simplesearch_searched():
             content = [['Unable to establish connection to nytimes'], "test"], num_results=1)
 
   if (len(search_ids) == 0):
-    return render_template('simplesearch_searched.html', query=searchquery,
-            content=[['No recipes found!'], "test"], num_results=1)
+    return render_template('no_results.html', query=searchquery, content=content, num_results=0)
 
   else:
     return render_template('simplesearch_searched.html', query=searchquery, 

@@ -15,6 +15,13 @@ MAPPER_OUT = 'mapper_out.txt'
 MAPPER_TOP = 'mapper_top.txt'
 
 
+#TODO:
+def getrecipe_info(recipe_id):
+  title = "title of the recipe"
+  details = "the recipe itself"
+  return [title, details]
+
+
 def _correct(string):
   """ Fix non-ascii characters to '?' """
   l = list(string)
