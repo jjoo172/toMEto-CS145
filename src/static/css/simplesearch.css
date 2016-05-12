@@ -1,21 +1,10 @@
+
 body {
 	background: url(../img/tomato_background.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-button {
-  border: solid 1px somecolor;
-  color: #eee;
-  border-radius:5px;
- -moz-border-radius:5px;
-  background: -moz-linear-gradient(top, #5E5E5E 0%, #474747 51%, #0a0e0a 51%, #0a0809 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5E5E5E), color-stop(51%,#474747), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809));
-}
-button:hover {
-  color: white;
 }
 
 
@@ -48,21 +37,56 @@ button:hover {
 	background-color: #ffffff; 
 }
 
-.button {
-    padding: 10px 15px;
-    background: #4479BA;
-    color: #FFF;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #20538D;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+/* this is for the tiles */
+.tile {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 13.5px 27px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.tile:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.tile:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+/* Hoverable Style stuff*/
+.hoverable {
+  cursor:default;
+  color:#000;
+  text-decoration:none;
+}
+.hoverable .hover {
+  display:none;
+}
+.hoverable:hover .normal {
+  display:none;
+}
+.hoverable:hover .hover {
+  display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
 }
 
 form {
-	margin-bottom:30px;
-	padding:0px;
+  margin-bottom:30px;
+  padding:0px;
 }

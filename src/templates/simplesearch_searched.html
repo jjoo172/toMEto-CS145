@@ -4,8 +4,8 @@
 <head>
   <title>ToMEto</title>
     
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/simplesearch.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="../static/css/simplesearch.css" />
 
     <!-- <script src="../static/js/jquery-1.11.2.js"></script> -->
     <script src="../static/js/simplesearch.js"></script>
@@ -43,13 +43,51 @@
     <tr>
       <td>
         <center>
-          <button type="button" onclick="alert({{content[x][1]}})"> {{content[x][0]}} </button>
+          <a href="http://google.com" class="hoverable tile" onclick="alert({{content[x][1]}})"> 
+            <span class="normal">{{content[x][0]}}</span>
+            <span class="hover">{{content[x][1]}}</span>
+          </a>
         </center>
       </td>
     </tr>
   {% endfor %}
 </table>
 </center>
+
+<!--
+<head>
+<title>JS Bin</title>
+  <style>
+    .hoverable {
+      cursor:default;
+      color:#000;
+      text-decoration:none;
+    }
+    .hoverable .hover {
+      display:none;
+    }
+    .hoverable:hover .normal {
+      display:none;
+    }
+    .hoverable:hover .hover {
+      display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript://" class="hoverable">
+    <img src="http://png-2.findicons.com/files/icons/1577/danish_royalty_free/32/forward_button.png" class="normal" border="0" /><img src="http://png-4.findicons.com/files/icons/1577/danish_royalty_free/32/forward_button_white.png" class="hover" border="0" />
+  </a>
+  
+  <a href="javascript://" class="hoverable">
+    <span class="normal">Mouse over me!</span><span class="hover">Hello world!!!</span>
+  </a>
+</body>
+
+-->
+
+
+
 
 </body>
 </html>

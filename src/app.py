@@ -74,6 +74,8 @@ def simplesearch_searched():
 
   print content
 
+
+
   #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
 
   #
@@ -85,7 +87,7 @@ def simplesearch_searched():
   except Exception as e:
     # TODO: better error message
     return render_template('simplesearch_searched.html', query=searchquery,
-            content = [['Unable to establish connection to nytimes'], "test"], num_results=1)
+            content = [['Unable to establish connection to nytimes', "We apologize for the inconvenience"]], num_results=1)
 
   if (len(search_ids) == 0):
     return render_template('no_results.html', query=searchquery, content=content, num_results=0)
