@@ -3,9 +3,9 @@ import re
 import tqdm
 
 
-DL_DIR = 'dls/'
 PROCESS_DIR = 'processed/'
-
+PROCESS_DIR_2 = 'processed2/'
+PREFIX = 'allrecipes_'
 
 
 def hasprocessed(filename):
@@ -15,7 +15,7 @@ def hasprocessed(filename):
 
 def process(filename):
   # Process and save
-  f = open(DL_DIR + filename, 'r')
+  f = open(PROCESS_DIR + filename, 'r')
   content = f.read()
   f.close()
 
@@ -30,9 +30,8 @@ def process(filename):
 
 if __name__ == '__main__':
   # Get all downloaded recipe files
-  allfiles = [f for f in os.listdir(DL_DIR) if os.path.isfile(DL_DIR + f)]
+  allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
 
   # Process all unprocessed recipes
   for f in tqdm.tqdm(allfiles):
-    if not hasprocessed(f):
-      process(f)
+    process(f)

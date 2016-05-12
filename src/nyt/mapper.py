@@ -15,7 +15,7 @@ Notes:
 import tqdm
 import random
 
-import analyzerutils
+import utils
 
 
 MIN_DEGREE = 10
@@ -23,11 +23,11 @@ DEBUG = False
 
 
 def writeToFile():
-  with open(analyzerutils.MAPPER_OUT, 'w') as f:
+  with open(utils.MAPPER_OUT, 'w') as f:
     for d in mapping:
       f.write('%s\t%s\n' % (d, mapping[d]))
 
-  with open(analyzerutils.MAPPER_TOP, 'w') as f:
+  with open(utils.MAPPER_TOP, 'w') as f:
     for d in degree:
       if degree[d] >= MIN_DEGREE:
         f.write('%s\n' % d)
@@ -37,7 +37,7 @@ def importall():
 
   graph = {}
   degree = {}
-  recipes = analyzerutils.getrecipes()
+  recipes = utils.getrecipes()
   mapping = {}
 
   for recipe_id in tqdm.tqdm(recipes):
