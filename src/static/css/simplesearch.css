@@ -44,15 +44,19 @@ body {
   cursor:default;
   color:#000;
   text-decoration:none;
+
 }
 .hoverable .hover {
   display:none;
+  width:100%;
 }
 .hoverable:hover .normal {
   display:none;
+  width:100%;
 }
 .hoverable:hover .hover {
   display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
+  width:100%;
 }
 
 form {
@@ -96,3 +100,51 @@ form {
   height:100%;
   width:100%; 
 }
+
+
+
+/* square blurring */
+
+
+    .square > header {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10px;
+      background: inherit;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+    .square > header::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: inherit;
+      background-attachment: fixed;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+    }
+    .module > header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25)
+    }
+    .square > header > h1 {
+      margin: 0;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+     
+    * {
+      box-sizing: border-box;
+    }
+
