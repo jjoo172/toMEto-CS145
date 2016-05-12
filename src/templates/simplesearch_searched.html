@@ -40,16 +40,16 @@
 <center>
 <table>
   {% for x in range(num_results) %}
-    <tr>
-      <td>
-        <center>
-          <a href="http://google.com" class="hoverable tile" onclick="alert({{content[x][1]}})"> 
+    <div class="square hoverable">
+      <div class="content">
+        <div class="table-cell">
+          <a href="http://google.com" onclick="alert({{content[x][1]}})"> 
             <span class="normal">{{content[x][0]}}</span>
             <span class="hover">{{content[x][1]}}</span>
           </a>
-        </center>
-      </td>
-    </tr>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </table>
 </center>
