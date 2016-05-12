@@ -1,3 +1,4 @@
 src/*/dls/*
 src/*/processed/*
+src/*/processed2/*
 *.pyc
