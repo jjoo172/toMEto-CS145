@@ -45,7 +45,7 @@ def complement(recipe_id):
   ingredients = recipes[recipe_id]
 
   d = defaultdict(float)
-  top10 = heapq.nsmallest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
+  top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
   for a in ingredients:
     if a in graph and a not in top10:
       for b in graph[a]:
@@ -53,7 +53,7 @@ def complement(recipe_id):
           continue
         d[b] += PMI(a, b) / degree[a]
 
-  return heapq.nsmallest(10, d, key=lambda k: d[k])
+  return heapq.nlargest(10, d, key=lambda k: d[k])
 
 
 def writeToFile(filename):
