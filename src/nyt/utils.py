@@ -9,6 +9,8 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 
+import pylab
+import scipy.stats as stats
 
 PROCESS_DIR = 'processed/'
 MAPPER_OUT = 'mapper_out.txt'
@@ -69,6 +71,17 @@ def getrecipes(mapped=False, ignorenotmapped=False):
       recipes[filename[:-4]] = ingredients
   return recipes
 
+def substitute(original, recommendation):
+    """ Substitute ingredient suggestions if they're too similar to
+        an ingredient originally part of the recipe. One example
+        of this occurance is suggesting 'white flour' when 'all-purpose flour'
+        is already an ingredient """
+    originalTokens = original.split(" ")
+    recTokens = recommendation.split(" ")
+    for item in originalTokens:
+        if item in recTokens:
+            return True
+    return False
 
 def gettop():
   """ Return a set of the top ingredients (in file specified by MAPPER_TOP) """
@@ -115,6 +128,27 @@ def histogram(degree, highest, binsize):
   y = [degree[k] for k in degree]
   plt.hist((x, y), bins=np.arange(0, highest, binsize))
   plt.show()
+
+
+def loglogplot(degree):
+  vals = degree.values()
+  vals = filter(lambda x: x > 0, vals)
+  vals.sort()
+  ranks = [i for i in range(len(vals))]
+  ranks.reverse()
+  plt.loglog(ranks, vals, basex=10, basey=10)
+  plt.show()
+
+def qqplot(degree):
+  vals = degree.values()
+  stats.probplot(np.array(vals), dist="lognorm(1.5)", plot = pylab)
+  pylab.show()
+
+
+
+
+
+
 
 
 def dump_json(d, filename):

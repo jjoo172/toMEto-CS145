@@ -9,6 +9,7 @@ from collections import defaultdict
 import numpy as np
 
 import utils
+utils.PROCESS_DIR = 'processed2/' # combined dataset
 
 
 def PMI(a, b):
