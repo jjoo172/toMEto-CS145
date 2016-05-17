@@ -25,29 +25,6 @@ def index():
 def ingredients():
   return render_template('ingredients.html')
 
-@app.route('/signUp', methods=['POST'])
-def signUp():
- 
-  mylist = []
-  counter = 1
-    # read the posted values from the UI
-    #request.form['myInput' + str(counter)] != true
-  while (True):
-    try:
-      mylist.append(request.form['myInput' + str(counter)])
-      print mylist
-      print "success"
-      counter += 1;
-    except:
-      break 
-
-  print "ingredients list: "
-  for i in mylist:
-    print i
-    if (i == ""):
-      return render_template('index.html')
-
-
 # Recipe search option
 @app.route('/simplesearch', methods=['GET'])
 def simplesearch():

@@ -1,3 +1,5 @@
+/*
+
 $(function() {
     $('#btnSearch').click(function() {
         $('#loading_img').show();
@@ -15,4 +17,5 @@ $(function() {
         });
     });
 });
+*/
 
