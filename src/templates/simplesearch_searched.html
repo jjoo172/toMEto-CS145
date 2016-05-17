@@ -59,9 +59,11 @@ $(document).ready(function(){
         <div class="table-cell">
           <header>
             <h1>
+              <!--
           <a href="http://cooking.nytimes.com/recipes/{{content[x][0]}}" onclick="MyWindow=window.open('http://cooking.nytimes.com/recipes/{{content[x][0]}}','MyWindow','width=600,height=300'); return false;"> 
+          -->
             
-            <a href="#" data-toggle="popover" title="{{content[x][0]}}" data-content="{{content[x][1]}}">{{content[x][0]}}</a>
+            <a href="http://cooking.nytimes.com/recipes/{{content[x][0]}}" onclick="MyWindow=window.open('http://cooking.nytimes.com/recipes/{{content[x][0]}}','MyWindow','width=600,height=300'); return false;" data-toggle="popover" title="{{content[x][0]}}" data-content="{{content[x][1]}}">{{content[x][0]}}</a>
           
             <span class="normal">{{content[x][0]}}</span>
             <span class="hover">{{content[x][1]}}</span>
