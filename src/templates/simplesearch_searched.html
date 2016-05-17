@@ -37,6 +37,20 @@
   </div>
 </div>
 
+<!-- popover -->
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+
+<!-- tiles -->
+
 <center>
 <table>
   {% for x in range(num_results) %}
@@ -45,7 +59,10 @@
         <div class="table-cell">
           <header>
             <h1>
-          <a href="http://cooking.nytimes.com/recipes/{{content[x][0]}}" onclick="alert({{content[x][1]}})"> 
+          <a href="http://cooking.nytimes.com/recipes/{{content[x][0]}}" onclick="MyWindow=window.open('http://cooking.nytimes.com/recipes/{{content[x][0]}}','MyWindow','width=600,height=300'); return false;"> 
+            
+            <a href="#" data-toggle="popover" title="{{content[x][0]}}" data-content="{{content[x][1]}}">{{content[x][0]}}</a>
+          
             <span class="normal">{{content[x][0]}}</span>
             <span class="hover">{{content[x][1]}}</span>
           </a>
@@ -58,37 +75,6 @@
 </table>
 </center>
 
-<!--
-<head>
-<title>JS Bin</title>
-  <style>
-    .hoverable {
-      cursor:default;
-      color:#000;
-      text-decoration:none;
-    }
-    .hoverable .hover {
-      display:none;
-    }
-    .hoverable:hover .normal {
-      display:none;
-    }
-    .hoverable:hover .hover {
-      display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
-    }
-  </style>
-</head>
-<body>
-  <a href="javascript://" class="hoverable">
-    <img src="http://png-2.findicons.com/files/icons/1577/danish_royalty_free/32/forward_button.png" class="normal" border="0" /><img src="http://png-4.findicons.com/files/icons/1577/danish_royalty_free/32/forward_button_white.png" class="hover" border="0" />
-  </a>
-  
-  <a href="javascript://" class="hoverable">
-    <span class="normal">Mouse over me!</span><span class="hover">Hello world!!!</span>
-  </a>
-</body>
-
--->
 
 
 
