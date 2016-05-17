@@ -69,8 +69,8 @@ form {
 /* more square stuff */
 .square { 
   background-color: #a2f47f;
-  opacity: 0.7;
-  filter: alpha(opacity=70); /*for IE8 and earlier*/
+  opacity: 0.95;
+  filter: alpha(opacity=95); /*for IE8 and earlier*/
 
   float:left; position: relative; width: 30%; 
   padding-bottom : 30%; /* = width for a 1:1 aspect ratio */ 
