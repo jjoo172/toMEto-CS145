@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
     $('#btnSearch').click(function() {
         $('#loading_img').show();
         $.ajax({
