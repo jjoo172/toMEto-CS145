@@ -1,5 +1,5 @@
 """ USAGE: 
-  >> python analyzer_PMI.py
+  >> python analyzer_PMI2.py
 """
 
 import os
@@ -10,20 +10,20 @@ import numpy as np
 
 import utils
 
-
-def PMI(a, b):
-    return np.log(float(graph[a][b]) / len(recipes)) /\
-            (num_recipe[a] / len(recipes) * num_recipe[b] / len(recipes))
+def genPMI(a, b):
+    num = float(graph[a][b]) / len(recipes)
+    tmp1 = float(num_recipe[a]) / len(recipes)
+    tmp2 = float(num_recipe[b]) / len(recipes)
+    return np.log(num / (tmp1 * tmp2))
 
 
 def importall():
   """ Call to import everything """
-  global graph, degree, recipes, recipes2, top, num_recipe
+  global graph, degree, recipes, top, num_recipe
 
   graph = defaultdict(lambda: defaultdict(float))
   degree = defaultdict(float)
-  recipes = utils.getrecipes(mapped=True, ignorenotmapped=True)
-  recipes2 = utils.getrecipes(mapped=False, ignorenotmapped=False)
+  recipes = utils.getrecipes(mapped=True)
   top = utils.gettop()
   num_recipe = defaultdict(float)
 
@@ -38,23 +38,28 @@ def importall():
 
   for a in graph:
     for b in graph[a]:
-      degree[a] += PMI(a, b)
+      degree[a] += graph[a][b]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes2[recipe_id]
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
+  global d
 
   d = defaultdict(float)
-  top10 = heapq.nsmallest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
+  top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
   for a in ingredients:
     if a in graph and a not in top10:
       for b in graph[a]:
         if b in ingredients or b in top10:
           continue
-        d[b] += PMI(a, b) / degree[a]
+        if b in d:
+          d[b] = min(d[b], PMI(a, b))
+        else:
+          d[b] = PMI(a,b)
 
-  return heapq.nsmallest(10, d, key=lambda k: d[k])
+  return heapq.nlargest(10, d, key=lambda k: d[k])
 
 
 def writeToFile(filename):

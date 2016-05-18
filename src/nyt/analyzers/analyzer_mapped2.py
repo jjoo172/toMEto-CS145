@@ -1,5 +1,5 @@
 """ USAGE: 
-  >> python analyzer_mapped.py
+  >> python analyzer_mapped2.py
 """
 
 import os
@@ -12,12 +12,11 @@ import utils
 
 def importall():
   """ Call to import everything """
-  global graph, degree, recipes, recipes2, top
+  global graph, degree, recipes, top
 
   graph = defaultdict(lambda: defaultdict(float))
   degree = defaultdict(float)
-  recipes = utils.getrecipes(mapped=True, ignorenotmapped=True)
-  recipes2 = utils.getrecipes(mapped=False, ignorenotmapped=False)
+  recipes = utils.getrecipes(mapped=True)
   top = utils.gettop()
 
   for recipe_id in tqdm.tqdm(recipes):
@@ -33,9 +32,10 @@ def importall():
       degree[g] += graph[g][z]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes2[recipe_id]
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
 
   d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients

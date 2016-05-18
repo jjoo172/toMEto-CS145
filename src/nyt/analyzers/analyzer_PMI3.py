@@ -1,5 +1,5 @@
 """ USAGE: 
-  >> python analyzer_PMI2.py
+  >> python analyzer_PMI3.py
 """
 
 import os
@@ -9,14 +9,12 @@ from collections import defaultdict
 import numpy as np
 
 import utils
-utils.PROCESS_DIR = 'processed2/' # combined dataset
+# utils.PROCESS_DIR = 'processed2/'   # Use combined dataset
 
 
 def PMI(a, b):
-    num = float(graph[a][b]) / len(recipes)
-    tmp1 = float(num_recipe[a]) / len(recipes)
-    tmp2 = float(num_recipe[b]) / len(recipes)
-    return np.log(num / (tmp1 * tmp2))
+    return np.log(graph[a][b] / len(recipes) /\
+            (num_recipe[a] / len(recipes) * num_recipe[b] / len(recipes)))
 
 
 def importall():
@@ -33,34 +31,33 @@ def importall():
     ingredients = recipes[recipe_id]
 
     for a in ingredients:
-      num_recipe[a] += 1.0;
-      for b in ingredients:
-        if a != b and a in top and b in top:
-          graph[a][b] += 1.0
+      if a in top:
+        num_recipe[a] += 1.0;
+        for b in ingredients:
+          if a != b and b in top:
+            graph[a][b] += 1.0
 
   for a in graph:
     for b in graph[a]:
-      degree[a] += graph[a][b]
+      degree[a] += PMI(a, b)
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes[recipe_id]
-  global d
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
 
-  d = defaultdict(float)
-  top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
+  score = defaultdict(float)
+  count = defaultdict(int)
   for a in ingredients:
-    if a in graph and a not in top10:
+    if a in graph:
       for b in graph[a]:
-        if b in ingredients or b in top10:
+        if b in ingredients:
           continue
-        if b in d:
-          d[b] = min(d[b], PMI(a, b))
-        else:
-          d[b] = PMI(a,b)
+        count[b] += 1
+        score[b] += PMI(a, b)
 
-  return heapq.nlargest(10, d, key=lambda k: d[k])
+  return heapq.nlargest(10, score, key=lambda k: count[k] * score[k])
 
 
 def writeToFile(filename):

@@ -1,8 +1,7 @@
 """ USAGE: 
-  >> python analyzer_mapped2.py
+  >> python analyzer_naive.py
 """
 
-import os
 import tqdm
 import heapq
 from collections import defaultdict
@@ -16,7 +15,7 @@ def importall():
 
   graph = defaultdict(lambda: defaultdict(float))
   degree = defaultdict(float)
-  recipes = utils.getrecipes(mapped=True)
+  recipes = utils.getrecipes()
   top = utils.gettop()
 
   for recipe_id in tqdm.tqdm(recipes):
@@ -27,23 +26,26 @@ def importall():
         if a != b and a in top and b in top:
           graph[a][b] += 1.0
 
-  for g in graph:
-    for z in graph[g]:
-      degree[g] += graph[g][z]
+  for a in graph:
+    for b in graph[a]:
+      degree[a] += graph[a][b]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes[recipe_id]
+
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
 
   d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
-  for a in ingredients:
-    if a in graph and a not in top10:
-      for b in graph[a]:
-        if b in ingredients or b in top10:
+  for i in ingredients:
+    if i in graph and i not in top10:
+      for k in graph[i]:
+        if k in ingredients or k in top10:
           continue
-        d[b] += min(graph[a][b]/degree[a], graph[b][a]/degree[b])
+
+        d[k] += min(graph[i][k]/degree[i], graph[k][i]/degree[k])
 
   return heapq.nlargest(10, d, key=lambda k: d[k])
 

@@ -9,11 +9,14 @@ from collections import defaultdict
 import numpy as np
 
 import utils
+# utils.PROCESS_DIR = 'processed2/' # combined dataset
 
 
 def PMI(a, b):
-    return np.log(float(graph[a][b]) / len(recipes)) /\
-            (num_recipe[a] / len(recipes) * num_recipe[b] / len(recipes))
+    num = float(graph[a][b]) / len(recipes)
+    tmp1 = float(num_recipe[a]) / len(recipes)
+    tmp2 = float(num_recipe[b]) / len(recipes)
+    return np.log(num / (tmp1 * tmp2))
 
 
 def importall():
@@ -37,12 +40,14 @@ def importall():
 
   for a in graph:
     for b in graph[a]:
-      degree[a] += PMI(a, b)
+      degree[a] += graph[a][b]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes[recipe_id]
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
+  global d
 
   d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
@@ -51,7 +56,10 @@ def complement(recipe_id):
       for b in graph[a]:
         if b in ingredients or b in top10:
           continue
-        d[b] += PMI(a, b) / degree[a]
+        if b in d:
+          d[b] = min(d[b], PMI(a, b))
+        else:
+          d[b] = PMI(a,b)
 
   return heapq.nlargest(10, d, key=lambda k: d[k])
 
