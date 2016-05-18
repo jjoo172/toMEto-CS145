@@ -8,15 +8,42 @@ import heapq
 from collections import defaultdict
 import numpy as np
 
+import itertools
 import utils
-utils.PROCESS_DIR = 'processed/' # combined dataset
+utils.PROCESS_DIR = 'processed2/' # combined dataset
 
 
-def genPMI(a, b):
-    num = float(graph[a][b]) / len(recipes)
-    tmp1 = float(num_recipe[a]) / len(recipes)
-    tmp2 = float(num_recipe[b]) / len(recipes)
-    return np.log(num / (tmp1 * tmp2))
+def genPMI(s):
+    num = len(recipes)
+    for pairs in list(itertools.combinations(s,2)):
+        num = min(num, graph[pairs[0]][pairs[1]])
+    num = num / float(len(recipes))
+    denom = 1.0
+    for i in s:
+        denom *= float(num_recipe[i]) / len(recipes)
+    return np.log(num / denom)
+
+def analyze():
+    ok = 0
+    failed = 0
+    for recipe_id in tqdm.tqdm(recipes):
+        if "allrecipes" in recipe_id:
+            continue
+        ingredients = recipes[recipe_id]
+        subsets=list(itertools.combinations(ingredients,3))
+        bestMatch = ("", float("-inf"))
+        for s in subsets:
+            pmi = genPMI(s)
+            if pmi > bestMatch[1]:
+                bestMatch = (s, pmi)
+        # print bestMatch, recipe_id
+        if bestMatch[1] < -2000:
+            failed += 1
+        else:
+            ok += 1
+    print "% num_failed", failed, "/", len(recipes)
+    print "% ok", ok, "/", len(recipes)
+
 
 
 def importall():
@@ -48,17 +75,49 @@ def complement(recipe_id):
   ingredients = recipes[recipe_id]
   global d
 
-  d = defaultdict(float)
+  d = defaultdict(list)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
+
+  bestMatch = ("", float("-inf"))
+  maxIngredients = 3
+  while maxIngredients > 1:
+    comb = list(itertools.combinations(ingredients, maxIngredients))
+    for s in comb:
+        if any(i not in graph for i in s):
+            continue
+        pmi = genPMI(s)
+        for a in s:
+            for b in graph[a]:
+                if b in ingredients:
+                    continue
+                ingredients = list(bestMatch[0])
+                ingredients.append(b)
+                try:
+                    pmi = genPMI(ingredients)
+                    # print pmi, ingredients
+                except:
+                    continue
+                if b in d:
+                    d[b] = max(d[b], pmi)
+                else:
+                    d[b] = pmi
+        # if pmi > bestMatch[1]:
+        #     bestMatch = (s, pmi)
+    maxIngredients -= 1
+
+
+  # return bestMatch
+
   for a in ingredients:
     if a in graph and a not in top10:
       for b in graph[a]:
+        pmi = genPMI((a,b))
         if b in ingredients or b in top10:
           continue
         if b in d:
-          d[b] = min(d[b], PMI(a, b))
+          d[b] = max(d[b], pmi)
         else:
-          d[b] = PMI(a,b)
+          d[b] = pmi
 
   return heapq.nlargest(10, d, key=lambda k: d[k])
 
@@ -70,6 +129,6 @@ def writeToFile(filename):
       out.write('%s\t%s\n' % (recipe_id, '\t'.join(best)))
 
 
-if __name__ == '__main__':
-  importall()
-  writeToFile(__file__[:-3] + '.txt')
+# if __name__ == '__main__':
+#   importall()
+#   writeToFile(__file__[:-3] + '.txt')
