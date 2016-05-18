@@ -14,6 +14,16 @@
 
     <!--<script src="../static/js/simplesearch.js"></script>-->
 
+  <!-- tile fading in script -->
+{% for x in range(num_results) %}
+   <script>
+   $(document).ready(function() {
+    $("#tile{{content[x][0]}}").delay({{x}} * 100).fadeIn(500);
+   });
+   </script>
+{% endfor %}
+
+
     <!-- loading icon script -->
     <script>
     $(function() {
@@ -23,6 +33,9 @@
     });
 });
     </script>
+
+   
+
     <!-- popover 
     <script>
       $(document).ready(function(){
@@ -87,6 +100,7 @@
 <center>
 <table>
   {% for x in range(num_results) %}
+  <div id="tile{{content[x][0]}}" style="display:none">
     <div class="square hoverable">
       <div class="content">
         <div class="table-cell">
@@ -113,6 +127,7 @@
         </div>
       </div>
     </div>
+  </div>
   {% endfor %}
 </table>
 </center>

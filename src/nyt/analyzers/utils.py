@@ -26,7 +26,10 @@ DB_DIR = FILE_DIR + '/../db/'
 
 #TODO:
 def getrecipe_info(recipe_id):
+  print recipe_id
+  print DB_DIR + recipe_id + '.txt'
   with open(DB_DIR + recipe_id + '.txt', 'r') as f:
+    print "opened"
     content = f.read()
     i = content.find('\n')
     title = content[:i]

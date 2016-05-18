@@ -6,6 +6,7 @@ import sys
 
 from flask import Flask, render_template, json, request
 import nyt.search as search
+import nyt.analyzers.utils as utils
 
 app = Flask(__name__)
 
@@ -36,18 +37,25 @@ def simplesearch_searched():
 
   search_ids = search.search(searchquery)
 
+
   # iterate through complements list, adding tuples of (id, list of complements)
   content = []
 
   for k in search_ids:
-    value = [k]
-    if k in complements:
-      value.append(complements[k])
-    else:
-      value.append('NULL')
+    try:
+      print k
+      titleinfo = utils.getrecipe_info(k)
 
-    #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
-    content.append(value)
+      value = [k]
+      if k in complements:
+        value.append(complements[k])
+      else:
+        value.append('NULL')
+
+      #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
+      content.append(value)
+    except:
+      pass
 
   print content
 
@@ -71,7 +79,7 @@ def simplesearch_searched():
 
   else:
     return render_template('simplesearch_searched.html', query=searchquery, 
-            content=content, num_results=len(search_ids)) 
+            content=content, num_results=len(content)) 
 
 
 # Loading complementary ingredients
