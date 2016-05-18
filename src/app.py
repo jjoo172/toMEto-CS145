@@ -43,8 +43,7 @@ def simplesearch_searched():
 
   for k in search_ids:
     try:
-      print k
-      titleinfo = utils.getrecipe_info(k)
+      titleinfo = [utils.getrecipe_info(k)]
 
       value = [k]
       if k in complements:
@@ -54,6 +53,8 @@ def simplesearch_searched():
 
       #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
       content.append(value)
+
+      content.append(titleinfo)
     except:
       pass
 
