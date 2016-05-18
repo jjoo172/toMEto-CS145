@@ -22,10 +22,15 @@ MAPPER_TOP = FILE_DIR + '/../mapper_top.txt'
 # LEARNING_DIR = FILE_DIR + '/../sandbox/processed_learning/'
 TEST_DIR = FILE_DIR + '/../sandbox/processed_test/'
 
+DB_DIR = FILE_DIR + '/../db/'
+
 #TODO:
 def getrecipe_info(recipe_id):
-  title = "title of the recipe"
-  details = "the recipe itself"
+  with open(DB_DIR + recipe_id + '.txt', 'r') as f:
+    content = f.read()
+    i = content.find('\n')
+    title = content[:i]
+    details = content[i+1:]
   return [title, details]
 
 
