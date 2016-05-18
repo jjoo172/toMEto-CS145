@@ -1,60 +1,53 @@
 """ USAGE: 
-  >> python analyzer_PMI.py
+  >> python analyzer_naive.py
 """
 
-import os
 import tqdm
 import heapq
 from collections import defaultdict
-import numpy as np
 
 import utils
 
 
-def PMI(a, b):
-    return np.log(float(graph[a][b]) / len(recipes)) /\
-            (num_recipe[a] / len(recipes) * num_recipe[b] / len(recipes))
-
-
 def importall():
   """ Call to import everything """
-  global graph, degree, recipes, recipes2, top, num_recipe
+  global graph, degree, recipes, top
 
   graph = defaultdict(lambda: defaultdict(float))
   degree = defaultdict(float)
-  recipes = utils.getrecipes(mapped=True, ignorenotmapped=True)
-  recipes2 = utils.getrecipes(mapped=False, ignorenotmapped=False)
+  recipes = utils.getrecipes()
   top = utils.gettop()
-  num_recipe = defaultdict(float)
 
   for recipe_id in tqdm.tqdm(recipes):
     ingredients = recipes[recipe_id]
 
     for a in ingredients:
-      num_recipe[a] += 1.0;
       for b in ingredients:
         if a != b and a in top and b in top:
           graph[a][b] += 1.0
 
   for a in graph:
     for b in graph[a]:
-      degree[a] += PMI(a, b)
+      degree[a] += graph[a][b]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes2[recipe_id]
+
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
 
   d = defaultdict(float)
-  top10 = heapq.nsmallest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
-  for a in ingredients:
-    if a in graph and a not in top10:
-      for b in graph[a]:
-        if b in ingredients or b in top10:
+  top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
+  for i in ingredients:
+    if i in graph and i not in top10:
+      for k in graph[i]:
+        if k in ingredients or k in top10:
           continue
-        d[b] += PMI(a, b) / degree[a]
 
-  return heapq.nsmallest(10, d, key=lambda k: d[k])
+        d[k] += min(graph[i][k]/degree[i], graph[k][i]/degree[k])
+
+  return heapq.nlargest(10, d, key=lambda k: d[k])
 
 
 def writeToFile(filename):

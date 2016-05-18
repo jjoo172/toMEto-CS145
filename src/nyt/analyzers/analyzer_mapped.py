@@ -1,48 +1,42 @@
 """ USAGE: 
-  >> python analyzer_PMI2.py
+  >> python analyzer_mapped.py
 """
 
 import os
 import tqdm
 import heapq
 from collections import defaultdict
-import numpy as np
 
 import utils
 
 
-def PMI(a, b):
-    return np.log(float(graph[a][b]) / len(recipes)) /\
-            (num_recipe[a] / len(recipes) * num_recipe[b] / len(recipes))
-
-
 def importall():
   """ Call to import everything """
-  global graph, degree, recipes, top, num_recipe
+  global graph, degree, recipes, recipes2, top
 
   graph = defaultdict(lambda: defaultdict(float))
   degree = defaultdict(float)
-  recipes = utils.getrecipes(mapped=True)
+  recipes = utils.getrecipes(mapped=True, ignorenotmapped=True)
+  recipes2 = utils.getrecipes(mapped=False, ignorenotmapped=False)
   top = utils.gettop()
-  num_recipe = defaultdict(float)
 
   for recipe_id in tqdm.tqdm(recipes):
     ingredients = recipes[recipe_id]
 
     for a in ingredients:
-      num_recipe[a] += 1.0;
       for b in ingredients:
         if a != b and a in top and b in top:
           graph[a][b] += 1.0
 
-  for a in graph:
-    for b in graph[a]:
-      degree[a] += PMI(a, b)
+  for g in graph:
+    for z in graph[g]:
+      degree[g] += graph[g][z]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes[recipe_id]
+  if ingredients == None:
+    ingredients = recipes2[recipe_id]
 
   d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
@@ -51,7 +45,7 @@ def complement(recipe_id):
       for b in graph[a]:
         if b in ingredients or b in top10:
           continue
-        d[b] += PMI(a, b) / degree[a]
+        d[b] += min(graph[a][b]/degree[a], graph[b][a]/degree[b])
 
   return heapq.nlargest(10, d, key=lambda k: d[k])
 

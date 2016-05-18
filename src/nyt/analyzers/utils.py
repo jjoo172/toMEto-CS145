@@ -12,10 +12,15 @@ import matplotlib.pyplot as plt
 import pylab
 import scipy.stats as stats
 
-PROCESS_DIR = 'processed/'
-MAPPER_OUT = 'mapper_out.txt'
-MAPPER_TOP = 'mapper_top.txt'
+FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 
+# PROCESS_DIR = FILE_DIR + '/../processed/'
+PROCESS_DIR = FILE_DIR + '/../sandbox/processed_learning/'
+MAPPER_OUT = FILE_DIR + '/../mapper_out.txt'
+MAPPER_TOP = FILE_DIR + '/../mapper_top.txt'
+
+# LEARNING_DIR = FILE_DIR + '/../sandbox/processed_learning/'
+TEST_DIR = FILE_DIR + '/../sandbox/processed_test/'
 
 #TODO:
 def getrecipe_info(recipe_id):
@@ -42,8 +47,19 @@ def _getmapping():
       mapping[a] = b
   return mapping
 
+def get_ingredients(filename, directory=PROCESS_DIR, mapping=None, mapped=False, ignorenotmapped=False):
+  with open(directory + filename, 'r') as f:
+    ingredients = set()
+    for line in f:
+      i = _correct(line.strip().lower())
+      if ignorenotmapped and i not in mapping:
+        continue
+      if mapped and i in mapping:
+        i = mapping[i]
+      ingredients |= set([i])
+  return ingredients
 
-def getrecipes(mapped=False, ignorenotmapped=False):
+def getrecipes(mapped=False, ignorenotmapped=False, mapping=None):
   """ Import database of recipes, located in PROCESS_DIR.
 
   Automatically uses _correct() to fix non-ascii characters.
@@ -60,14 +76,7 @@ def getrecipes(mapped=False, ignorenotmapped=False):
   allfiles = [f for f in os.listdir(PROCESS_DIR) if os.path.isfile(PROCESS_DIR + f)]
   for filename in tqdm.tqdm(allfiles):
     with open(PROCESS_DIR + filename, 'r') as f:
-      ingredients = set()
-      for line in f:
-        i = _correct(line.strip().lower())
-        if ignorenotmapped and i not in mapping:
-          continue
-        if mapped and i in mapping:
-          i = mapping[i]
-        ingredients |= set([i])
+      ingredients = get_ingredients(filename, PROCESS_DIR, mapping, mapped, ignorenotmapped)
       recipes[filename[:-4]] = ingredients
   return recipes
 

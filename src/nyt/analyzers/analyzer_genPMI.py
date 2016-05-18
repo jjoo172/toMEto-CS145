@@ -70,12 +70,13 @@ def importall():
       degree[a] += graph[a][b]
 
 
-def complement(recipe_id):
+def complement(recipe_id, ingredients = None):
   """ Complement of a recipe """
-  ingredients = recipes[recipe_id]
+  if ingredients == None:
+    ingredients = recipes[recipe_id]
   global d
 
-  d = defaultdict(list)
+  d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
 
   bestMatch = ("", float("-inf"))
@@ -129,6 +130,6 @@ def writeToFile(filename):
       out.write('%s\t%s\n' % (recipe_id, '\t'.join(best)))
 
 
-# if __name__ == '__main__':
-#   importall()
-#   writeToFile(__file__[:-3] + '.txt')
+if __name__ == '__main__':
+  importall()
+  writeToFile(__file__[:-3] + '.txt')
