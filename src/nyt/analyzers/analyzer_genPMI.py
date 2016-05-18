@@ -10,7 +10,6 @@ import numpy as np
 
 import itertools
 import utils
-utils.PROCESS_DIR = 'processed2/' # combined dataset
 
 
 def genPMI(s):
