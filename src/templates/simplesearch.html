@@ -8,15 +8,30 @@
     <link href="../static/css/simplesearch.css" rel="stylesheet">
 
     <!-- <script src="../static/js/jquery-1.11.2.js"></script> -->
-    <script src="../static/js/simplesearch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!--
+    <script src="../static/js/simplesearch.js"></script>
+-->
+    <!-- fading script -->
     <script>
     $(document).one('ready', function(){
         $("#tometo_logo").delay(200).fadeIn(500);
         $("#search_box").delay(400).fadeIn(500);
     });
     </script>   
+
+    <!-- loading icon script -->
+    <script>
+    $(function() {
+    $('#btnSearch').click(function() {
+        $('#loading_img').show();
+    
+    });
+});
+    </script>
+
 
 </head>
 
@@ -42,6 +57,9 @@
         </div>
   </div>
 </div>
+
+<center>
+<div> <img src="../static/img/barload.gif" id="loading_img" style="display:none"/ > </div> </center>
 
 </body>
 </html>
