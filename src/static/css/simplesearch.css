@@ -69,8 +69,8 @@ form {
 /* more square stuff */
 .square { 
   background-color: #a2f47f;
-  opacity: 0.7;
-  filter: alpha(opacity=70); /*for IE8 and earlier*/
+  opacity: 0.95;
+  filter: alpha(opacity=95); /*for IE8 and earlier*/
 
   float:left; position: relative; width: 30%; 
   padding-bottom : 30%; /* = width for a 1:1 aspect ratio */ 
@@ -83,9 +83,9 @@ form {
 
 .content { 
   position:absolute; 
-  height:80%; /* = 100% - 2*10% padding */ 
-  width:90%; /* = 100% - 2*5% padding */
-   padding: 10% 5%; 
+  height:100%; /* = 100% - 2*10% padding */ 
+  /*width:90%;  = 100% - 2*5% padding */
+   /*padding-top: 20%;*/
 } 
 
 .table{ 
@@ -103,7 +103,56 @@ form {
 
 
 
-/* square blurring */
+/* Modal stuff */
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+
+
+
+
+
+
+
+
+
+/* deprecated code */
+/* Popover */
+
+/*
+.popover {
+    border: 2px dotted red;
+}
+
+.popover-title {
+    background-color: #73AD21; 
+    color: #FFFFFF; 
+    font-size: 28px;
+    text-align:center;
+}
+
+.popover-content {
+    background-color: coral;
+    color: #FFFFFF;
+    padding: 25px;
+}
+
+.arrow {
+    border-right-color: red !important;
+}
+
+*/
+
+
+
+
+/* square blurring 
 
 
     .square > header {
@@ -147,50 +196,4 @@ form {
     * {
       box-sizing: border-box;
     }
-
-
-/* Modal stuff */
-.modal-header, h4, .close {
-      background-color: #5cb85c;
-      color:white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: #f9f9f9;
-  }
-
-
-
-
-
-
-
-
-
-/* deprecated code */
-/* Popover */
-.popover {
-    border: 2px dotted red;
-}
-
-/* Popover Header */
-.popover-title {
-    background-color: #73AD21; 
-    color: #FFFFFF; 
-    font-size: 28px;
-    text-align:center;
-}
-
-/* Popover Body */
-.popover-content {
-    background-color: coral;
-    color: #FFFFFF;
-    padding: 25px;
-}
-
-/* Popover Arrow */
-.arrow {
-    border-right-color: red !important;
-}
-Try it Yourself »
+*/
