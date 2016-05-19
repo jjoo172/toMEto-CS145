@@ -32,6 +32,8 @@ def getrecipe_info(recipe_id):
     content = f.read()
     i = content.find('\n')
     title = content[:i]
+    if title.rsplit(None, 1)[-1] == 'Recipe':
+       title = title.rsplit(' ', 1)[0]
     details = content[i+1:]
   return [title, details]
 
