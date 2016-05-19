@@ -64,6 +64,9 @@ def simplesearch_searched():
   print content[0][2][1]
   print htmls[0]
 
+  thehtml = htmls[0]
+  print thehtml
+
 
   #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
 
@@ -83,7 +86,7 @@ def simplesearch_searched():
 
   else:
     return render_template('simplesearch_searched.html', query=searchquery, 
-            content=content, htmls=htmls, num_results=len(content)) 
+            content=content, htmls=htmls, thehtml=thehtml, num_results=len(content)) 
 
 
 # Loading complementary ingredients
