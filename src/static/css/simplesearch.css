@@ -60,6 +60,7 @@ body {
   display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
   width:100%;
   font-size: 2vw;
+
 }
 
 form {
@@ -71,9 +72,8 @@ form {
 
 /* more square stuff */
 .square { 
-  background-color: #d3d3d3;
-  opacity: 0.95;
-  filter: alpha(opacity=95); /*for IE8 and earlier*/
+  background: rgb(200, 200, 200);
+  background: rgba(200, 200, 200, 0.75);
 
   float:left; 
   position: 
