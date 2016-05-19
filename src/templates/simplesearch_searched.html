@@ -6,13 +6,9 @@
     
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="../static/css/simplesearch.css" />
-
-    <!-- <script src="../static/js/jquery-1.11.2.js"></script> -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-    <!--<script src="../static/js/simplesearch.js"></script>-->
 
   <!-- tile fading in script -->
 {% for x in range(num_results) %}
@@ -34,15 +30,6 @@
 });
     </script>
 
-   
-
-    <!-- popover 
-    <script>
-      $(document).ready(function(){
-      $('[data-toggle="popover"]').popover();   
-       });
-    </script>
--->
 
 </head>
 
@@ -127,13 +114,6 @@
         <div class="table-cell">
           <header>
             <h1>
-              <!--
-          <a href="http://cooking.nytimes.com/recipes/{{content[x][0]}}" onclick="MyWindow=window.open('http://cooking.nytimes.com/recipes/{{content[x][0]}}','MyWindow','width=600,height=300'); return false;"> 
-          -->
-            
-            <!-- this one opens up a new window with recipe 
-            <a href="http://cooking.nytimes.com/recipes/{{content[x][0]}}" onclick="MyWindow=window.open('http://cooking.nytimes.com/recipes/{{content[x][0]}}','MyWindow','width=600,height=300'); return false;" data-toggle="modal" data-target="#myModal" title="{{content[x][0]}}" data-content="{{content[x][1]}}">{{content[x][0]}}</a>
-          -->
 
             <a href="#" data-toggle="modal" 
                         data-target="#myModal{{content[x][0]}}" 
