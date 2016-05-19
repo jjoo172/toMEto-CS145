@@ -53,7 +53,10 @@ def simplesearch_searched():
         value.append('NULL')
 
       value.append(titleinfo)
-      htmls.append(titleinfo[1])
+      stripped = titleinfo[1].replace('\n', '')
+      stripped = stripped.replace('\t', '')
+      stripped = stripped.replace('\r', '')
+      htmls.append(stripped)
 
       #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
       content.append(value)
@@ -61,11 +64,9 @@ def simplesearch_searched():
     except:
       pass
 
-  print content[0][2][1]
-  print htmls[0]
 
   thehtml = htmls[0]
-  print thehtml
+  print repr(thehtml)
 
 
   #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
