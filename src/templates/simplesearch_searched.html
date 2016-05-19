@@ -52,6 +52,7 @@
   content[x][1] stores the complements
   content[x][2][0] stores the title
   content[x][2][1] stores the recipe html
+  content[x][3] stores the recipe image path
 -->
 
 
@@ -140,7 +141,7 @@
                         </a>
           
             <span class="normal">{{content[x][2][0]}}</span>
-            <span class="hover"><img style="width: 100%; padding-top: 20%;" src="../static/img/intro-bg.jpg"/></span>
+            <span class="hover"><img style="width: 100%; padding-top: 20%;" src="{{content[x][3]}}"/></span>
           </a>
         </h1>
       </header>

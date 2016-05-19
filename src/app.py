@@ -3,6 +3,7 @@
     to start the webpage.
 """
 import sys
+import os
 
 from flask import Flask, render_template, json, request
 import nyt.search as search
@@ -44,6 +45,7 @@ def simplesearch_searched():
   for k in search_ids:
     try:
       titleinfo = utils.getrecipe_info(k)
+      image = getrecipeimage(k)
 
       value = [k]
       if k in complements:
@@ -53,6 +55,8 @@ def simplesearch_searched():
         value.append('NULL')
 
       value.append(titleinfo)
+
+      value.append(image)
 
       #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
       content.append(value)
@@ -91,6 +95,14 @@ def load(filename):
       tokens = line.strip().split('\t')
       complements[tokens[0]] = tokens[1:]
 
+
+#getting ingredients images
+def getrecipeimage(recipe_id): 
+  location = 'static/img/recipes/' + recipe_id + '.jpg'
+  if os.path.isfile(location): 
+    return '../' + location 
+  else: 
+    return "../static/img/noimage.png"
 
 # Application entry point
 if __name__ == "__main__":
