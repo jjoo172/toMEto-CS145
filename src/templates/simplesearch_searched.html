@@ -95,7 +95,7 @@
           <h4 class="modal-title">{{content[x][2][0]}}</h4>
         </div>
         <div class="modal-body">
-          <p>{{content[x][2][0]}}</p>
+          <p>{{content[x][2][1]|safe}}</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -111,8 +111,6 @@
 <center>
 <table>
   {% for x in range(num_results) %}
-  <div> {{thehtml}} </div>
-
   <div id="tile{{content[x][0]}}" style="display:none">
     <div class="square hoverable">
       <div class="content">

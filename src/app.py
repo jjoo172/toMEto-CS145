@@ -66,6 +66,7 @@ def simplesearch_searched():
 
 
   thehtml = htmls[0]
+  print repr(titleinfo[0])
   print repr(thehtml)
 
 
