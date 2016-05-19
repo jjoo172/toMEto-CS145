@@ -115,23 +115,18 @@
     <div class="square hoverable">
       <div class="content">
         <div class="table-cell">
-          <header>
-            <h1>
-
-            
-                        
-          
-            <span class="normal">{{content[x][2][0]}} <img style="width: 100%; padding-top: 20%;" src="{{content[x][3]}}"/></span>
-            <span class="hover">
+            <div class="normal">
+                <img style="width: 100%;" src="{{content[x][3]}}"/>
+                <h2><span>{{content[x][2][0]}}</span></h2>
+            </div>
+            <div class="hover">
               <ul style="list-style-type:disc">
               {% for n in content[0][1] %}
                 <li> {{n}} </li>
               {% endfor %}
               </ul>
-            </span>
-          
-        </h1>
-      </header>
+            </div>
+
       </div>
     </div>
 
