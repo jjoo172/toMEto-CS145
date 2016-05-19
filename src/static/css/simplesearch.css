@@ -49,10 +49,12 @@ body {
 .hoverable .hover {
   display:none;
   width:100%;
+  font-size: 0.5em;
 }
 .hoverable:hover .normal {
   display:none;
   width:100%;
+
 }
 .hoverable:hover .hover {
   display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
@@ -79,6 +81,7 @@ form {
   border-style: groove;
   border-width: 5px;
   border-color: red;
+  cursor:pointer;
 } 
 
 .content { 

@@ -109,25 +109,34 @@
 <table>
   {% for x in range(num_results) %}
   <div id="tile{{content[x][0]}}" style="display:none">
+              <a href="#" data-toggle="modal" 
+                        data-target="#myModal{{content[x][0]}}" 
+                        title="{{content[x][0]}}">
     <div class="square hoverable">
       <div class="content">
         <div class="table-cell">
           <header>
             <h1>
 
-            <a href="#" data-toggle="modal" 
-                        data-target="#myModal{{content[x][0]}}" 
-                        title="{{content[x][0]}}" 
-                        </a>
+            
+                        
           
-            <span class="normal">{{content[x][2][0]}}</span>
-            <span class="hover"><img style="width: 100%; padding-top: 20%;" src="{{content[x][3]}}"/></span>
-          </a>
+            <span class="normal">{{content[x][2][0]}} <img style="width: 100%; padding-top: 20%;" src="{{content[x][3]}}"/></span>
+            <span class="hover">
+              <ul style="list-style-type:disc">
+              {% for n in content[0][1] %}
+                <li> {{n}} </li>
+              {% endfor %}
+              </ul>
+            </span>
+          
         </h1>
       </header>
-        </div>
       </div>
     </div>
+
+  </div>
+        </a>
   </div>
   {% endfor %}
 </table>
