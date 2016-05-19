@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 import pylab
 import scipy.stats as stats
 
+import codecs
+
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 # PROCESS_DIR = FILE_DIR + '/../processed/'
@@ -26,7 +28,7 @@ DB_DIR = FILE_DIR + '/../db/'
 
 #TODO:
 def getrecipe_info(recipe_id):
-  with open(DB_DIR + recipe_id + '.txt', 'r') as f:
+  with codecs.open(DB_DIR + recipe_id + '.txt', 'r', 'utf-8') as f:
     content = f.read()
     i = content.find('\n')
     title = content[:i]
