@@ -78,7 +78,7 @@ form {
   float:left; 
   position: relative;
    width: 30%; 
-  padding-bottom : 20%; /* = width for a 1:1 aspect ratio */ 
+  padding-bottom : 18%; /* = width for a 1:1 aspect ratio */ 
   margin:1.66%; 
   overflow:hidden; 
   border-style: groove;
@@ -110,7 +110,7 @@ form {
 
 .table-cell h2{
   position:absolute;
-  top:200px;
+  top:10vw;
   left:0;
   width:100%;
 }
