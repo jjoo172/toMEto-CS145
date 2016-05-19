@@ -97,7 +97,16 @@
         <div class="modal-body">
           <p>{{content[x][2][1]|safe}}</p>
         </div>
+        <div class="modal-body">
+          <h4> Additional Recommended Ingredients: </h4>
+          <ul style="list-style-type:disc">
+            {% for n in content[0][1] %}
+              <li> {{n}} </li>
+            {% endfor %}
+          </ul>
+        </div>
         <div class="modal-footer">
+
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
