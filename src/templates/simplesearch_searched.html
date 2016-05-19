@@ -86,7 +86,7 @@
           <p>{{content[x][2][1]|safe}}</p>
         </div>
         <div class="modal-body">
-          <h4> Additional Recommended Ingredients: </h4>
+          <h4> Tometo's Recommended Ingredients: </h4>
           <ul style="list-style-type:disc">
             {% for n in content[0][1] %}
               <li> {{n}} </li>
@@ -116,12 +116,12 @@
       <div class="content">
         <div class="table-cell">
             <div class="normal">
-                <img style="width: 100%;" src="{{content[x][3]}}"/>
+                <img src="{{content[x][3]}}"/>
                 <h2><span>{{content[x][2][0]}}</span></h2>
             </div>
             <div class="hover">
               <ul style="list-style-type:disc">
-              {% for n in content[0][1] %}
+              {% for n in content[x][1] %}
                 <li> {{n}} </li>
               {% endfor %}
               </ul>

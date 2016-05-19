@@ -59,6 +59,7 @@ body {
 .hoverable:hover .hover {
   display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
   width:100%;
+  font-size: 2vw;
 }
 
 form {
@@ -70,17 +71,19 @@ form {
 
 /* more square stuff */
 .square { 
-  background-color: #a2f47f;
+  background-color: #d3d3d3;
   opacity: 0.95;
   filter: alpha(opacity=95); /*for IE8 and earlier*/
 
-  float:left; position: relative; width: 30%; 
+  float:left; 
+  position: 
+  relative; width: 30%; 
   padding-bottom : 30%; /* = width for a 1:1 aspect ratio */ 
   margin:1.66%; 
   overflow:hidden; 
   border-style: groove;
   border-width: 5px;
-  border-color: red;
+  border-color: black;
   cursor:pointer;
 } 
 
@@ -109,6 +112,11 @@ form {
   position:absolute;
   top:200px;
   left:0;
+  width:100%;
+}
+
+.table-cell img{
+  height:100%;
   width:100%;
 }
 
