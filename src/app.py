@@ -40,6 +40,7 @@ def simplesearch_searched():
 
   # iterate through complements list, adding tuples of (id, list of complements)
   content = []
+  htmls=[]
 
   for k in search_ids:
     try:
@@ -52,6 +53,7 @@ def simplesearch_searched():
         value.append('NULL')
 
       value.append(titleinfo)
+      htmls.append(titleinfo[1])
 
       #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
       content.append(value)
@@ -60,6 +62,7 @@ def simplesearch_searched():
       pass
 
   print content[0][2][1]
+  print htmls[0]
 
 
   #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
@@ -80,7 +83,7 @@ def simplesearch_searched():
 
   else:
     return render_template('simplesearch_searched.html', query=searchquery, 
-            content=content, num_results=len(content)) 
+            content=content, htmls=htmls, num_results=len(content)) 
 
 
 # Loading complementary ingredients
