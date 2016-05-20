@@ -77,7 +77,7 @@ form {
 
   float:left; 
   position: relative;
-   width: 30%; 
+  width: 30%; 
   padding-bottom : 18%; /* = width for a 1:1 aspect ratio */ 
   margin:1.66%; 
   overflow:hidden; 
