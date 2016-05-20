@@ -14,10 +14,6 @@ import scipy.stats as stats
 
 import codecs
 
-import sys
-import HTMLParser
-from unidecode import unidecode
-
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 # PROCESS_DIR = FILE_DIR + '/../processed/'
@@ -30,16 +26,12 @@ TEST_DIR = FILE_DIR + '/../sandbox/processed_test/'
 
 DB_DIR = FILE_DIR + '/../db/'
 
-parser = HTMLParser.HTMLParser()
-
 #TODO:
 def getrecipe_info(recipe_id):
   with codecs.open(DB_DIR + recipe_id + '.txt', 'r', 'utf-8') as f:
     content = f.read()
     i = content.find('\n')
     title = content[:i]
-    title = str(parser.unescape(title))
-    
     if title.rsplit(None, 1)[-1] == 'Recipe':
        title = title.rsplit(' ', 1)[0]
     details = content[i+1:]
@@ -47,15 +39,12 @@ def getrecipe_info(recipe_id):
 
 
 def _correct(string):
-
-  tmp = codecs.decode(string,'utf-8')
-  return unidecode(tmp)
-  # """ Fix non-ascii characters to '?' """
-  # l = list(string)
-  # for i in xrange(len(l)):
-  #   if ord(l[i]) >= 128:
-  #     l[i] = '?'
-  # return ''.join(l)
+  """ Fix non-ascii characters to '?' """
+  l = list(string)
+  for i in xrange(len(l)):
+    if ord(l[i]) >= 128:
+      l[i] = '?'
+  return ''.join(l)
 
 
 def _getmapping():
@@ -88,8 +77,6 @@ def getrecipes(mapped=False, ignorenotmapped=False, mapping=None):
 
   Returns a dict of recipe_id -> set of ingredients.
   """
-  reload(sys)
-  sys.setdefaultencoding('utf8')
 
   if mapped or ignorenotmapped:
     mapping = _getmapping()
