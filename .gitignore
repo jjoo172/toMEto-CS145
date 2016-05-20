@@ -5,4 +5,5 @@ src/*/images/*
 src/*/db/*
 src/*/sandbox/processed_test/*
 src/*/sandbox/processed_learning/*
+src/static/img/recipes/*
 *.pyc
