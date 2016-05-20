@@ -52,15 +52,7 @@ body {
 
 }
 .hoverable:hover .normal {
-  display:none;
-  width:100%;
-
-}
-.hoverable:hover .hover {
-  display:inline;  /* CHANGE IF FOR BLOCK ELEMENTS */
-  width:100%;
-  font-size: 1.3vw;
-
+  opacity: 0.7;
 }
 
 form {
