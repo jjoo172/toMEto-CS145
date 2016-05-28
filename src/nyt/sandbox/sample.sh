@@ -10,7 +10,7 @@ mkdir -p $dest2
 for file in $( ls $src); do
     i=$((${#file}-5))
     lastdigit=${file:$i:1}
-    if(("$lastdigit" < "7")); then
+    if(("$lastdigit" < "8")); then
         cp $src$file $dest1
     else
         cp $src$file $dest2
