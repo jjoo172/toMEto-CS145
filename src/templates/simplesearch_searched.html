@@ -14,7 +14,7 @@
 {% for x in range(num_results) %}
    <script>
    $(document).ready(function() {
-    $("#tile{{content[x][0]}}").delay({{x}} * 100).fadeIn(500);
+    $("#tile{{content[x][0].decode('utf-8')}}").delay({{x}} * 100).fadeIn(500);
    });
    </script>
 {% endfor %}
@@ -73,23 +73,23 @@
 
 {% for x in range(num_results) %}
   <!-- Modal -->
-  <div id="myModal{{content[x][0]}}" class="modal fade" role="dialog">
+  <div id="myModal{{content[x][0].decode('utf-8')}}" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">{{content[x][2][0]}}</h4>
+          <h4 class="modal-title">{{content[x][2][0].decode('utf-8')}}</h4>
         </div>
         <div class="modal-body">
-          <p>{{content[x][2][1]|safe}}</p>
+          <p>{{content[x][2][1].decode('utf-8')|safe}}</p>
         </div>
         <div class="modal-body">
           <h4> Tometo's Recommended Ingredients: </h4>
           <ul style="list-style-type:disc">
             {% for n in content[x][1] %}
-              <li> {{n}} </li>
+              <li> {{n.decode('utf-8')}} </li>
             {% endfor %}
           </ul>
         </div>
@@ -108,16 +108,16 @@
 <center>
 <table>
   {% for x in range(num_results) %}
-  <div id="tile{{content[x][0]}}" style="display:none">
+  <div id="tile{{content[x][0].decode('utf-8')}}" style="display:none">
               <a href="#" data-toggle="modal" 
-                        data-target="#myModal{{content[x][0]}}" 
-                        title="{{content[x][0]}}">
+                        data-target="#myModal{{content[x][0].decode('utf-8')}}" 
+                        title="{{content[x][0].decode('utf-8')}}">
     <div class="square hoverable">
       <div class="content">
         <div class="table-cell">
             <div class="normal">
-                <img src="{{content[x][3]}}"/>
-                <h2><span>{{content[x][2][0]}}</span></h2>
+                <img src="{{content[x][3].decode('utf-8')}}"/>
+                <h2><span>{{content[x][2][0].decode('utf-8')}}</span></h2>
             </div>
 
       </div>

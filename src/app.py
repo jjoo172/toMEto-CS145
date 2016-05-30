@@ -6,8 +6,8 @@ import sys
 import os
 
 from flask import Flask, render_template, json, request
-import nyt.search as search
-import nyt.analyzers.utils as utils
+import backend.search as search
+import backend.analyzers.utils as utils
 
 app = Flask(__name__)
 
@@ -47,12 +47,15 @@ def simplesearch_searched():
       titleinfo = utils.getrecipe_info(k)
       image = getrecipeimage(k)
 
-      value = [k]
+      value = [str(k)]
       if k in complements:
-        complements_list = [n.capitalize() for n in complements[k]] #capitalize first letter
+        complements_list = [str(n.capitalize()) for n in complements[k]] #capitalize first letter
         value.append(complements_list)
       else:
         value.append('NULL')
+
+      titleinfo[0] = str(titleinfo[0])
+      titleinfo[1] = str(titleinfo[1])
 
       value.append(titleinfo)
 
