@@ -83,7 +83,7 @@ def getrecipe_info(recipe_id, directory=DEFAULT_PROCESSED_DIR):
     i = content.find('\n', i+1)
     body = content[i+1:]
 
-    return [title, body]
+    return title, body
 
 
 

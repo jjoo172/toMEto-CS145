@@ -36,43 +36,6 @@ def simplesearch():
 def simplesearch_searched():
   searchquery = request.form['simplesearch']
 
-  search_ids = search.search(searchquery)
-
-
-  # iterate through complements list, adding tuples of (id, list of complements)
-  content = []
-
-  for k in search_ids:
-    try:
-      titleinfo = utils.getrecipe_info(k)
-      image = getrecipeimage(k)
-
-      value = [str(k)]
-      if k in complements:
-        complements_list = [str(n.capitalize()) for n in complements[k]] #capitalize first letter
-        value.append(complements_list)
-      else:
-        value.append('NULL')
-
-      titleinfo[0] = str(titleinfo[0])
-      titleinfo[1] = str(titleinfo[1])
-
-      value.append(titleinfo)
-
-      value.append(image)
-
-      #content.append('%s: %s' % (k, complements[k] if k in complements else 'NULL'))
-      content.append(value)
-
-    except:
-      pass
-
-  #content = ['%s: %s' % (k, complements[k] if k in complements else 'NULL') for k in search_ids]
-
-  #
-  # TODO: separate page for single line errors?
-  #
-
   try:
     search_ids = search.search(searchquery)
   except Exception as e:
@@ -84,6 +47,26 @@ def simplesearch_searched():
     return render_template('no_results.html', query=searchquery, content=content, num_results=0)
 
   else:
+
+    # iterate through complements list, adding tuples of (id, list of complements)
+    content = []
+
+    for k in search_ids:
+      try:
+        title, body = utils.getrecipe_info(k)
+        image = getrecipeimage(k)
+
+        value = [k]
+        if k in complements:
+          complements_list = [n.capitalize() for n in complements[k]] #capitalize first letter
+        else:
+          complements_list = 'NULL'
+
+        content.append([k, complements_list, title, body, image])
+
+      except:
+        pass
+
     return render_template('simplesearch_searched.html', query=searchquery, 
             content=content, num_results=len(content)) 
 

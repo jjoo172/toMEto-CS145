@@ -37,9 +37,9 @@
 <!-- note:
   content[x][0] stores the id
   content[x][1] stores the complements
-  content[x][2][0] stores the title
-  content[x][2][1] stores the recipe html
-  content[x][3] stores the recipe image path
+  content[x][2] stores the title
+  content[x][3] stores the recipe html
+  content[x][4] stores the recipe image path
 -->
 
 
@@ -80,10 +80,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">{{content[x][2][0].decode('utf-8')}}</h4>
+          <h4 class="modal-title">{{content[x][2].decode('utf-8')}}</h4>
         </div>
         <div class="modal-body">
-          <p>{{content[x][2][1].decode('utf-8')|safe}}</p>
+          <p>{{content[x][3].decode('utf-8')|safe}}</p>
         </div>
         <div class="modal-body">
           <h4> Tometo's Recommended Ingredients: </h4>
@@ -116,8 +116,8 @@
       <div class="content">
         <div class="table-cell">
             <div class="normal">
-                <img src="{{content[x][3].decode('utf-8')}}"/>
-                <h2><span>{{content[x][2][0].decode('utf-8')}}</span></h2>
+                <img src="{{content[x][4].decode('utf-8')}}"/>
+                <h2><span>{{content[x][2].decode('utf-8')}}</span></h2>
             </div>
 
       </div>
