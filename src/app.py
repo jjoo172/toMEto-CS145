@@ -39,12 +39,13 @@ def simplesearch_searched():
   try:
     search_ids = search.search(searchquery)
   except Exception as e:
-    # TODO: better error message
-    return render_template('simplesearch_searched.html', query=searchquery,
-            content = [['Unable to establish connection to nytimes', "We apologize for the inconvenience"]], num_results=1)
+    # TODO: better error message, current one does not work
+    return render_template('no_results.html', query=searchquery)
+    # return render_template('simplesearch_searched.html', query=searchquery,
+    #         content = [['Unable to establish connection to nytimes', "We apologize for the inconvenience"]], num_results=1)
 
   if (len(search_ids) == 0):
-    return render_template('no_results.html', query=searchquery, content=content, num_results=0)
+    return render_template('no_results.html', query=searchquery)
 
   else:
 
