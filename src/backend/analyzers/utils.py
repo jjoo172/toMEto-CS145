@@ -13,8 +13,9 @@ import pylab
 import scipy.stats as stats
 
 import codecs
+import HTMLParser
 
-
+parser = HTMLParser.HTMLParser()
 
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 
@@ -57,7 +58,7 @@ def getrecipes(directory=DEFAULT_PROCESSED_DIR, mapped=False, mapping_file=None)
         if i:       # Need this check to handle no-ingredient case
           if mapped and i in mapping:
             i = mapping[i]
-          ingredients |= set([i])      
+          ingredients |= set([i])
 
       # Insert set into dictionary
       recipes[filename[:-4]] = ingredients
@@ -76,6 +77,7 @@ def getrecipe_info(recipe_id, directory=DEFAULT_PROCESSED_DIR):
     # Get title (line 1)
     i = content.find('\n')
     title = content[:i]
+    title = str(parser.unescape(title))
     if title.rsplit(None, 1)[-1] == 'Recipe':
        title = title.rsplit(' ', 1)[0]
 
@@ -129,10 +131,10 @@ def substitute(original, recommendation):
 def _correct(string):
   """ DEPRECATED. NO LONGER NEEDED WITH UNICODE ENCODING.
 
-  Fix non-ascii characters to '?' 
+  Fix non-ascii characters to '?'
   """
   assert(False)
-  
+
   l = list(string)
   for i in xrange(len(l)):
     if ord(l[i]) >= 128:

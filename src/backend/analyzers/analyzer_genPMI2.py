@@ -70,6 +70,14 @@ def importall(recipes_=None):
       degree[a] += graph[a][b]
 
 
+def sum_of_weights(s):
+  res = 0
+  for pairs in list(itertools.combinations(s,2)):
+    res += graph[pairs[0]][pairs[1]]
+  return res
+
+
+
 def complement(recipe_id, ingredients=None):
   """ Complement of a recipe """
   if not ingredients:
@@ -79,37 +87,32 @@ def complement(recipe_id, ingredients=None):
   d = defaultdict(float)
   top10 = heapq.nlargest(10, degree, key=lambda k: degree[k]) # ignore top 10 ingredients
 
-  maxIngredients = 2
+  maxIngredients = 3
   comb = list(itertools.combinations(ingredients, maxIngredients))
+  bestMatch = ((), float("-inf"))
   for s in comb:
       if any(i not in graph for i in s):
-          continue
-      pmi = genPMI(s)
-      for a in s:
-          for b in graph[a]:
-              if b in ingredients:
-                  continue
-              try:
-                  ing = list(s)
-                  ing.append(b)
-                  pmi = genPMI(ing)
-              except:
-                  continue
-              if b in d:
-                  d[b] = max(d[b], pmi)
-              else:
-                  d[b] = pmi
+        continue
+      score = sum_of_weights(s)
+      if bestMatch[1] < score:
+        bestMatch = (s, score)
 
-  # for a in ingredients:
-  #   if a in graph and a not in top10:
-  #     for b in graph[a]:
-  #       pmi = genPMI((a,b))
-  #       if b in ingredients or b in top10:
-  #         continue
-  #       if b in d:
-  #         d[b] = max(d[b], pmi)
-  #       else:
-  #         d[b] = pmi
+  s = bestMatch[0]
+  pmi = genPMI(s)
+  for a in s:
+    for b in graph[a]:
+        if b in ingredients:
+            continue
+        try:
+            ing = list(s)
+            ing.append(b)
+            pmi = genPMI(ing)
+        except:
+            continue
+        if b in d:
+            d[b] = max(d[b], pmi)
+        else:
+            d[b] = pmi
 
   return heapq.nlargest(10, d, key=lambda k: d[k])
 
