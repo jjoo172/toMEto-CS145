@@ -89,7 +89,7 @@ def getrecipeimage(recipe_id):
   if os.path.isfile(location): 
     return '../' + location 
   else: 
-    return "../static/img/noimage.png"
+    return "../static/img/transparent.png"
 
 # Application entry point
 if __name__ == "__main__":
