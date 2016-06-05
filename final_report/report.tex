@@ -73,7 +73,7 @@ Boyu (Charlie) Tong\\
 
 \maketitle
 \begin{abstract}
-Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. 
+toMEto is a web-based application that suggests ingredients to supplement existing recipes.
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -88,21 +88,80 @@ Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. Abstr
 \section{Introduction}
 Cooking is a 
 
-Citation of Einstein paper~\cite{Einstein}.
+The rest of the paper is organized as follows. Section 2 contains how we scraped the data and other preprocessing steps. Section 3 describes the algorithms considered. Section 4 covers the app's web design while Section 5 covers the backend. Section 6 concludes our paper. 
 
-\section{Related Work}
+\subsection{Related Work}
 
-There have been a select number of papers discussing analysis of food and ingredient networks. Teng et al. describes the goal of being able to recommend entire recipes, using recipe suggestions made by examining communities of a co-occurrence network, to predict the success of a particular recipe's rating ~\cite{recommend}. 
+There have been a select number of papers discussing analysis of food and ingredient networks. Teng et al.~\cite{recommend} describes the goal of being able to recommend entire recipes, using recipe suggestions made by examining communities of a co-occurrence network, to predict the success of a particular recipe's rating. 
 
-Another paper by Ahn et al. compares the differences in cuisine by instead looking at a flavor-compounds network, and making general statements about the co-occurrence of ingredients by their chemical composition ~\cite{pairings}. They discovered that Asian recipes tend to have ingredients with different compounds, whereas Western cuisines have ingredients with like compounds. 
+Another paper by Ahn et al.~\cite{pairings} compares the differences in cuisine by instead looking at a flavor-compounds network, and making general statements about the co-occurrence of ingredients by their chemical composition. They discovered that Asian recipes tend to have ingredients with different compounds, whereas Western cuisines have ingredients with like compounds. 
 
 Still other research is ongoing, some building upon the relevance of flavor compounds 
-in regional cuisines ~\cite{zhu2013geography}, ~\cite{jain2015analysis}, and others attempt to implement these ideas to help users make suggestions about healthy food choices ~\cite{Geleijnse}.
+in regional cuisines~\cite{zhu2013geography},~\cite{jain2015analysis}, and others attempt to implement these ideas to help users make suggestions about healthy food choices~\cite{Geleijnse}.
 
 Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients that are compatible with each other.
 
 
 \section{Data Processing}
+
+\subsection{Data source}
+Our application's source of data are the online recipe websites New York Times (NYT) Cooking and AllRecipes.com. We gained over 13,000 and 52,000 recipes by crawling and scraping these two websites respectively. This was done by a script written in \texttt{scraper.py}. 
+
+\subsection{Initial parsing}
+Our application only requires the title, ingredients, and body of each recipe, so we extracted this data from each webpage using a simple script written in \texttt{parser.py}.
+
+However, this extracted data was not in a clean format that our algorithms could easily use. For example, ingredients were often combined with quantifiers and other adjectives:
+\begin{itemize}
+       \item {\em medium-size russet potato, about 10 ounces, peeled and diced}
+       \item {\em shrimp, shelled and cut into bite-sized pieces}
+       \item {\em kale, stemmed, rinsed and coarsely chopped to make 6 cups}
+\end{itemize}
+These ingredients would only occur maybe once or twice in the entire dataset, resulting in many ``rare'' ingredients. In the NYT dataset (12402 unique ingredients), approximately 70\% of the unique ingredients occurred only once, and 90\% occurred less than 10 times. We realized this resulted in suboptimal performance, as these ingredients would not be counted correctly in the co-occurrence network and many edges would not exist in the network.
+
+\subsection{Mapping}
+To fix this, we developed a script in \texttt{nyt\_mapper.py} to find these ``rare'' ingredients and map them to their root ingredient. For the example ingredients from above, we generated the mappings:
+\begin{itemize}
+       \item {\em medium-size russet potato, about 10 ounces, peeled and diced} $\to$ {\em potato}
+       \item {\em shrimp, shelled and cut into bite-sized pieces} $\to$ {\em shrimps}
+       \item {\em kale, stemmed, rinsed and coarsely chopped to make 6 cups} $\to$ {\em kale}
+\end{itemize}
+The script attempts to extract the root ingredient for each entry by combining several strategies. For example, some strategies that we use are:
+\begin{itemize}
+       \item Removing parenthetical tokens 
+       \begin{itemize}
+              \item {\em vanilla extract (to taste)} $\to$ {\em vanilla extract}
+       \end{itemize}
+       \item Removing comma separated descriptors 
+       \begin{itemize}
+              \item {\em honey, preferably wildflower} $\to$ {\em honey}
+       \end{itemize}
+       \item Picking the best of two ingredients separated by `or' 
+       \begin{itemize}
+              \item {\em sriracha or other hot sauce} $\to$ {\em sriracha}
+       \end{itemize}
+       \item Finding a sole `top' ingredient name 
+       \begin{itemize}
+              \item {\em coarsely grated carrot} $\to$ {\em carrots}
+       \end{itemize}
+\end{itemize}
+Using the mappings generated by \texttt{nyt\_mapper.py}, we reduced the unique ingredient count by 75\%. This resulted in a much more densely connected network, and more accuracy in recommendations.
+
+\subsection{Supplementing with AllRecipes data}
+We initially focused our application on the NYT dataset due to the relatively cleaner data and ingredients list. Once our basic algorithms were up and running on this dataset, we moved to supplement it with the much larger AllRecipes dataset. We reasoned that this would further improve the co-occurrence network by providing a more accurate count of ingredient frequencies. We also realized it would introduce new connections, since there may be recipes and foods that are not found in the NYT dataset.
+
+As our application does recommendations only for NYT recipes, we modified our approach to processing the AllRecipes data accordingly. Again, we wrote a mapping script in \texttt{allrecipes\_mapper.py}, but instead of mapping to only the root ingredients, the script also attempted to map to the top ingredients in the NYT dataset. This was important because our goal ultimately was to develop a co-occurrence network for the NYT dataset, and we did not want the ingredients of the AllRecipes dataset to be disjoint in any way. 
+
+The AllRecipes mapper employed many of the same techniques as the NYT mapper, with some additional strategies. The recipes from the AllRecipes websites list the ingredients with numbers and quantifiers, for example:
+\begin{itemize}
+       \item {\em 1 pound ground beef}
+       \item {\em 1/2 teaspoon black pepper}
+       \item {\em 1 (25 ounce) package frozen cheese ravioli}
+\end{itemize}
+Thus, we added filters that removed numerical digits from the raw ingredient name and also searched for and removed quantifiers such as ``pound'', ``teaspoon'', or ``ounce''. To map the ingredients to the NYT ingredients, we took a set of the most common NYT ingredients and searched for corresponding tokens in the AllRecipes ingredients. If there was a 1-to-1 matching, then we considered it a mapping.
+
+Combining both datasets resulted in a network with 7339 unique ingredients. Of these, we selected the top 1000 which approximately corresponded to the set of ingredients with at least 10 occurrences. For several of our algorithms, we restricted the recommendations to be from within this ``top set'' in order to have meaningful suggestions.
+
+
 
 \section{Algorithm Design and Analysis}
 
@@ -283,31 +342,33 @@ Upon clicking a recipe, a modal popup appears, which lists both the recipe itsel
 
 \includegraphics[scale=0.5]{p3.png}
 
-Much of the front-end was designed to be easily updated and maintained, and thus small UI tweaks, such as background images, color schemes, etc. are easily changeable by editing the HTML and/or CSS files. The front-end utilizes mainly three different HTML templates:\begin{itemize}
-\item simplesearch.html 
+Much of the front-end was designed to be easily updated and maintained, and thus small UI tweaks, such as background images, color schemes, etc. are easily changeable by editing the HTML and/or CSS files. The front-end utilizes mainly three different HTML templates:
+\begin{itemize}
+\item simplesearch.html
 \item simplesearch\_searched.html 
 \item no\_results.html
 \end{itemize}
-
 simplesearch.html is simply the html for the landing page, before any queries are entered. Then, once a search query is entered, app.py directs this information to the backend, which then generates information which is supplied to the simplesearch\_searched.html template. The user is also redirected to this template, which includes the tiles, modal popup information, etc. Furthermore, if a search is entered into simplesearch\_searched.html, this also refreshes the simplesearch\_searched.html template, utilizing the new information. Finally, no\_results.html is used as a template to be redirected to when the query entered into simplesearch.html or simplesearch\_searched.html does not contain any results. As a note, a user will be redirected to simplesearch.html upon clicking the toMEto logo.
 
 \includegraphics[scale=0.5]{p4.png}
 
 
-\section{Performance}
+\section{Backend Architecture}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-\section{Discussion}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 
 
 \section{Conclusions and Future Work}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The final result of our project is a web based application that suggests supplementary ingredients to existing recipes. The novel part of our application lies in our algorithms, where we use purely network metrics to rank ingredient suggestions. The generalized PMI algorithms had the most success in providing solid, consistent recommendations.
+
+There are also several features that could be implemented to further improve toMEto. At the moment, recipes are found using a database. Allowing the user to specify his own recipe with a set of ingredients and then recommending supplementary ingredients would be a very useful feature. This would not be very difficult to implement with our current architecture. The one challenge here is restricting or preprocessing user inputs to match those in the existing ingredient network.
+
+We could parse the dataset and classify them, allowing users to get suggestions for a certain type of recipe. For example, some classifications could be how the recipe is cooked (baked, fried, etc.) or the type of cuisune. Then, suggestions that appear will be restricted to the type of recipe the user is interested in.
+
+Furthermore, we could allow user personalization. Allow the user to upvote or downvote suggestions, and use machine learning techniques to determine what kind of additions the user likes. This would require new algorithms to supplement our existing network algorithms.
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -317,7 +378,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 % pdflatex report.tex
 % 
 % You have to compile twice to get the references to show up
-
 
 \bibliographystyle{abbrv}
 \bibliography{report}
