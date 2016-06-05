@@ -32,6 +32,8 @@
 \usepackage{algorithm}
 \usepackage{dsfont}
 \usepackage[noend]{algpseudocode}
+\usepackage{pbox}
+
 \begin{document}
 
 \title{toMEto: a Networks-based Approach to Recipe Recommendation}
@@ -408,26 +410,58 @@ We could parse the dataset and classify them, allowing users to get suggestions 
 
 Furthermore, we could allow user personalization. Allow the user to upvote or downvote suggestions, and use machine learning techniques to determine what kind of additions the user likes. This would require new algorithms to supplement our existing network algorithms.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Compiling Instructions %%%%%%%
+% pdflatex report.tex
+% bibtex report
+% pdflatex report.tex
+% 
+% You have to compile twice to get the references to show up
+
+\bibliographystyle{abbrv}
+\bibliography{report}
+
+%\balancecolumns 
+
+
 \clearpage
 \onecolumn
-\section{Appendix}
+\section*{Appendix A: Larger versions of Figures 2-4}
+\vspace{3mm} %3mm vertical space
 
-Larger scale version of (Figures 2-4):
-
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.879\textwidth]{p1.png}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.879\textwidth]{p2.png}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.879\textwidth]{p3.png}
+\includegraphics[width=.95\textwidth]{p1.png}
+\includegraphics[width=.95\textwidth]{p2.png}
+\includegraphics[width=.95\textwidth]{p3.png}
 \end{figure}
 
 \clearpage
+\onecolumn
+\section*{Appendix B: Software Architecture}
+\vspace{3mm} %3mm vertical space
+
+\begin{table}[h]
+       \begin{tabular}{ | l | l | p{5cm} |}
+       \hline
+       Directory & Contains & Notable files \\ 
+       \hline
+       \texttt{src/} & Root of toMEto source code & \texttt{app.py} \\ \hline
+       \texttt{src/static} & Images, CSS, JavaScript used by the frontend (Flask) & \\ \hline
+       \texttt{src/templates} & HTML templates used by the frontend (Flask) & \\ \hline
+       \texttt{src/backend} & Backend scripts & \texttt{algorithm\_analyzer.py} \\
+                            &                 & \texttt{search.py} \\ \hline
+       \texttt{src/backend/data} & Data processing & \texttt{allrecipes\_mapper.py} \\
+                                 &                 & \texttt{allrecipes\_parser.py} \\
+                                 &                 & \texttt{nyt\_mapper.py}  \\
+                                 &                 & \texttt{nyt\_parser.py} \\ 
+                                 &                 & \texttt{scraper.py} \\ \hline
+       \texttt{src/backend/analyzers} & Different recommendation algorithms & \texttt{analyzer\_*.py} \\
+                                      &                                     & \texttt{utils.py} \\ \hline
+       \end{tabular}
+       \caption{Source code organization}
+\end{table}
 
 \begin{table}[h]
     \centering
@@ -447,20 +481,5 @@ Larger scale version of (Figures 2-4):
     \end{tabular}
     \caption{List of modules used in toMEto.}
 \end{table}
-
-\clearpage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Compiling Instructions %%%%%%%
-% pdflatex report.tex
-% bibtex report
-% pdflatex report.tex
-% 
-% You have to compile twice to get the references to show up
-
-\bibliographystyle{abbrv}
-\bibliography{report}
-
-%\balancecolumns 
 
 \end{document}
