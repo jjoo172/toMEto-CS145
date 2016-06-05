@@ -28,10 +28,18 @@
 
 \documentclass{acm_proc_article-sp}
 
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
 \begin{document}
 
 \title{toMEto: a Networks-based Approach to Recipe Recommendation}
 \subtitle{CS145}
+
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
 
 
 \numberofauthors{4} 
@@ -77,13 +85,7 @@ Abstract text. Abstract text. Abstract text. Abstract text. Abstract text. Abstr
 %\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
 
 \section{Introduction}
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
-Sample text. Sample text. Sample text. Sample text. Sample text. Sample text. 
+Cooking is a 
 
 Citation of Einstein paper~\cite{Einstein}.
 
@@ -96,13 +98,60 @@ Another paper by Ahn et al. compares the differences in cuisine by instead looki
 Still other research is ongoing, some building upon the relevance of flavor compounds 
 in regional cuisines ~\cite{zhu2013geography}, ~\cite{jain2015analysis}, and others attempt to implement these ideas to help users make suggestions about healthy food choices ~\cite{Geleijnse}.
 
-Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients that are compatible with each other.
+Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients thaFigure~\ref{fig:}t are compatible with each other.
+
 
 \section{Data Processing}
 
 \section{Algorithm Design and Analysis}
 
-There are a two primary schools of thought when designing an appropriate algorithm for recipe recommendation - using centrality measures, versus using pointwise mutual information (PMI). 
+The primary application of algorithm design resides in ingredient recommendation to the user. We reserve the majority of this section to understanding the different frameworks we tried for the \textit{complement} method, which is a method that takes in a particular recipe ID, and suggests up to ten ingredients that the user could potentially add. 
+
+Before we do so, however, we first introduce some common terminology to be used throughout the text:
+\begin{enumerate}
+	\item \textit{w(x,y)} describes the weight of the edge between two ingredients.
+	\item \textit{graph} is the entire ingredient network.
+	\item \textit{peripheral ingredient} describes those ingredients that are not part of a recipe, but have at least one edge (with nonzero weight) to an ingredient in the recipe (Fig. 1). Formally, this is described as
+	\[\{k : \text{k} \in \text{adjacent neighbors of recipe} \wedge k \notin \text{recipe}\}
+	\]
+\end{enumerate}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=5cm]{peripheral}
+	\caption{Peripheral ingredients}
+\end{figure}
+
+
+
+There are a two primary schools of thought when designing an appropriate algorithm for recipe recommendation - using degree centrality measures, versus using pointwise mutual information (PMI). Here we enumerate in detail the algorithms.
+
+\begin{enumerate}
+	\item Degree Centrality (Fig. 1). This algorithm was the first variant that we attempted on ingredient recommendation. 
+
+
+\end{enumerate}
+
+  \begin{algorithm}
+   \caption{Degree Centrality algorithm}
+    \begin{algorithmic}[1]
+      \Function{naive}{$recipeID$}
+      	\State Let $recipe$ = recipe with ID $recipeID$
+        \State Let $top10$ = ten ingredients with highest weighted number of connections
+        \State Let d = dictionary to contain all ingredients and their compatibility score
+        \For{$i$ in ingredients of $recipe$}
+        	\If {$i$ in graph and $i$ not in $top10$}
+        		\For{peripheral ingredient $k$}
+        			\State{$d[k] = d[k] + \min(\frac{w(i,k)}{degree(i)},\frac{w(i,k)}{degree(k)})$}
+        		\EndFor
+        	\EndIf
+        \EndFor
+        \Return 10 ingredients from $d$ with highest compatibility score
+       \EndFunction
+
+\end{algorithmic}
+\end{algorithm}
 
 
 \section{Web Design}
