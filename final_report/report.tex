@@ -30,6 +30,7 @@
 
 \usepackage{amsmath}
 \usepackage{algorithm}
+\usepackage{dsfont}
 \usepackage[noend]{algpseudocode}
 \begin{document}
 
@@ -98,7 +99,7 @@ Another paper by Ahn et al. compares the differences in cuisine by instead looki
 Still other research is ongoing, some building upon the relevance of flavor compounds 
 in regional cuisines ~\cite{zhu2013geography}, ~\cite{jain2015analysis}, and others attempt to implement these ideas to help users make suggestions about healthy food choices ~\cite{Geleijnse}.
 
-Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients thaFigure~\ref{fig:}t are compatible with each other.
+Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients that are compatible with each other.
 
 
 \section{Data Processing}
@@ -109,11 +110,17 @@ The primary application of algorithm design resides in ingredient recommendation
 
 Before we do so, however, we first introduce some common terminology to be used throughout the text:
 \begin{enumerate}
-	\item \textit{w(x,y)} describes the weight of the edge between two ingredients.
+	\item \textit{w(x,y)} describes the weight of the edge between two ingredients. We define the weight
+	of an edge as the co-occurrence of two ingredients; that is, how many times the two ingredients 
+	appear in the same recipe. 
 	\item \textit{graph} is the entire ingredient network.
 	\item \textit{peripheral ingredient} describes those ingredients that are not part of a recipe, but have at least one edge (with nonzero weight) to an ingredient in the recipe (Fig. 1). Formally, this is described as
 	\[\{k : \text{k} \in \text{adjacent neighbors of recipe} \wedge k \notin \text{recipe}\}
 	\]
+	\item \textit{compatibility score} is a score computed (using different metrics) that
+	is used to rate each ingredient suggestion. An ingredient with high \"compatibility\"
+	with another suggests that the pair are commonly used together, and therefore
+	would be a good fit for the recipe.
 \end{enumerate}
 
 
@@ -124,28 +131,112 @@ Before we do so, however, we first introduce some common terminology to be used 
 \end{figure}
 
 
-
-There are a two primary schools of thought when designing an appropriate algorithm for recipe recommendation - using degree centrality measures, versus using pointwise mutual information (PMI). Here we enumerate in detail the algorithms.
+There are two primary schools of thought when designing an appropriate algorithm for recipe recommendation - using degree centrality measures, versus using pointwise mutual information (PMI). Here we enumerate in detail the algorithms. \\
+First, we discuss the algorithm that uses degree centrality. We apply degree centrality toward compatibility scores of ingredients.
 
 \begin{enumerate}
-	\item Degree Centrality (Fig. 1). This algorithm was the first variant that we attempted on ingredient recommendation. 
-
+	\item Degree Centrality (Algorithm 1). This algorithm was the first variant that we attempted on ingredient recommendation. First, we obtain a list of 
+	all peripheral ingredients of a particular recipe. 
+	 Here, we exclude the top ten ingredients
+	as part of our search. The idea was to exclude potentially obvious or very
+	similar ingredients from our search - we wanted to suggest something that would 
+	introduce variability to our suggestions, rather than recommend the same
+	high-frequency ingredients. Additionally, we must check if ingredients
+	exist in the network, as our data processing eliminates certain ingredients
+	from the graph but doesn't eliminate them from the recipes themselves.\\
+	The key aspect of this algorithm was to compute a compatibility score 
+	of an ingredient by summing over the all its connections with ingredients in the recipe. 
+	For two ingredients $(a,b)$, we compute the weight of its connection by $w(a,b)$ by 
+	counting the number of occurrences $a,b$ appear together in the same recipe. 
+	Each connection is normalized by dividing by the highest weighted number of connections of 
+	the two ingredients; this helps prevent other high-frequency ingredients from
+	dominating the recommendation. To compute the the weighted number of connections of 
+	an ingredient $a$, we sum the weights over all the connections with its neighbors: $\sum_{b \in N(a)} w(a,b)$.
+	\\
+	 Formally, we write, for a pair of ingredients $(i, k)$
+	with $i$ being a recipe ingredient and $k$ a peripheral ingredient,
+	\[score = \sum_{i \in recipe} \min(\frac{w(i,k)}{degree(i)},\frac{w(i,k)}{degree(k)})
+	\]
 
 \end{enumerate}
 
+\begin{algorithm}
+\caption{Degree Centrality algorithm}
+\begin{algorithmic}[1]
+  \Function{naive}{$recipeID$}
+  	\State Let $recipe$ = recipe with ID $recipeID$
+    \State Let $top10$ = ten ingredients with highest weighted number of connections
+    \State Let d = dictionary to contain all ingredients and their compatibility score
+    \For{$i$ in ingredients of $recipe$}
+    	\If {$i$ in graph and $i$ not in $top10$}
+    		\For{peripheral ingredient $k$}
+    			\State{$d[k] = d[k] + \min(\frac{w(i,k)}{degree(i)},\frac{w(i,k)}{degree(k)})$}
+    		\EndFor
+    	\EndIf
+    \EndFor
+    \Return 10 ingredients from $d$ with highest compatibility score
+   \EndFunction
+
+\end{algorithmic}
+\end{algorithm}
+
+Since this algorithm takes an arbitrary standard of excluding the top ten ingredients from recommendation, this was initially seen as a naive algorithm for recipe recommendation. Hence, we turned to a much more extensive analysis of using
+PMI as the basis of our algorithms. The general formula of PMI, between two ingredients $a,b$ is given by:
+\[
+	\log \frac{p(a,b)}{p(a)p(b)}
+\]
+where $p(a)$ is defined as $\frac{\text{number of occurrences of a}}{\|graph\|}$. Intuitively, this value between
+two ingredients describes how likely two ingredients are to appear together in the graph. Two ingredients with very few connections could still have a high value according to this metric, if they appear together more often than they do not. Thus it was thought that this metric captures ingredient pairings much better, as now there isn't any need to remove the most frequent ingredients.
+
+As in degree centrality, we use PMI mainly for computing compatibility scores of ingredients.
+
+Here we enumerate the algorithms using PMI:
+\begin{enumerate}
+	\item Normalized PMI. After computing a score using PMI, normalize the value by the weighted number
+	of connections. This algorithm is the exact same as in Algorithm 1, only the weight $w(a,b)$ is subsituted for $PMI(a,b)$. This was mostly meant to compare directly with the the degree centrality algorithm.
+	\item Weighted PMI (Algorithm 2). This weights an ingredient's PMI score by the number of edges that exist between
+	itself and ingredients of the recipe. Formally, for a peripheral ingredient $b$ we describe this as
+	\[
+		(\sum_{a \in recipe} \mathds{1}_{(a, b) \in graph})(\sum_{a \in recipe} PMI(a, b))
+	\]
+	Thus, for each connection to an ingredient in the recipe, we increase the weight factor by 1. Intuitively, this assigns more importance to peripheral ingredients
+	that pairs well with many of the recipe's ingredients. 
+	\item Generalized PMI. This is an extension to the pairwise PMI score, and generalizes it PMI between more than 2 ingredients. For an $n$-tuple of ingredients in the recipe, we compute sum of all their weighted connections with each other $\sum_{a, a' \in tuple} w(a,a')$. We then find the tuple whose
+	sum of weights is the greatest - this captures the ingredients that are seen together most often in recipes,
+	and gives us a sense of the \"essential\" ingredients in the recipe. Then, using these essential ingredients,
+	we can compute a generalized PMI score for each peripheral ingredient that has connections to all of
+	these essential ingredients, which is given by 
+	\[
+		PMI(tuple) = \log \frac{p(x \in tuple)}{\prod_{x \in tuple}p(x)}
+	\]
+	In practice, we found that letting $n = 3$ for determining the size of our tuple was best, as
+	it as large as we could get without too many division by zero errors. 
+	\item Minimax PMI. This algorithm was meant to consider \"safe\" suggestions; that is, recommending peripheral ingredients that would be compatible with all recipe ingredients, instead of ingredients
+	that would work very well with some and not at all with others in the recipe. To do this,
+	for a peripheral ingredient $b$ we computed $\min_{a \in recipe} PMI(a,b)$, and then 
+	returned the ingredients with the highest min values. This way, we could rule out ingredients
+	that would never pair well with at least one recipe ingredient.
+\end{enumerate}
+
+
+
   \begin{algorithm}
-   \caption{Degree Centrality algorithm}
+   \caption{Weighted PMI algorithm}
     \begin{algorithmic}[1]
       \Function{naive}{$recipeID$}
       	\State Let $recipe$ = recipe with ID $recipeID$
         \State Let $top10$ = ten ingredients with highest weighted number of connections
         \State Let d = dictionary to contain all ingredients and their compatibility score
         \For{$i$ in ingredients of $recipe$}
-        	\If {$i$ in graph and $i$ not in $top10$}
+        	\If {$i$ in graph}
         		\For{peripheral ingredient $k$}
-        			\State{$d[k] = d[k] + \min(\frac{w(i,k)}{degree(i)},\frac{w(i,k)}{degree(k)})$}
+        			\State{$d[k] = d[k] + \min( \frac{PMI(a,b)}{degree(b)}, \frac{PMI(a,b)}{degree(a)})$}
+        			\State{$count[k] = count[k] + 1$}
         		\EndFor
         	\EndIf
+        \EndFor
+        \For{ingredient in $d$}
+        	$d[k] = d[k] \cdot count[k]$
         \EndFor
         \Return 10 ingredients from $d$ with highest compatibility score
        \EndFunction
@@ -154,9 +245,31 @@ There are a two primary schools of thought when designing an appropriate algorit
 \end{algorithm}
 
 
+  \begin{algorithm}
+   \caption{generalized PMI algorithm}
+    \begin{algorithmic}[1]
+      \Function{naive}{$recipeID$}
+      	\State Let $recipe$ = recipe with ID $recipeID$
+        \State Let $top10$ = ten ingredients with highest weighted number of connections
+        \State Let d = dictionary to contain all ingredients and their compatibility score
+    	\State{$bestMatch=\max_{(a,b,c) \in recipe} w(a, b) + w(b,c) + w(a,c)$ }
+    	\State{$tuple=\text{argmax}_{(a,b,c) \in recipe} w(a, b) + w(b,c) + w(a,c)$ }
+        \For{$i$ in ingredients of $tuple$}
+    		\For{peripheral ingredient $k$ and $a, b, c \in N(k)$}
+    			\State{$d[k] = PMI(k, tuple)$}
+    		\EndFor
+        \EndFor
+        \Return 10 ingredients from $d$ with highest compatibility score
+       \EndFunction
+
+\end{algorithmic}
+\end{algorithm}
+
+
+
 \section{Web Design}
 
-Web design was done using a combination of HTML, CSS, JavaScript, and Python. HTML was used to create the content for display on the page, and CSS was used to style this content. JavaScript was also used for animations and general User Interface tweaks to make browsing the site intuitive and smooth. Finally, Python was utilized as an interface between the back-end and the front-end. Through the usage of Python's Flask framework, it was possible to integrate the back-end algorithms with displaying the relevant computed information on the front-end. In other words, our module app.py imported modules from the back-end, while also using this information to fill in the HTML templates based on search queries, etc. given by a user in the front end. %Thus, our architecture can be modeled in the following way:
+Web design was done using a combination of HTML, CSS, JavaScript, and Python. HTML was used to create the content for display on the page, and CSS was used to style this content. JavaScript was also used for animations and general User Interface tweaks to make browsing the site intuitive and smooth. Finally, Python was utilized as an interface between the back-end and the front-end. Through the usage of Python's Flask framework, it was possible to integrate the back-end algorithms with displaying the relevant computed information on the front-end. In other words, our module app.py imported modules from the back-end, while also using this information to fill in the HTML templates based on search queries, etc. given by a user in the front end. %Thus, our architecture can be modeled in the following way:h
 
 The primary focus on the front end was to develop a site that is intuitive and self-explanatory, while also featuring only the information that is needed the most. Thus, the landing page has the following design:
 
