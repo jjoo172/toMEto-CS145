@@ -69,12 +69,13 @@ for recipe_id in to_del:
 with open('edit_dist.txt', 'r') as infile:
   similarities = json.loads(infile.read())
 
+
 # test on all analyzers
-anals = [anal for anal in dir(analyzers) if (anal[0] != "_" and anal != "utils" and anal != "analyzer_genPMI")]
+anals = [anal for anal in dir(analyzers) if (anal[0] != "_" and anal != "utils")]
 print 'anals:', anals
 print 'len(testset):', len(testset)
 for a in anals:
-  print "running " + a
+  print "running analyzer2: " + a
 
   # run on training set only
   analyzers.__dict__[a].importall(trainingset)
@@ -82,9 +83,9 @@ for a in anals:
   for recipe_id in testset:
     # get suggestions on altered set
     suggestions = analyzers.__dict__[a].complement(recipe_id=None, ingredients=testset[recipe_id])
-    
-    # run through removed ingredients and check if they are present
-    for r in removed[recipe_id]:
-      result[a] += min([similarities[r][s] for s in suggestions])
+    if len(suggestions) > 0:
+      # run through removed ingredients and check if they are present
+      for r in removed[recipe_id]:
+        results[a] += sum([similarities[r][s] for s in suggestions])
 
   print results
