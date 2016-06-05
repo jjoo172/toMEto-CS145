@@ -371,7 +371,7 @@ simplesearch.html is simply the html for the landing page, before any queries ar
 
 \begin{figure*}[t]
 	\centering
-	\includegraphics[width=0.9\textwidth]{backend}
+	\includegraphics[width=0.9\textwidth]{architecture}
 	\caption{Schematic of the architectural design.}
 	\label{fig:}
 \end{figure*}
@@ -408,26 +408,47 @@ We could parse the dataset and classify them, allowing users to get suggestions 
 
 Furthermore, we could allow user personalization. Allow the user to upvote or downvote suggestions, and use machine learning techniques to determine what kind of additions the user likes. This would require new algorithms to supplement our existing network algorithms.
 
+\clearpage
+\onecolumn
 \section{Appendix}
-\begin{table*}[t]
-	\centering
+
+Larger scale version of (Figures 2-4):
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.879\textwidth]{p1.png}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.879\textwidth]{p2.png}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.879\textwidth]{p3.png}
+\end{figure}
+
+\clearpage
+
+\begin{table}[h]
+    \centering
     \begin{tabular}{ | p{5cm} | p{2cm} | p{2cm} | p{1cm} | p{6cm} |}
     \hline
     Module Name & Language & Author & Lines of Code & Description/Functionality \\  \hline
     \texttt{data/scraper.py} & Python & Charlie & ~100 & Scrapes for recipes off NYT and Allrecipes websites \\ \hline
-    data/allrecipes\_parser.py,
-    data/nyt\_parser.py & Python & Charlie & ~150 & Extracts relevant information (title, ingredients, body) from scraped recipes \\ \hline
-    data/allrecipes\_mapper.py,
-    data/nyt\_mapper.py & Python & Charlie & ~400 & Finds top ingredients and maps uncommon ingredients to real ones (improves data quality) \\ \hline
-    analyzers/analyzer\_*.py & Python & Charlie, Matthew, Albert & ~600 & Different algorithms for recommendations \\ \hline
-    analyzers/utils.py & Python & Charlie, Matthew, Albert & ~200 & Utility functions used by different files \\ \hline
-    backend/algorithm\_analyzer.py & Python & Matthew, Albert & ~200 & Objectively tests differences between algorithms \\ \hline
-    backend/search.py & Python & Matthew & ~20 & Handles user search queries (forward to NYT search) \\ \hline
-    src/app.py and CSS/HTML & Python/Flask, CSS, HTML, Javascript & Jonathan & ~600 & Entry point to the program, used to start up the ToMEto service (built using Flask Framework) \\ \hline
+    \texttt{data/allrecipes\_parser.py},
+    \texttt{data/nyt\_parser.py} & Python & Charlie & ~150 & Extracts relevant information (title, ingredients, body) from scraped recipes \\ \hline
+    \texttt{data/allrecipes\_mapper.py},
+    \texttt{data/nyt\_mapper.py} & Python & Charlie & ~400 & Finds top ingredients and maps uncommon ingredients to real ones (improves data quality) \\ \hline
+    \texttt{analyzers/analyzer\_*.py} & Python & Charlie, Matthew, Albert & ~600 & Different algorithms for recommendations \\ \hline
+    \texttt{analyzers/utils.py} & Python & Charlie, Matthew, Albert & ~200 & Utility functions used by different files \\ \hline
+    \texttt{backend/algorithm\_analyzer.py} & Python & Matthew, Albert & ~200 & Objectively tests differences between algorithms \\ \hline
+    \texttt{backend/search.py} & Python & Matthew & ~20 & Handles user search queries (forward to NYT search) \\ \hline
+    \texttt{src/app.py} and CSS/HTML & Python/Flask, CSS, HTML, Javascript & Jonathan & ~600 & Entry point to the program, used to start up the ToMEto service (built using Flask Framework) \\ \hline
     \end{tabular}
-\end{table*}
+    \caption{List of modules used in toMEto.}
+\end{table}
 
-\pagebreak
+\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Compiling Instructions %%%%%%%
