@@ -1,9 +1,30 @@
 \begin{thebibliography}{1}
 
-\bibitem{Einstein}
-A.~Einstein.
-\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies].
-\newblock {\em Annalen der Physik}, 322(10):891--921, 1905.
+\bibitem{pairings}
+Y.-Y. Ahn, S.~E. Ahnert, J.~P. Bagrow, and A.-L. Barab{\'a}si.
+\newblock Flavor network and the principles of food pairing.
+\newblock {\em Scientific Reports}, 1, 12 2011.
+
+\bibitem{Geleijnse}
+G.~Geleijnse, P.~Nachtigall, P.~van Kaam, and L.~Wijgergangs.
+\newblock A personalized recipe advice system to promote healthful choices.
+\newblock In {\em Proceedings of the 16th International Conference on
+  Intelligent User Interfaces}, IUI '11, pages 437--438, New York, NY, USA,
+  2011. ACM.
+
+\bibitem{jain2015analysis}
+A.~Jain, N.~Rakhi, and G.~Bagler.
+\newblock Analysis of food pairing in regional cuisines of india.
+\newblock {\em PloS one}, 10(10), 2015.
+
+\bibitem{recommend}
+C.~Teng, Y.~Lin, and L.~A. Adamic.
+\newblock Recipe recommendation using ingredient networks.
+\newblock {\em CoRR}, abs/1111.3919, 2011.
+
+\bibitem{zhu2013geography}
+Y.-X. Zhu, J.~Huang, Z.-K. Zhang, Q.-M. Zhang, T.~Zhou, and Y.-Y. Ahn.
+\newblock Geography and similarity of regional cuisines in china.
+\newblock {\em PloS one}, 8(11), 2013.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAY 2016 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 JUN 2016 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -184,35 +184,73 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-))) (./report.aux)
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks36
+\float@box=\box30
+\@float@everytoks=\toks37
+\@floatcapt=\box31
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks38
+\c@algorithm=\count110
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count111
+\c@ALG@rem=\count112
+\c@ALG@nested=\count113
+\ALG@tlm=\skip44
+\ALG@thistlm=\skip45
+\c@ALG@Lnr=\count114
+\c@ALG@blocknr=\count115
+\c@ALG@storecount=\count116
+\c@ALG@tmpcounter=\count117
+\ALG@tmplength=\skip46
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count118
 \scratchdimen=\dimen123
-\scratchbox=\box30
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count112
+\scratchbox=\box32
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count121
 \MPscratchDim=\dimen124
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -261,76 +299,94 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 65.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<p1.png, id=1, 469.755pt x 208.6194pt>
-File: p1.png Graphic file (type png)
- <use p1.png>
-Package pdftex.def Info: p1.png used on input line 105.
-(pdftex.def)             Requested size: 234.87692pt x 104.30943pt.
+
+LaTeX Warning: Reference `fig:' on page \thepage  undefined on input line 99.
+
+<peripheral.png, id=1, 350.7504pt x 253.4268pt>
+File: peripheral.png Graphic file (type png)
+ <use peripheral.png>
+Package pdftex.def Info: peripheral.png used on input line 120.
+(pdftex.def)             Requested size: 142.26378pt x 102.79196pt.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./p1.png>]
-<p2.png, id=13, 469.755pt x 210.5466pt>
+]
+<p1.png, id=16, 469.755pt x 208.6194pt>
+File: p1.png Graphic file (type png)
+ <use p1.png>
+Package pdftex.def Info: p1.png used on input line 161.
+(pdftex.def)             Requested size: 234.87692pt x 104.30943pt.
+
+<p2.png, id=17, 469.755pt x 210.5466pt>
 File: p2.png Graphic file (type png)
  <use p2.png>
-Package pdftex.def Info: p2.png used on input line 109.
+Package pdftex.def Info: p2.png used on input line 165.
 (pdftex.def)             Requested size: 234.87692pt x 105.27304pt.
 
-<p3.png, id=14, 469.755pt x 211.0284pt>
+<p3.png, id=18, 469.755pt x 211.0284pt>
 File: p3.png Graphic file (type png)
  <use p3.png>
-Package pdftex.def Info: p3.png used on input line 113.
+Package pdftex.def Info: p3.png used on input line 169.
 (pdftex.def)             Requested size: 234.87692pt x 105.51393pt.
 
-Overfull \hbox (2.5593pt too wide) in paragraph at lines 121--122
+Overfull \hbox (2.5593pt too wide) in paragraph at lines 177--178
 \T1/aer/m/n/9 rected to this tem-plate, which in-cludes the tiles, modal popup
  []
 
-<p4.png, id=15, 461.0826pt x 304.0158pt>
+<p4.png, id=19, 461.0826pt x 304.0158pt>
 File: p4.png Graphic file (type png)
  <use p4.png>
-Package pdftex.def Info: p4.png used on input line 123.
+Package pdftex.def Info: p4.png used on input line 179.
 (pdftex.def)             Requested size: 230.54073pt x 152.00752pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [2 <./peripheral.png> <./p1.png> <./p2.png> <./p3.png>] (./report.bbl) [3 <./p
+4.png>]
+(./report.aux)
 
-(./report.bbl) [2 <./p2.png> <./p3.png> <./p4.png>] (./report.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2784 strings out of 493089
- 35363 string characters out of 6134842
- 98971 words of memory out of 5000000
- 6204 multiletter control sequences out of 15000+600000
- 45321 words of font info for 59 fonts, out of 8000000 for 9000
+ 3441 strings out of 493089
+ 44720 string characters out of 6134842
+ 112790 words of memory out of 5000000
+ 6829 multiletter control sequences out of 15000+600000
+ 54399 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,28p,827b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local
-/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb>
-Output written on report.pdf (2 pages, 1995281 bytes).
+ 41i,10n,28p,825b,280s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb>
+Output written on report.pdf (3 pages, 2117891 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
