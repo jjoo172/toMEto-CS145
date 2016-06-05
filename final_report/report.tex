@@ -89,7 +89,14 @@ Citation of Einstein paper~\cite{Einstein}.
 
 \section{Related Work}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+There have been a select number of papers discussing analysis of food and ingredient networks. Teng et al. describes the goal of being able to recommend entire recipes, using recipe suggestions made by examining communities of a co-occurrence network, to predict the success of a particular recipe's rating ~\cite{recommend}. 
+
+Another paper by Ahn et al. compares the differences in cuisine by instead looking at a flavor-compounds network, and making general statements about the co-occurrence of ingredients by their chemical composition ~\cite{pairings}. They discovered that Asian recipes tend to have ingredients with different compounds, whereas Western cuisines have ingredients with like compounds. 
+
+Still other research is ongoing, some building upon the relevance of flavor compounds 
+in regional cuisines ~\cite{zhu2013geography}, ~\cite{jain2015analysis}, and others attempt to implement these ideas to help users make suggestions about healthy food choices ~\cite{Geleijnse}.
+
+Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients that are compatible with each other.
 
 \section{Data Processing}
 
@@ -100,7 +107,7 @@ There are a two primary schools of thought when designing an appropriate algorit
 
 \section{Web Design}
 
-Web design was done using a combination of HTML, CSS, JavaScript, and Python. HTML was used to create the content for display on the page, and CSS was used to style this content. JavaScript was also used for animations and general User Interface tweaks to make browsing the site intuitive and smooth. Finally, Python was utilized as an interface between the back-end and the front-end. Through the usage of Python’s Flask framework, it was possible to integrate the back-end algorithms with displaying the relevant computed information on the front-end. In other words, our module app.py imported modules from the back-end, while also using this information to fill in the HTML templates based on search queries, etc. given by a user in the front end. %Thus, our architecture can be modeled in the following way:
+Web design was done using a combination of HTML, CSS, JavaScript, and Python. HTML was used to create the content for display on the page, and CSS was used to style this content. JavaScript was also used for animations and general User Interface tweaks to make browsing the site intuitive and smooth. Finally, Python was utilized as an interface between the back-end and the front-end. Through the usage of Python's Flask framework, it was possible to integrate the back-end algorithms with displaying the relevant computed information on the front-end. In other words, our module app.py imported modules from the back-end, while also using this information to fill in the HTML templates based on search queries, etc. given by a user in the front end. %Thus, our architecture can be modeled in the following way:
 
 The primary focus on the front end was to develop a site that is intuitive and self-explanatory, while also featuring only the information that is needed the most. Thus, the landing page has the following design:
 
