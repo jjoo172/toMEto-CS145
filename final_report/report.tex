@@ -86,13 +86,17 @@ toMEto is a web-based application that suggests ingredients to supplement existi
 %\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
 
 \section{Introduction}
-Cooking is a 
+Traditionally, cooking involves a combination of technical skills and creativity. While technical skills can only be improved through time and practice, we believed that the creative aspect of cooking could be improved through utilizing the wealth of existing recipes available online. There are a variety of web and mobile applications
+that mostly function as a database for recipes, and allow users to quickly search to recipes pertaining to their desires. There are also more advanced applications that devote specficially to \textit{food pairings}; websites such as \texttt{foodpairing.com} allow users to experiment with different ingredients and rate their synergy by examining the flavor network. On another hand, \texttt{yummly.com} will recommend new recipes based on a variety of selection filters, such as allergies or diets. \\
+The purpose of this project is to be able to blend the two and suggest individual ingredients, as opposed to entire recipes, using the concept of food pairings found through an ingredient network.
+ Thus, through construction of a network using this information, toMEto offers creative suggestions to aid in the creation of interesting new twists to already successful recipes. Having these suggestions available alongside a recipe allows toMEto to inspire new forms of cooking styles, and improves the creative cooking experience for beginners and advanced chefs alike. With a simple, intuitive user interface, along with a rich database of recipe information, toMEto allows for a streamlined recipe lookup experience, with the added functionality of optimized suggestions. 
 
 The rest of the paper is organized as follows. Section 2 contains how we scraped the data and other preprocessing steps. Section 3 describes the algorithms considered. Section 4 covers the app's web design while Section 5 covers the backend. Section 6 concludes our paper. 
 
 \subsection{Related Work}
 
-There have been a select number of papers discussing analysis of food and ingredient networks. Teng et al.~\cite{recommend} describes the goal of being able to recommend entire recipes, using recipe suggestions made by examining communities of a co-occurrence network, to predict the success of a particular recipe's rating. 
+There have been a select number of papers discussing analysis of food and ingredient networks. In the literature, there are two common food networks that subject to network analysis. The first is a \textit{co-occurrence network}, which relates ingredients by how often they appear together in user-defined recipes. The other is a \textit{flavor compound network}, which relates ingredients by how similar their chemical composition is. Throughout this paper we will refer to the co-occurrence network as the \textit{ingredient network}, and the flavor compounds network as the \textit{flavor network.}
+Teng et al.~\cite{recommend} describes the goal of being able to recommend entire recipes, using recipe suggestions made by examining communities of a co-occurrence network, to predict the success of a particular recipe's rating. 
 
 Another paper by Ahn et al.~\cite{pairings} compares the differences in cuisine by instead looking at a flavor-compounds network, and making general statements about the co-occurrence of ingredients by their chemical composition. They discovered that Asian recipes tend to have ingredients with different compounds, whereas Western cuisines have ingredients with like compounds. 
 
@@ -165,7 +169,7 @@ Combining both datasets resulted in a network with 7339 unique ingredients. Of t
 
 \section{Algorithm Design and Analysis}
 
-The primary application of algorithm design resides in ingredient recommendation to the user. We reserve the majority of this section to understanding the different frameworks we tried for the \textit{complement} method, which is a method that takes in a particular recipe ID, and suggests up to ten ingredients that the user could potentially add. 
+The primary application of algorithm design resides in ingredient recommendation to the user. These algorithms were implemented in a collection of files with the pattern \texttt{analyzer\_*.py}, and each file corresponds to a different algorithm (as we enumerate below). We reserve the majority of this section to understanding the different frameworks we tried for the \textit{complement} method, which is a method that takes in a particular recipe ID, and suggests up to ten ingredients that the user could potentially add. 
 
 Before we do so, however, we first introduce some common terminology to be used throughout the text:
 \begin{enumerate}
@@ -195,15 +199,7 @@ There are two primary schools of thought when designing an appropriate algorithm
 First, we discuss the algorithm that uses degree centrality. We apply degree centrality toward compatibility scores of ingredients.
 
 \begin{enumerate}
-	\item Degree Centrality (Algorithm 1). This algorithm was the first variant that we attempted on ingredient recommendation. First, we obtain a list of 
-	all peripheral ingredients of a particular recipe. 
-	 Here, we exclude the top ten ingredients
-	as part of our search. The idea was to exclude potentially obvious or very
-	similar ingredients from our search - we wanted to suggest something that would 
-	introduce variability to our suggestions, rather than recommend the same
-	high-frequency ingredients. Additionally, we must check if ingredients
-	exist in the network, as our data processing eliminates certain ingredients
-	from the graph but doesn't eliminate them from the recipes themselves.\\
+	\item Degree Centrality (Algorithm 1). 
 	The key aspect of this algorithm was to compute a compatibility score 
 	of an ingredient by summing over the all its connections with ingredients in the recipe. 
 	For two ingredients $(a,b)$, we compute the weight of its connection by $w(a,b)$ by 
@@ -219,6 +215,16 @@ First, we discuss the algorithm that uses degree centrality. We apply degree cen
 	\]
 
 \end{enumerate}
+
+This algorithm was the first variant that we attempted on ingredient recommendation. First, we obtain a list of 
+	all peripheral ingredients of a particular recipe. 
+	 Here, we exclude the top ten ingredients
+	as part of our search. The idea was to exclude potentially obvious or very
+	similar ingredients from our search - we wanted to suggest something that would 
+	introduce variability to our suggestions, rather than recommend the same
+	high-frequency ingredients. Additionally, we must check if ingredients
+	exist in the network, as our data processing eliminates certain ingredients
+	from the graph but doesn't eliminate them from the recipes themselves.
 
 \begin{algorithm}
 \caption{Degree Centrality algorithm}
@@ -261,7 +267,7 @@ Here we enumerate the algorithms using PMI:
 	\]
 	Thus, for each connection to an ingredient in the recipe, we increase the weight factor by 1. Intuitively, this assigns more importance to peripheral ingredients
 	that pairs well with many of the recipe's ingredients. 
-	\item Generalized PMI. This is an extension to the pairwise PMI score, and generalizes it PMI between more than 2 ingredients. For an $n$-tuple of ingredients in the recipe, we compute sum of all their weighted connections with each other $\sum_{a, a' \in tuple} w(a,a')$. We then find the tuple whose
+	\item Generalized PMI (Algorithm 3). This is an extension to the pairwise PMI score, and generalizes it PMI between more than 2 ingredients. For an $n$-tuple of ingredients in the recipe, we compute sum of all their weighted connections with each other $\sum_{a, a' \in tuple} w(a,a')$. We then find the tuple whose
 	sum of weights is the greatest - this captures the ingredients that are seen together most often in recipes,
 	and gives us a sense of the \"essential\" ingredients in the recipe. Then, using these essential ingredients,
 	we can compute a generalized PMI score for each peripheral ingredient that has connections to all of
@@ -271,19 +277,16 @@ Here we enumerate the algorithms using PMI:
 	\]
 	In practice, we found that letting $n = 3$ for determining the size of our tuple was best, as
 	it as large as we could get without too many division by zero errors. 
-	\item Minimax PMI. This algorithm was meant to consider \"safe\" suggestions; that is, recommending peripheral ingredients that would be compatible with all recipe ingredients, instead of ingredients
+	\item Minimax PMI. This algorithm was meant to consider safe suggestions; that is, recommending peripheral ingredients that would be compatible with all recipe ingredients, instead of ingredients
 	that would work very well with some and not at all with others in the recipe. To do this,
 	for a peripheral ingredient $b$ we computed $\min_{a \in recipe} PMI(a,b)$, and then 
 	returned the ingredients with the highest min values. This way, we could rule out ingredients
 	that would never pair well with at least one recipe ingredient.
 \end{enumerate}
-
-
-
   \begin{algorithm}
    \caption{Weighted PMI algorithm}
-    \begin{algorithmic}[1]
-      \Function{naive}{$recipeID$}
+    \begin{algorithmic}
+      \Function{wPMI}{$recipeID$}
       	\State Let $recipe$ = recipe with ID $recipeID$
         \State Let $top10$ = ten ingredients with highest weighted number of connections
         \State Let d = dictionary to contain all ingredients and their compatibility score
@@ -304,11 +307,10 @@ Here we enumerate the algorithms using PMI:
 \end{algorithmic}
 \end{algorithm}
 
-
   \begin{algorithm}
-   \caption{generalized PMI algorithm}
-    \begin{algorithmic}[1]
-      \Function{naive}{$recipeID$}
+   \caption{Generalized PMI algorithm}
+    \begin{algorithmic}
+      \Function{genPMI}{$recipeID$}
       	\State Let $recipe$ = recipe with ID $recipeID$
         \State Let $top10$ = ten ingredients with highest weighted number of connections
         \State Let d = dictionary to contain all ingredients and their compatibility score
@@ -333,15 +335,25 @@ Web design was done using a combination of HTML, CSS, JavaScript, and Python. HT
 
 The primary focus on the front end was to develop a site that is intuitive and self-explanatory, while also featuring only the information that is needed the most. Thus, the landing page has the following design:
 
+\begin{figure}[H]
 \includegraphics[scale=0.5]{p1.png}
+\caption{Landing page for toMEto.}
+\end{figure}
 
-Upon searching for a recipe, a loading bar appears, and once recipe information ins obtained, tiles fade in. These tiles offer an image of the recipe to be prepared, with the recipe title overlaid on top. This can be seen below:
 
+Upon searching for a recipe, a loading bar appears, and once recipe information is obtained, tiles fade in. These tiles offer an image of the recipe to be prepared, with the recipe title overlaid on top. This can be seen below:
+
+\begin{figure}[H]
 \includegraphics[scale=0.5]{p2.png}
+\caption{Tiles, each with a recipe related to the search input.}
+\end{figure}
 
 Upon clicking a recipe, a modal popup appears, which lists both the recipe itself as well as toMEto's recommended ingredients, as can be seen in the below image:
 
+\begin{figure}[H]
 \includegraphics[scale=0.5]{p3.png}
+\caption{The resulting popup from clicking on an image, with the recipe and our recommended ingredients.}
+\end{figure}
 
 Much of the front-end was designed to be easily updated and maintained, and thus small UI tweaks, such as background images, color schemes, etc. are easily changeable by editing the HTML and/or CSS files. The front-end utilizes mainly three different HTML templates:
 \begin{itemize}
@@ -356,8 +368,34 @@ simplesearch.html is simply the html for the landing page, before any queries ar
 
 \section{Backend Architecture}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=0.9\textwidth]{backend}
+	\caption{Schematic of the architectural design.}
+	\label{fig:}
+\end{figure*}
 
+\subsection{Integration with Frontend}
+A diagram of our backend architecture is described in Figure 5. We first launch the service by calling \texttt{app.py}, as well as invoking the appropriate \texttt{analyzer\_*.py} program whose algorithm we wish to display. Shortly after, the landing page for toMEto is brought up. The user then can enter a search query,
+which gets passed through \texttt{app.py}, and then \texttt{search.py} in the backend. The relevant
+recipes are returned back through \texttt{app.py}, which then looks through a text file \texttt{analyzer\_*.txt} to find our recommended ingredients for the returned recipes. Finally, these are displayed to the user 
+ as a webpage.
+
+\subsection{Backend processing}
+As described in Section 2 of this paper, we use the following
+modules to extract and obtain relevant recipe information, to be fed to \texttt{app.py}.
+\begin{enumerate}
+	\item First, use module \texttt{scraper.py} to scrape recipes from the Internet
+and store raw data in a folder \texttt{dl/}. 
+	\item Then, we employ \texttt{parser.py} to parse out the relevant recipe data and store the recipes in a folder \texttt{processed/}. 
+	\item Run \texttt{mapper.py} to create two files: \texttt{mapping.txt}, which maps
+		similar ingredients to the same ingredient, and \texttt{top.txt}, which lists
+		the ~1000 most common ingredients.
+	\item These are fed into the \texttt{analyzer\_*.py} files, which produce the ingredient networks
+		and run the relevant algorithms described in Section 3. These functions will run
+		the algorithm on each recipe obtain from NYTimes Cooking, and save all the results 
+		in the corresponding \texttt{analyzer\_*.txt} files.
+\end{enumerate}
 
 \section{Conclusions and Future Work}
 
@@ -369,8 +407,26 @@ We could parse the dataset and classify them, allowing users to get suggestions 
 
 Furthermore, we could allow user personalization. Allow the user to upvote or downvote suggestions, and use machine learning techniques to determine what kind of additions the user likes. This would require new algorithms to supplement our existing network algorithms.
 
+\section{Appendix}
+\begin{table*}[t]
+	\centering
+    \begin{tabular}{ | p{5cm} | p{2cm} | p{2cm} | p{1cm} | p{6cm} |}
+    \hline
+    Module Name & Language & Author & Lines of Code & Description/Functionality \\  \hline
+    \texttt{data/scraper.py} & Python & Charlie & ~100 & Scrapes for recipes off NYT and Allrecipes websites \\ \hline
+    data/allrecipes\_parser.py,
+    data/nyt\_parser.py & Python & Charlie & ~150 & Extracts relevant information (title, ingredients, body) from scraped recipes \\ \hline
+    data/allrecipes\_mapper.py,
+    data/nyt\_mapper.py & Python & Charlie & ~400 & Finds top ingredients and maps uncommon ingredients to real ones (improves data quality) \\ \hline
+    analyzers/analyzer\_*.py & Python & Charlie, Matthew, Albert & ~600 & Different algorithms for recommendations \\ \hline
+    analyzers/utils.py & Python & Charlie, Matthew, Albert & ~200 & Utility functions used by different files \\ \hline
+    backend/algorithm\_analyzer.py & Python & Matthew, Albert & ~200 & Objectively tests differences between algorithms \\ \hline
+    backend/search.py & Python & Matthew & ~20 & Handles user search queries (forward to NYT search) \\ \hline
+    src/app.py and CSS/HTML & Python/Flask, CSS, HTML, Javascript & Jonathan & ~600 & Entry point to the program, used to start up the ToMEto service (built using Flask Framework) \\ \hline
+    \end{tabular}
+\end{table*}
 
-
+\pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Compiling Instructions %%%%%%%
