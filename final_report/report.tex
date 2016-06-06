@@ -342,7 +342,7 @@ Here we enumerate the algorithms using PMI:
 
 Furthermore, we compared these algorithms using an objective test. First, we separated the dataset into two parts. The first part, used for ``learning'', consisted of 70\% of the dataset, and the second part, used for testing, consisted of 30\% of the dataset. The separation of this dataset was done randomly to ensure that there was no bias in the learning and testing sets. (For example, we wanted to avoid a case where all the baked goods ended up in the learning set.) Then, we applied our algorithms on the the learning set, and tested their recommendations on the testing set, with each recipe having one ingredient removed. We restricted the removed ingredients to be from the top 1000 ingredient set because our recommendations are drawn only from that set. The algorithms were evaluated on their ability to recover the missing ingredient. This gave us an objective and fair test between the algorithms, and we found that the \textit{weighted PMI algorithm} was the most successful. 
 
-However, it was only able to recover the missing ingredient about 20\% of the time. While this indicates some failure with our algorithms, it is really a misalignment of objectives. Our algorithms try to recommend a novel ingredient to spice up a dish, whereas the algorithm analyzer awards points for recovering a missing ingredient. These use cases, albeit similar, are clearly different. Thus, through the construction of this alanlyzer, we determined the difficulty of implementing an objective test that evaluates the accuracy of our algorithms. Improvements to such algorithm analyzing techniques may be of interest to study in future work.
+However, it was only able to recover the missing ingredient about 20\% of the time. While this indicates some failure with our algorithms, it is really a misalignment of objectives. Our algorithms try to recommend a novel ingredient to spice up a dish, whereas the algorithm analyzer awards points for recovering a missing ingredient. These use cases, albeit similar, are clearly different. Thus, through the construction of this alanlyzer, we observed the difficulty of implementing an objective test that evaluates the accuracy of our algorithms. Improvements to such algorithm analyzing techniques may be of interest to study in future work.
 
 
 
@@ -351,7 +351,7 @@ However, it was only able to recover the missing ingredient about 20\% of the ti
 
 \section{Web Design}
 
-Web design was done using a combination of HTML, CSS, JavaScript, and Python. HTML was used to create the content for display on the page, and CSS was used to style this content. JavaScript was also used for animations and general User Interface tweaks to make browsing the site intuitive and smooth. Finally, Python was utilized as an interface between the back-end and the front-end. Through the usage of Python's Flask framework, it was possible to integrate the back-end algorithms with displaying the relevant computed information on the front-end. In other words, our module app.py imported modules from the back-end, while also using this information to fill in the HTML templates based on search queries, etc. given by a user in the front end. 
+Web design was done using a combination of HTML, CSS, JavaScript, and Python. HTML was used to create the content for display on the page, and CSS was used to style this content. JavaScript was also used for animations and general User Interface tweaks to make browsing the site seamless and intuitive. Finally, Python was utilized as an interface between the back-end and the front-end. Through the usage of Python's Flask framework, it was possible to integrate the back-end algorithms with displaying the relevant computed information on the front-end. In other words, our module app.py imported modules from the back-end, while also using this information to fill in the HTML templates based on search queries, etc. provided by a user in the front end. 
 
 The primary focus on the front end was to develop a site that is intuitive and self-explanatory, while also featuring only the information that is needed the most. Thus, the landing page has the following design:
 
@@ -409,12 +409,12 @@ modules to extract and obtain relevant recipe information, to be fed to \texttt{
 	\item First, use module \texttt{scraper.py} to scrape recipes from the Internet
 and store raw data in a folder \texttt{dl/}. 
 	\item Then, we employ \texttt{parser.py} to parse out the relevant recipe data and store the recipes in a folder \texttt{processed/}. 
-	\item Run \texttt{mapper.py} to create two files: \texttt{mapping.txt}, which maps
+	\item \texttt{mapper.py} is run to create two files: \texttt{mapping.txt}, which maps
 		similar ingredients to the same ingredient, and \texttt{top.txt}, which lists
 		the ~1000 most common ingredients.
 	\item These are fed into the \texttt{analyzer\_*.py} files, which produce the ingredient networks
 		and run the relevant algorithms described in Section 3. These functions will run
-		the algorithm on each recipe obtain from NYTimes Cooking, and save all the results 
+		the algorithm on each recipe obtained from NYTimes Cooking, and save all the results 
 		in the corresponding \texttt{analyzer\_*.txt} files.
 \end{enumerate}
 
@@ -447,9 +447,11 @@ However, this analysis also didn't appear that fruitful either, because this req
 
 There are also several features that could be implemented to further improve toMEto. At the moment, recipes are found using a database. Allowing the user to specify his own recipe with a set of ingredients and then recommending supplementary ingredients would be a very useful feature. This would not be very difficult to implement with our current architecture. The one challenge here is restricting or preprocessing user inputs to match those in the existing ingredient network.
 
-We could parse the dataset and classify them, allowing users to get suggestions for a certain type of recipe. For example, some classifications could be how the recipe is cooked (baked, fried, etc.) or the type of cuisune. Then, suggestions that appear will be restricted to the type of recipe the user is interested in.
+We could also parse the dataset and classify entries, allowing users to get suggestions for a certain type of recipe. For example, some classifications could be how the recipe is cooked (baked, fried, etc.) or the type of cuisine (Asian, Italian, etc.). Then, suggestions that appear will be restricted to the type of recipe the user is interested in.
 
-Furthermore, we could allow user personalization. Allow the user to upvote or downvote suggestions, and use machine learning techniques to determine what kind of additions the user likes. This would require new algorithms to supplement our existing network algorithms.
+Furthermore, we could allow user personalization. By allowing the user to upvote or downvote suggestions, we may be able to utilize machine learning techniques to determine what kind of additions the user likes. This would require new algorithms to supplement our existing network algorithms, as well as a more complex user/login-based infastructure. 
+
+These additions may offer a more featureful and useful application. However, the work covered in this paper offers a solid foundation for accomplishing our initial objectives, and aids the cooking experience through suggestion of creative, relevant ingredients.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
