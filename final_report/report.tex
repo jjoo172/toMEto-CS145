@@ -176,6 +176,8 @@ Combining both datasets resulted in a network with 7339 unique ingredients. Of t
 
 \section{Algorithm Design and Analysis}
 
+\subsection{Algorithm Design}
+
 The primary application of algorithm design resides in ingredient recommendation to the user. These algorithms were implemented in a collection of files with the pattern \texttt{analyzer\_*.py}, and each file corresponds to a different algorithm (as we enumerate below). We reserve the majority of this section to understanding the different frameworks we tried for the \textit{complement} method, which is a method that takes in a particular recipe ID, and suggests up to ten ingredients that the user could potentially add. 
 
 Before we do so, however, we first introduce some common terminology to be used throughout the text:
@@ -311,34 +313,38 @@ Here we enumerate the algorithms using PMI:
 \end{algorithmic}
 \end{algorithm}
 
-  \begin{algorithm}
-   \caption{Weighted PMI algorithm}
-    \begin{algorithmic}
-      \Function{wPMI}{$recipeID$}
-      	\State Let $recipe$ = recipe with ID $recipeID$
-        \State Let $top10$ = ten ingredients with highest weighted number of connections
-        \State Let d = dictionary to contain all ingredients and their compatibility score
-        \For{$i$ in ingredients of $recipe$}
-        	\If {$i$ in graph}
-        		\For{peripheral ingredient $k$}
-        			\State{$d[k] = d[k] + \min( \frac{PMI(a,b)}{degree(b)}, \frac{PMI(a,b)}{degree(a)})$}
-        			\State{$count[k] = count[k] + 1$}
-        		\EndFor
-        	\EndIf
-        \EndFor
-        \For{ingredient in $d$}
-        	$d[k] = d[k] \cdot count[k]$
-        \EndFor
-        \Return 10 ingredients from $d$ with highest compatibility score
-       \EndFunction
+\begin{algorithm}
+\caption{Weighted PMI algorithm}
+\begin{algorithmic}
+  \Function{wPMI}{$recipeID$}
+  	\State Let $recipe$ = recipe with ID $recipeID$
+    \State Let $top10$ = ten ingredients with highest weighted number of connections
+    \State Let d = dictionary to contain all ingredients and their compatibility score
+    \For{$i$ in ingredients of $recipe$}
+    	\If {$i$ in graph}
+    		\For{peripheral ingredient $k$}
+    			\State{$d[k] = d[k] + \min( \frac{PMI(a,b)}{degree(b)}, \frac{PMI(a,b)}{degree(a)})$}
+    			\State{$count[k] = count[k] + 1$}
+    		\EndFor
+    	\EndIf
+    \EndFor
+    \For{ingredient in $d$}
+    	$d[k] = d[k] \cdot count[k]$
+    \EndFor
+    \Return 10 ingredients from $d$ with highest compatibility score
+   \EndFunction
 
 \end{algorithmic}
 \end{algorithm}
 
+\subsection{Analysis}
 
 Furthermore, we compared these algorithms using an objective test. First, we separated the dataset into two parts. The first part, the part used for ``learning'', consisted of 70\% of the dataset, and the second part, the part used for testing, consisted of 30\% of the dataset. The separation of this dataset was done randomly to ensure that there was no bias in the learning and testing sets. (For example, we wanted to avoid a case where all the baked goods ended up in the learning set, skewing results.) Then, we applied our algorithms on the the learning set, and tested their recommendations on the testing set, with each recipe having one ingredient removed. When removing one ingredient from each testing recipe, we chose an ingredient that was a top 1000 ingredient, to make sure it had a chance at being recommended. The algorithms were evaluated on their ability to recover the one missing ingredient. This gave us an objective and fair test between the algorithms, and we found that the \textit{weighted PMI algorithm} was the most successful. 
 
-However, it was only able to recover the missing ingredient about 20\% of the time. While this indicates some failure with our algorithms, it is really a misalignment of objectives. Our algorithms try to recommend a novel ingredient to spice up a dish, whereas the algorithm analyzer awards points for recovering a missing ingredient. These use cases, albeit similar, are clearly different. It is quite difficult to have an objective test that evaluates how good the algorithms are.
+
+However, using the first standard, it was only able to recover the missing ingredient about 20\% of the time. 
+While this indicates some failure with our algorithms, it is really a misalignment of objectives. Our algorithms try to recommend a novel ingredient to spice up a dish, whereas the algorithm analyzer awards points for recovering a missing ingredient. These use cases, albeit similar, are clearly different. It is quite difficult to have an objective test that evaluates how good the algorithms are.
+
 
 
 
@@ -415,6 +421,26 @@ and store raw data in a folder \texttt{dl/}.
 \section{Conclusions and Future Work}
 
 The final result of our project is a web based application that suggests supplementary ingredients to existing recipes. The novel part of our application lies in our algorithms, where we use purely network metrics to rank ingredient suggestions. The generalized PMI algorithms had the most success in providing solid, consistent recommendations.
+
+We also attempted to relax the standard for determining if suggested ingredients were close enough in similarity to the actual removed ingredient. Here, we defined a \textit{minimum edit distance}, which
+is the minimum number of insertions, deletions or substitutions of individual characters between two strings (Algorithm 4). We write the code for this in \texttt{backend/levenshtein.py}, which computes the minimum edit distance between
+all distinct pairs of the 1000 most common ingredients. 
+
+\begin{algorithm}
+\caption{Minimum edit distance algorithm}
+\begin{algorithmic}
+  \Function{Levenshtein}{$a[1 \dots m], b[1 \dots n]$}
+
+  	\State{delete = $(Levenshtein(a[1 \dots m - 1], b[1 \dots n]) + 1)$}
+  	\State{insert = $(Levenshtein(a[1 \dots m], b[1 \dots n - 1]) + 1)$}
+  	\State{substitute = $(Levenshtein(a[1 \dots m - 1], b[1 \dots n - 1]) + \mathds{1}_{a_{m} \neq b_{n}})$}
+  	\Return{$\min(delete, insert, substitute)$}
+   \EndFunction
+
+\end{algorithmic}
+\end{algorithm}
+
+However, this analysis also didn't appear that fruitful either, because this requires an assumption about similar ingredients being also lexicographically similar. However, for instance, \"chicken\" and \"beef\" are likely to be easily substituted, but do not share many characters in common.
 
 There are also several features that could be implemented to further improve toMEto. At the moment, recipes are found using a database. Allowing the user to specify his own recipe with a set of ingredients and then recommending supplementary ingredients would be a very useful feature. This would not be very difficult to implement with our current architecture. The one challenge here is restricting or preprocessing user inputs to match those in the existing ingredient network.
 
