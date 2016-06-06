@@ -34,10 +34,14 @@
 \usepackage[noend]{algpseudocode}
 \usepackage{pbox}
 
+\makeatletter
+\def\@copyrightspace{\relax}
+\makeatother
+
 \begin{document}
 
 \title{toMEto: a Networks-based Approach to Recipe Recommendation}
-\subtitle{CS145}
+\subtitle{CS 145}
 
 
 \makeatletter
@@ -75,7 +79,7 @@ Boyu (Charlie) Tong\\
 
 \maketitle
 \begin{abstract}
-toMEto is a web-based application that suggests ingredients to supplement existing recipes. We develop and evaluate several network based algorithms, packaging the suggestions under an intuitive and friendly user interface. 
+toMEto is a web-based application that suggests ingredients to supplement existing food recipes. Our goal is to spice up day-to-day cooking by recommending innovative and creative ingredients to complement the flavors of each dish. We develop and evaluate several network based algorithms, packaging the suggestions under an intuitive and friendly user interface. 
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -108,6 +112,7 @@ in regional cuisines~\cite{zhu2013geography},~\cite{jain2015analysis}, and other
 Within this web of research, we discovered a potential niche for recommending individual \textit{ingredients}, as opposed to entire recipes. This combines both the practical application of current research on food networks, as well as the theory behind identifying ingredients that are compatible with each other.
 
 
+\clearpage
 \section{Data Processing}
 
 \subsection{Data source}
@@ -189,7 +194,7 @@ Before we do so, however, we first introduce some common terminology to be used 
 \end{enumerate}
 
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=5cm]{peripheral}
 	\caption{Peripheral ingredients. Nodes denoted in gray are part of recipe $X$, while ingredients in blue
@@ -197,15 +202,15 @@ Before we do so, however, we first introduce some common terminology to be used 
 \end{figure}
 
 
-There are two primary schools of thought when designing an appropriate algorithm for recipe recommendation - using degree centrality measures, versus using pointwise mutual information (PMI). Here we enumerate in detail the algorithms. \\
+There are two primary schools of thought when designing an appropriate algorithm for recipe recommendation - using degree centrality measures, and using pointwise mutual information (PMI). Here we enumerate in detail the algorithms. \\
 First, we discuss the algorithm that uses degree centrality. We apply degree centrality toward compatibility scores of ingredients.
 
 \begin{enumerate}
 	\item Degree Centrality (Algorithm 1). 
 	The key aspect of this algorithm was to compute a compatibility score 
-	of an ingredient by summing over the all its connections with ingredients in the recipe. 
-	For two ingredients $(a,b)$, we compute the weight of its connection by $w(a,b)$ by 
-	counting the number of occurrences $a,b$ appear together in the same recipe. 
+	of an ingredient by summing over all its connections with ingredients in the recipe. 
+	For two ingredients $(a,b)$, we compute the weight of the connection $w(a,b)$ by 
+	counting the number of occurrences in which $a,b$ appear together in the same recipe. 
 	Each connection is normalized by dividing by the highest weighted number of connections of 
 	the two ingredients; this helps prevent other high-frequency ingredients from
 	dominating the recommendation. To compute the the weighted number of connections of 
@@ -368,7 +373,7 @@ Much of the front-end was designed to be easily updated and maintained, and thus
 \end{itemize}
 \texttt{simplesearch.html} is simply the html for the landing page, before any queries are entered. Then, once a search query is entered, app.py directs this information to the backend, which then generates information which is supplied to the \texttt{simplesearch\_searched.html} template. The user is also redirected to this template, which includes the tiles, modal popup information, etc. Furthermore, if a search is entered into \texttt{simplesearch\_searched.html}, this also refreshes the \texttt{simplesearch\_searched.html} template, utilizing the new information. Finally, \texttt{no\_results.html} is used as a template to be redirected to when the query entered into \texttt{simplesearch.html} or \texttt{simplesearch\_searched.html} does not contain any results. As a note, a user will be redirected to \texttt{simplesearch.html} upon clicking the toMEto logo.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{p4.png}
 \caption{Diagram of front-end architecture. \texttt{simplesearch.html} is the landing page of the website,
