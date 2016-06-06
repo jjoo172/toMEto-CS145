@@ -88,13 +88,12 @@ toMEto is a web-based application that suggests ingredients to supplement existi
 %\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
 
 \section{Introduction}
-Traditionally, cooking involves a combination of technical skills and creativity. While technical skills can only be improved through time and practice, we believed that the creative aspect of cooking could be improved through utilizing the wealth of existing recipes available online. There are a variety of web and mobile applications
-that mostly function as a database for recipes, and allow users to quickly search to recipes pertaining to their desires. There are also more advanced applications that devote specifically to \textit{food pairings}; websites such as \texttt{foodpairing.com} allow users to experiment with different ingredients and rate their synergy by examining the flavor network. On another hand, \texttt{yummly.com} will recommend new recipes based on a variety of selection filters, such as allergies or diets. \\
-The purpose of this project is to be able to blend the two and suggest individual ingredients, as opposed to entire recipes, using the concept of food pairings found through an ingredient network.
- Thus, through construction of a network using this information, toMEto offers unique suggestions to create interesting new twists on already successful recipes. Having these suggestions available alongside a recipe allows toMEto to inspire new forms of cooking styles, and improves the creative cooking experience for beginners and advanced chefs alike. With a simple, intuitive user interface, along with a rich database of recipe information, toMEto allows for a streamlined recipe lookup experience, with the added functionality of optimized suggestions. 
+Traditionally, cooking involves a combination of technical skills and creativity. While technical skills can only be improved through time and practice, we believed that the creative aspect of cooking could be improved through utilizing the wealth of existing recipes available online. There are a variety of web and mobile applications that mostly function as a database for recipes, and allow users to quickly search to recipes pertaining to their desires. There are also more advanced applications that devote specficially to \textit{food pairings}; websites such as \texttt{foodpairing.com} allow users to experiment with different ingredients and rate their synergy by examining the flavor network. On another hand, \texttt{yummly.com} will recommend new recipes based on a variety of selection filters, such as allergies or diets. 
 
+The purpose of this project is to be able to blend the two and suggest individual ingredients, as opposed to entire recipes, using the concept of food pairings found through an ingredient network. Thus, through construction of a network using this information, toMEto offers unique suggestions to create interesting new twists on already successful recipes. Having these suggestions available alongside a recipe allows toMEto to inspire new forms of cooking styles, and improves the creative cooking experience for beginners and advanced chefs alike. With a simple, intuitive user interface, along with a rich database of recipe information, toMEto allows for a streamlined recipe lookup experience, with the added functionality of optimized suggestions. 
 
 The rest of the paper is organized as follows. Section 2 contains details on data scraping and other preprocessing steps. Section 3 describes the various algorithms considered. Section 4 covers the app's web design while Section 5 covers the backend. Section 6 concludes our paper. 
+
 
 \subsection{Related Work}
 
@@ -350,19 +349,15 @@ The primary focus on the front end was to develop a site that is intuitive and s
 
 
 Upon searching for a recipe, a loading bar appears, and once recipe information is obtained, tiles fade in. These tiles offer an image of the recipe to be prepared, with the recipe title overlaid on top. This can be seen below:
-
 \begin{figure}[H]
 \includegraphics[scale=0.5]{p2.png}
 \caption{Tiles, each with a recipe related to the search input.}
 \end{figure}
-
 Upon clicking a recipe, a modal popup appears, which lists both the recipe itself as well as toMEto's recommended ingredients, as can be seen in the below image:
-
 \begin{figure}[H]
 \includegraphics[scale=0.5]{p3.png}
 \caption{The resulting popup from clicking on an image, with the recipe and our recommended ingredients.}
 \end{figure}
-
 Much of the front-end was designed to be easily updated and maintained, and thus small UI tweaks, such as background images, color schemes, etc. are easily changeable by editing the HTML and/or CSS files. The front-end utilizes mainly three different HTML templates:
 \begin{itemize}
 \item simplesearch.html
@@ -371,7 +366,12 @@ Much of the front-end was designed to be easily updated and maintained, and thus
 \end{itemize}
 simplesearch.html is simply the html for the landing page, before any queries are entered. Then, once a search query is entered, app.py directs this information to the backend, which then generates information which is supplied to the simplesearch\_searched.html template. The user is also redirected to this template, which includes the tiles, modal popup information, etc. Furthermore, if a search is entered into simplesearch\_searched.html, this also refreshes the simplesearch\_searched.html template, utilizing the new information. Finally, no\_results.html is used as a template to be redirected to when the query entered into simplesearch.html or simplesearch\_searched.html does not contain any results. As a note, a user will be redirected to simplesearch.html upon clicking the toMEto logo.
 
+\begin{figure}
+\centering
 \includegraphics[scale=0.5]{p4.png}
+\caption{Diagram of front-end architecture. \texttt{simplesearch.html} is the landing page of the website,
+and after a search query, the webpage will then transition into either \texttt{simplesearch\_searched.html} if there are search results, or \texttt{no\_results.html} if there are no results. Additional search queries will just redirect into the corresponding HTML page.}
+\end{figure}
 
 
 \section{Backend Architecture}
@@ -384,7 +384,7 @@ simplesearch.html is simply the html for the landing page, before any queries ar
 \end{figure*}
 
 \subsection{Integration with Frontend}
-A diagram of our backend architecture is described in Figure 5. We first launch the service by calling \texttt{app.py}, as well as invoking the appropriate \texttt{analyzer\_*.py} program whose algorithm we wish to display. Shortly after, the landing page for toMEto is brought up. The user then can enter a search query,
+A diagram of our backend architecture is described in Figure 6. We first launch the service by calling \texttt{app.py}, as well as invoking the appropriate \texttt{analyzer\_*.py} program whose algorithm we wish to display. Shortly after, the landing page for toMEto is brought up. The user then can enter a search query,
 which gets passed through \texttt{app.py}, and then \texttt{search.py} in the backend. The relevant
 recipes are returned back through \texttt{app.py}, which then looks through a text file \texttt{analyzer\_*.txt} to find our recommended ingredients for the returned recipes. Finally, these are displayed to the user 
  as a webpage.
