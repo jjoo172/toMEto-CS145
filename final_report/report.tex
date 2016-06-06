@@ -41,7 +41,7 @@
 \begin{document}
 
 \title{toMEto: a Networks-based Approach to Recipe Recommendation}
-\subtitle{CS 145}
+\subtitle{CS 145 Final Report}
 
 
 \makeatletter
@@ -483,13 +483,14 @@ These additions may offer a more featureful and useful application. However, the
 \clearpage
 \onecolumn
 \section*{Appendix B: Software Architecture}
-\vspace{3mm} %3mm vertical space
+\vspace{5mm} %5mm vertical space
 
 \begin{table}[h]
+       \centering
        \begin{tabular}{ | l | l | p{5cm} |}
        \hline
        Directory & Contains & Notable files \\ 
-       \hline
+       \hline \hline
        \texttt{src/} & Root of toMEto source code & \texttt{app.py} \\ \hline
        \texttt{src/static} & Images, CSS, JavaScript used by the frontend (Flask) & \\ \hline
        \texttt{src/templates} & HTML templates used by the frontend (Flask) & \\ \hline
@@ -503,14 +504,15 @@ These additions may offer a more featureful and useful application. However, the
        \texttt{src/backend/analyzers} & Different recommendation algorithms & \texttt{analyzer\_*.py} \\
                                       &                                     & \texttt{utils.py} \\ \hline
        \end{tabular}
-       \caption{Source code organization}
+       \caption{Source code directory organization.}
 \end{table}
-
+\vspace{1cm}
 \begin{table}[h]
     \centering
-    \begin{tabular}{ | p{5cm} | p{2cm} | p{2cm} | p{1cm} | p{6cm} |}
+    \begin{tabular}{ | p{5cm} | p{2cm} | p{1.5cm} | p{1cm} | p{6cm} |}
     \hline
-    Module Name & Language & Author & Lines of Code & Description/Functionality \\  \hline
+    Module Name & Language & Author & Lines of Code & Description/Functionality \\  
+    \hline \hline
     \texttt{data/scraper.py} & Python & Charlie & ~100 & Scrapes for recipes off NYT and Allrecipes websites \\ \hline
     \texttt{data/allrecipes\_parser.py},
     \texttt{data/nyt\_parser.py} & Python & Charlie & ~150 & Extracts relevant information (title, ingredients, body) from scraped recipes \\ \hline
