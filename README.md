@@ -1,17 +1,17 @@
-# CS145
-CS145 Project Repository - toMEto
-
+CS145 - toMEto
+=======
 
 To start up toMEto:
+-----------
 
-Unzip processed.zip (files needed for recipe metadata)
-> cd src/backend/data/
-> unzip -q processed.zip
+1. Unzip processed.zip (files needed for recipe metadata)
+    * cd src/backend/data/
+    * unzip -q processed.zip
 
-Run with default algorithm (weighted PMI)
-> cd src/
-> python app.py backend/analyzers/analyzer_PMI3.txt
+2. Run with default algorithm (weighted PMI)
+    * cd src/
+    * python app.py backend/analyzers/analyzer_PMI3.txt
 
-You're done!
-Access toMEto locally at 'localhost:5000' (type into browser)
-There will be no images since it's about ~3GB total
+3. You're done!
+
+4. Access toMEto locally at 'localhost:5000' (type into browser). Note that there will be no images... they take up about ~3GB total so it's not in the repository.
